@@ -1,0 +1,94 @@
+WARNING: Solver does not appear to support adding constraints to an existing model. JuMP's internal model will be discarded.
+WARNING: Repeated integer solution without converging
+#SOLVERNAME# PAJ_CBC_ECOS
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Cbc.CbcMathProgSolverInterface.CbcSolver(Any[(:logLevel, 0), (:integerTolerance, 1.0e-9), (:primalTolerance, 1.0e-8), (:ratioGap, 0.0), (:check_warmstart, false)]), Pajarito.UnsetSolver(), 0, false, true, ECOS.ECOSSolver(Any[(:verbose, false), (:reltol, 1.0e-10), (:feastol, 1.0e-10), (:reltol_inacc, 1.0e-5), (:feastol_inacc, 1.0e-8)]), true, true, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, false, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# tls2.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |      42
+     constraints |     115
+   nonzeros in A |     304
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Second order |       4 |         3 |         3
+
+Variable types:
+      continuous |       9
+         integer |      33
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.00s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.00s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =       0.718306
+Coin0505I Presolved problem not optimal, resolve after postsolve
+Coin0505I Presolved problem not optimal, resolve after postsolve
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |  +5.300000e+00 |  +5.300000e+00 |  -5.027e-16 |   2.292e-01
+
+Iterative algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  +5.300000e+00
+ - Best bound           =  +5.300000e+00
+ - Relative opt. gap    =     -5.027e-16
+ - Total time (s)       =       2.29e-01
+
+Timers (s):
+ - Setup                =   7.22e-04
+ -- Transform data      =   1.48e-04
+ -- Create conic data   =   7.20e-05
+ -- Create MIP data     =   5.01e-04
+ - Algorithm            =   2.29e-01
+ -- Solve relaxation    =   9.61e-04
+ -- Get relaxation cuts =   3.06e-05
+ -- Solve MIP models    =   2.27e-01
+ -- Solve subproblems   =   2.57e-04
+ -- Get subproblem cuts =   6.07e-05
+ -- Get separation cuts =   3.00e-06
+
+Counters:
+ - Iterations           =     1
+ -- Integer repeats     =     0
+ -- Conic subproblems   =     1
+ --- Infeasible         =     0
+ --- Optimal            =     1
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =     1
+ --- From subproblems   =     1
+ --- From MIP solve     =     0
+
+Solution returned by conic solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+    Second order |      8 |      0 |      7 |      8 |      4
+
+0 numerically unstable disaggregated SOC cuts
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |        NA |  1.61e-13
+    Second order |        NA |  1.26e-10
+
+Distance to integrality of integer/binary variables:
+         integer |  1.78e-15
+
+#STATUS# Optimal
+#OBJVAL# 5.299999999999997
+#OBJBOUND# 5.3
+#NODECOUNT# NaN
+#TIMESOLVER# 0.22927284240722656
+#TIMEALL# 0.22972702980041504
+#SOLUTION# [1.0,1.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,5.299999999999997,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,8.999999999999998,15.999999999999998,25.000000000000064,1.0000000000000389,1.0000000000001605,15.999999999999996,14.999999999916692,4.000000000134225,2.2843353250387524,15.27292072632241]

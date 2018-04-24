@@ -1,0 +1,261 @@
+Bonmin 1.8.2 using Cbc 2.9.8 and Ipopt 3.12.1
+bonmin: bonmin.algorithm="B-OA"
+bonmin.time_limit=3600.0
+halt_on_ampl_error=yes
+bonmin.allowable_fraction_gap=1.0e-5
+bonmin.oa_log_level=1
+bonmin.bb_log_level=1
+
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit http://projects.coin-or.org/Ipopt
+******************************************************************************
+
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I             1         OPT -0.086088464       17 0.088     build initial OA
+NLP0014I             2      INFEAS 0.14657435       40 0.26     OA decomposition
+NLP0014I             3      INFEAS 0.14380984       36 0.228     OA decomposition
+NLP0014I             4      INFEAS 0.020439021       35 0.224     OA decomposition
+NLP0014I             5         OPT -0.06364403       13 0.064     OA decomposition
+OA0003I New best feasible of -0.06364403 found after 1.032 sec and
+NLP0014I             6      INFEAS 0.019012283       39 0.24     OA decomposition
+NLP0014I             7      INFEAS 0.15395837       25 0.16     OA decomposition
+NLP0014I             8      INFEAS 0.054021634       28 0.176     OA decomposition
+NLP0014I             9      INFEAS 0.098932676       31 0.196     OA decomposition
+NLP0014I            10      INFEAS 0.30299514       23 0.136     OA decomposition
+NLP0014I            11      INFEAS 0.032627797       38 0.232     OA decomposition
+NLP0014I            12      INFEAS 0.0012873346       38 0.232     OA decomposition
+NLP0014I            13      INFEAS 0.038856946       42 0.264     OA decomposition
+NLP0014I            14         OPT -0.07913292       13 0.064     OA decomposition
+OA0003I New best feasible of -0.07913292 found after 3.308 sec and
+NLP0014I            15      INFEAS 0.001165236       33 0.2     OA decomposition
+NLP0014I            16      INFEAS 0.011437975       42 0.268     OA decomposition
+NLP0014I            17      INFEAS 0.011222872       31 0.192     OA decomposition
+NLP0014I            18      INFEAS 0.023772351       42 0.268     OA decomposition
+NLP0014I            19         OPT -0.076927935       13 0.064     OA decomposition
+NLP0014I            20      INFEAS 0.0022836179       44 0.272     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I            21      INFEAS 0.0010597723       38 0.232     OA decomposition
+NLP0014I            22         OPT -0.073088398       17 0.088     OA decomposition
+NLP0014I            23      INFEAS 0.014262217       40 0.252     OA decomposition
+NLP0014I            24      INFEAS 0.0047601988       40 0.244     OA decomposition
+NLP0014I            25      INFEAS 0.0017838726       33 0.196     OA decomposition
+NLP0014I            26         OPT -0.078256858        9 0.044     OA decomposition
+NLP0014I            27         OPT -0.077483847       16 0.084     OA decomposition
+NLP0014I            28      INFEAS 0.00069048994       40 0.244     OA decomposition
+NLP0014I            29         OPT -0.084962617       11 0.052     OA decomposition
+OA0003I New best feasible of -0.084962617 found after 7.264 sec and
+NLP0014I            30         OPT -0.072147682       14 0.064     OA decomposition
+NLP0014I            31      INFEAS 0.0067283002       37 0.224     OA decomposition
+NLP0014I            32      INFEAS 0.0040148766       33 0.2     OA decomposition
+NLP0014I            33      INFEAS 0.013438828       42 0.276     OA decomposition
+NLP0014I            34      INFEAS 0.030077292       40 0.252     OA decomposition
+NLP0014I            35         OPT -0.074630323       14 0.072     OA decomposition
+NLP0014I            36         OPT -0.085529145        6 0.028     OA decomposition
+OA0003I New best feasible of -0.085529145 found after 9.036 sec and
+NLP0014I            37      INFEAS 0.0067860654       39 0.244     OA decomposition
+NLP0014I            38         OPT -0.078995213       11 0.056     OA decomposition
+NLP0014I            39         OPT -0.085651282       10 0.048     OA decomposition
+OA0003I New best feasible of -0.085651282 found after 9.68 sec and
+NLP0014I            40      INFEAS 0.0028389015       26 0.152     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I            41         OPT -0.08402453       12 0.06     OA decomposition
+NLP0014I            42         OPT -0.079798581        9 0.044     OA decomposition
+NLP0014I            43         OPT -0.077871842       14 0.072     OA decomposition
+NLP0014I            44         OPT -0.07947153       13 0.068     OA decomposition
+NLP0014I            45      INFEAS 0.0076320562       39 0.248     OA decomposition
+NLP0014I            46         OPT -0.077509379       11 0.056     OA decomposition
+NLP0014I            47         OPT -0.080797452       12 0.06     OA decomposition
+NLP0014I            48         OPT -0.086088465        4 0.016     OA decomposition
+OA0003I New best feasible of -0.086088465 found after 11.428 sec and
+OA0008I OA  converged in 11.428 seconds found solution of value -0.086088465 (lower bound 1e+50 ).
+OA0010I Performed 47 iterations, explored 149 branch-and-bound nodes in total
+Cbc0012I Integer solution of -0.086088465 found by nonlinear programm after 15 iterations and 0 nodes (11.43 seconds)
+Cbc0031I 9 added rows had average density of 51
+Cbc0013I At root node, 9 cuts changed objective from -0.086088552 to -0.086088444 in 2 passes
+Cbc0014I Cut generator 0 (Outer Approximation decomposition.) - 44 row cuts average 51.0 elements, 0 column cuts (0 active)
+Cbc0014I Cut generator 1 (Outer Approximation feasibility check.) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)
+Cbc0014I Cut generator 2 (Outer Approximation strong branching solution check.) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)
+Cbc0001I Search completed - best objective -0.08608846491536833, took 15 iterations and 0 nodes (11.43 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+ Outer Approximation decomposition. was tried 2 times and created 44 cuts of which 0 were active after adding rounds of cuts
+
+ 	"Finished"
+WARNING: Array{T}(::Type{T}, m::Int) is deprecated, use Array{T}(m) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] Array(::Type{Int64}, ::Int64) at ./deprecated.jl:57
+ [3] loadcommon!(::AmplNLWriter.AmplNLMathProgModel, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:313
+ [4] loadproblem!(::AmplNLWriter.AmplNLNonlinearModel, ::Int64, ::Int64, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol, ::JuMP.NLPEvaluator) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:171
+ [5] _buildInternalModel_nlp(::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1248
+ [6] #build#119(::Bool, ::Bool, ::JuMP.ProblemTraits, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:303
+ [7] (::JuMP.#kw##build)(::Array{Any,1}, ::JuMP.#build, ::JuMP.Model) at ./<missing>:0
+ [8] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:168
+ [9] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [10] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [11] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [12] (::##5#6)(::IOStream) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:354
+ [13] open(::##5#6, ::String, ::String) at ./iostream.jl:152
+ [14] include_from_node1(::String) at ./loading.jl:569
+ [15] include(::String) at ./sysimg.jl:14
+ [16] process_options(::Base.JLOptions) at ./client.jl:305
+ [17] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 351
+WARNING: map!{F}(f::F, A::AbstractArray) is deprecated, use map!(f, A, A) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] map!(::AmplNLWriter.#pull_up_constants, ::Array{Any,1}) at ./deprecated.jl:57
+ [3] pull_up_constants(::AmplNLWriter.LinearityExpr) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_linearity.jl:126
+ [4] process_expression!(::Expr, ::Dict{Int64,Float64}, ::Array{Symbol,1}) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:409
+ [5] (::AmplNLWriter.##109#110{AmplNLWriter.AmplNLMathProgModel})(::Int64) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:213
+ [6] _collect(::UnitRange{Int64}, ::Base.Generator{UnitRange{Int64},AmplNLWriter.##109#110{AmplNLWriter.AmplNLMathProgModel}}, ::Base.EltypeUnknown, ::Base.HasShape) at ./array.jl:454
+ [7] loadproblem!(::AmplNLWriter.AmplNLNonlinearModel, ::Int64, ::Int64, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol, ::JuMP.NLPEvaluator) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:177
+ [8] _buildInternalModel_nlp(::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1248
+ [9] #build#119(::Bool, ::Bool, ::JuMP.ProblemTraits, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:303
+ [10] (::JuMP.#kw##build)(::Array{Any,1}, ::JuMP.#build, ::JuMP.Model) at ./<missing>:0
+ [11] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:168
+ [12] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [13] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [14] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [15] (::##5#6)(::IOStream) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:354
+ [16] open(::##5#6, ::String, ::String) at ./iostream.jl:152
+ [17] include_from_node1(::String) at ./loading.jl:569
+ [18] include(::String) at ./sysimg.jl:14
+ [19] process_options(::Base.JLOptions) at ./client.jl:305
+ [20] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 351
+WARNING: !(B::BitArray) is deprecated, use .!(B) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] !(::BitArray{1}) at ./deprecated.jl:57
+ [3] write_nl_header(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:67
+ [4] write_nl_file(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:2
+ [5] optimize!(::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:371
+ [6] optimize!(::AmplNLWriter.AmplNLNonlinearModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:722
+ [7] #solvenlp#165(::Bool, ::Function, ::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1271
+ [8] (::JuMP.#kw##solvenlp)(::Array{Any,1}, ::JuMP.#solvenlp, ::JuMP.Model, ::JuMP.ProblemTraits) at ./<missing>:0
+ [9] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:172
+ [10] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [11] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [12] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [13] (::##5#6)(::IOStream) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:354
+ [14] open(::##5#6, ::String, ::String) at ./iostream.jl:152
+ [15] include_from_node1(::String) at ./loading.jl:569
+ [16] include(::String) at ./sysimg.jl:14
+ [17] process_options(::Base.JLOptions) at ./client.jl:305
+ [18] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 351
+WARNING: !(B::BitArray) is deprecated, use .!(B) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] !(::BitArray{1}) at ./deprecated.jl:57
+ [3] write_nl_header(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:68
+ [4] write_nl_file(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:2
+ [5] optimize!(::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:371
+ [6] optimize!(::AmplNLWriter.AmplNLNonlinearModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:722
+ [7] #solvenlp#165(::Bool, ::Function, ::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1271
+ [8] (::JuMP.#kw##solvenlp)(::Array{Any,1}, ::JuMP.#solvenlp, ::JuMP.Model, ::JuMP.ProblemTraits) at ./<missing>:0
+ [9] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:172
+ [10] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [11] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [12] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [13] (::##5#6)(::IOStream) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:354
+ [14] open(::##5#6, ::String, ::String) at ./iostream.jl:152
+ [15] include_from_node1(::String) at ./loading.jl:569
+ [16] include(::String) at ./sysimg.jl:14
+ [17] process_options(::Base.JLOptions) at ./client.jl:305
+ [18] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 351
+WARNING: Array{T}(::Type{T}, m::Int) is deprecated, use Array{T}(m) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] Array(::Type{Int64}, ::Int64) at ./deprecated.jl:57
+ [3] loadcommon!(::AmplNLWriter.AmplNLMathProgModel, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:313
+ [4] loadproblem!(::AmplNLWriter.AmplNLNonlinearModel, ::Int64, ::Int64, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol, ::JuMP.NLPEvaluator) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:171
+ [5] _buildInternalModel_nlp(::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1248
+ [6] #build#119(::Bool, ::Bool, ::JuMP.ProblemTraits, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:303
+ [7] (::JuMP.#kw##build)(::Array{Any,1}, ::JuMP.#build, ::JuMP.Model) at ./<missing>:0
+ [8] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:168
+ [9] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [10] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [11] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [12] include_from_node1(::String) at ./loading.jl:569
+ [13] include(::String) at ./sysimg.jl:14
+ [14] process_options(::Base.JLOptions) at ./client.jl:305
+ [15] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 372
+WARNING: map!{F}(f::F, A::AbstractArray) is deprecated, use map!(f, A, A) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] map!(::AmplNLWriter.#pull_up_constants, ::Array{Any,1}) at ./deprecated.jl:57
+ [3] pull_up_constants(::AmplNLWriter.LinearityExpr) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_linearity.jl:126
+ [4] process_expression!(::Expr, ::Dict{Int64,Float64}, ::Array{Symbol,1}) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:409
+ [5] (::AmplNLWriter.##109#110{AmplNLWriter.AmplNLMathProgModel})(::Int64) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:213
+ [6] _collect(::UnitRange{Int64}, ::Base.Generator{UnitRange{Int64},AmplNLWriter.##109#110{AmplNLWriter.AmplNLMathProgModel}}, ::Base.EltypeUnknown, ::Base.HasShape) at ./array.jl:454
+ [7] loadproblem!(::AmplNLWriter.AmplNLNonlinearModel, ::Int64, ::Int64, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol, ::JuMP.NLPEvaluator) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:177
+ [8] _buildInternalModel_nlp(::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1248
+ [9] #build#119(::Bool, ::Bool, ::JuMP.ProblemTraits, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:303
+ [10] (::JuMP.#kw##build)(::Array{Any,1}, ::JuMP.#build, ::JuMP.Model) at ./<missing>:0
+ [11] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:168
+ [12] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [13] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [14] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [15] include_from_node1(::String) at ./loading.jl:569
+ [16] include(::String) at ./sysimg.jl:14
+ [17] process_options(::Base.JLOptions) at ./client.jl:305
+ [18] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 372
+WARNING: !(B::BitArray) is deprecated, use .!(B) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] !(::BitArray{1}) at ./deprecated.jl:57
+ [3] write_nl_header(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:67
+ [4] write_nl_file(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:2
+ [5] optimize!(::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:371
+ [6] optimize!(::AmplNLWriter.AmplNLNonlinearModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:722
+ [7] #solvenlp#165(::Bool, ::Function, ::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1271
+ [8] (::JuMP.#kw##solvenlp)(::Array{Any,1}, ::JuMP.#solvenlp, ::JuMP.Model, ::JuMP.ProblemTraits) at ./<missing>:0
+ [9] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:172
+ [10] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [11] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [12] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [13] include_from_node1(::String) at ./loading.jl:569
+ [14] include(::String) at ./sysimg.jl:14
+ [15] process_options(::Base.JLOptions) at ./client.jl:305
+ [16] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 372
+WARNING: !(B::BitArray) is deprecated, use .!(B) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] !(::BitArray{1}) at ./deprecated.jl:57
+ [3] write_nl_header(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:68
+ [4] write_nl_file(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:2
+ [5] optimize!(::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:371
+ [6] optimize!(::AmplNLWriter.AmplNLNonlinearModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:722
+ [7] #solvenlp#165(::Bool, ::Function, ::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1271
+ [8] (::JuMP.#kw##solvenlp)(::Array{Any,1}, ::JuMP.#solvenlp, ::JuMP.Model, ::JuMP.ProblemTraits) at ./<missing>:0
+ [9] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:172
+ [10] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [11] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [12] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [13] include_from_node1(::String) at ./loading.jl:569
+ [14] include(::String) at ./sysimg.jl:14
+ [15] process_options(::Base.JLOptions) at ./client.jl:305
+ [16] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 372
+#SOLVERNAME# BONMIN_OA
+#SOLVER# ConicNonlinearBridge.ConicNLPWrapper(AmplNLWriter.AmplNLSolver("/home/ubuntu/.julia/v0.6/CoinOptServices/deps/usr/lib/../bin/bonmin", String["bonmin.algorithm=\"B-OA\"", "bonmin.time_limit=3600.0", "halt_on_ampl_error=yes", "bonmin.allowable_fraction_gap=1.0e-5", "bonmin.oa_log_level=1", "bonmin.bb_log_level=1"], ""), false, false, false)
+#INSTANCE# robust_50_0.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# Optimal
+#OBJVAL# -0.08608846491536833
+#OBJBOUND# NaN
+#NODECOUNT# NaN
+#TIMESOLVER# 11.623048067092896
+#TIMEALL# 13.992024183273315
+#SOLUTION# [0.08608846491536833,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05344116370118865,1.0,0.0,0.0,0.0,0.0,0.042615820551683344,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04417502302092225,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.053282395629120884,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.10171533899951558,1.0,0.39878427897304214,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.09975064173124819,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.14725930505383344,1.0,0.058976418391934494,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.020490132162048386,0.008976364749819726,0.0037988750877007618,0.05588267865102658,0.014446454919793756,0.012522320091453702,0.025623367728690866,0.02396069109001248,0.014294678288990637,0.015237697801054564,0.016484388636811734,0.009831586514436344,0.0699668347353413,0.02035917257495255,0.014600768886880408,0.014855296209664116,0.029018594401249157,0.00800236186808124,0.021098747706888264,0.008452383751024053,0.002542452583654629,0.018497041000298094,-0.0005460139247281497,0.01047948261397218,0.01778575590810929,0.015471178918832821,0.07413406516537427,0.09392737211964634,0.019031675957235223,0.015475057085547549,-0.00035273907954892574,0.036107310453198156,0.0034259695667263113,0.01751795141916535,0.01526686911576208,0.012975293014441723,0.01345751045951087,0.01216295116936888,0.05951064300159676,0.04136357214646885,0.013214830170189784,0.007027275733627358,0.013511275706379347,0.01428823572682954,0.019253943115313515,0.028069026945066022,0.004489065415038092,0.0077830205513097815,0.023500207743858678,0.029201498467035937,0.0,0.2,0.005323492493768716,0.002332127972102725,0.0009869766995271023,0.014518745802995692,0.003753299086549109,0.003253394194052172,0.006657146215060383,0.006225170152846445,0.003713866361156026,0.0039588700172781405,0.004282769797590352,0.002554321104302844,0.01817791689093454,0.005289468194977177,0.0037933910312386936,0.0038595191694930056,0.007539251980073506,0.0020790746004107595,0.005481615450664669,0.0021959937152686657,0.0006605485576081563,0.004805672220333252,-0.00014185857888896259,0.002722649448665062,0.004620874932577965,0.0040195301910642845,0.019260595115697804,0.024403047109904354,0.004944574456658098,0.004020537768330764,-9.164430113724828e-5,0.009380954434456693,0.0008900930032128978,0.004551297285375425,0.003966448947154317,0.0033710800116240956,0.0034963637788872734,0.003160027409297578,0.015461318590469654,0.01074657128103487,0.0034333135902254223,0.001825739791422367,0.0035103323997844084,0.003712192534398188,0.005002321158263198,0.007292547118179761,0.0011662934066077953,0.0020220880546858765,0.00610553307012667,0.007586771850312069,0.0,0.05196151679305851]

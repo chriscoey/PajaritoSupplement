@@ -1,0 +1,50 @@
+numerics/lpfeastol = 1e-08
+presolving:
+(round 1, fast)       68 del vars, 165 del conss, 0 add conss, 103 chg bounds, 0 chg sides, 0 chg coeffs, 18 upgd conss, 2 impls, 5 clqs
+(round 2, fast)       86 del vars, 183 del conss, 0 add conss, 121 chg bounds, 17 chg sides, 0 chg coeffs, 18 upgd conss, 2 impls, 5 clqs
+(round 3, fast)       86 del vars, 183 del conss, 0 add conss, 142 chg bounds, 17 chg sides, 0 chg coeffs, 18 upgd conss, 2 impls, 5 clqs
+(round 4, exhaustive) 86 del vars, 183 del conss, 0 add conss, 142 chg bounds, 17 chg sides, 0 chg coeffs, 40 upgd conss, 2 impls, 5 clqs
+   (0.0s) probing cycle finished: starting next cycle
+presolving (5 rounds: 5 fast, 2 medium, 2 exhaustive):
+ 86 deleted vars, 183 deleted constraints, 0 added constraints, 142 tightened bounds, 0 added holes, 17 changed sides, 0 changed coefficients
+ 48 implications, 5 cliques
+presolved problem has 46 variables (16 bin, 0 int, 0 impl, 30 cont) and 46 constraints
+     18 constraints of type <soc>
+     17 constraints of type <varbound>
+      5 constraints of type <setppc>
+      6 constraints of type <linear>
+Presolving Time: 0.01
+numerics/lpfeastol = 1e-08
+
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |    23 |     - |1324k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |    27 |     - |1324k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |    36 |     - |1355k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |    45 |     - |1375k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |    52 |     - |1379k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |    60 |     - |1411k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |    66 |     - |1412k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   247 |     - |1416k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   252 |     - |1416k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   254 |     - |1429k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   255 |     - |1429k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   268 |     - |1433k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   273 |     - |1525k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   280 |     - |1560k| 0.000000e+00 |      --      |    Inf 
+F     1 |     0 |   379 |     - |1636k| 0.000000e+00 | 1.588170e+00 |    Inf 
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |   379 |     - |1636k| 0.000000e+00 | 1.588170e+00 |    Inf 
+      1 |     0 |   385 |     - |1659k| 0.000000e+00 | 1.588170e+00 |    Inf 
+      1 |     0 |   395 |     - |1659k| 0.000000e+00 | 1.588170e+00 |    Inf 
+      1 |     2 |   395 |     - |1659k| 0.000000e+00 | 1.588170e+00 |    Inf 
+*     7 |     6 |   761 | 109.7 |1680k| 0.000000e+00 | 1.438815e+00 |    Inf 
+*    83 |    79 |  6094 |  73.1 |2522k| 6.059391e-01 | 1.205252e+00 |  98.91%
+    100 |    84 |  6773 |  67.4 |2552k| 6.059391e-01 | 1.205252e+00 |  98.91%
+(node 137) unresolved numerical troubles in LP 1008
+(node 137) forcing the solution of an LP (last LP 1008)...
+(node 137) unresolved numerical troubles in LP 1018
+[src/scip/solve.c:3813] ERROR: (node 137) unresolved numerical troubles in LP 1018 cannot be dealt with
+[src/scip/solve.c:4102] ERROR: Error <-6> in function call
+[src/scip/solve.c:4881] ERROR: Error <-6> in function call
+[src/scip/scip.c:15889] ERROR: Error <-6> in function call
+CSIP: failing with retcode 1 at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/src/csip.c:980

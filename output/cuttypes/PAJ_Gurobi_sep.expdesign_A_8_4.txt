@@ -1,0 +1,117 @@
+#SOLVERNAME# PAJ_Gurobi_sep
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 0), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 0.0)]), Pajarito.UnsetSolver(), 0, false, true, Pajarito.UnsetSolver(), false, false, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, false, true, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# expdesign_A_8_4.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |      29
+     constraints |     134
+   nonzeros in A |     265
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Pos. semidef. |       4 |       5^2 |       5^2
+
+Variable types:
+      continuous |      21
+         integer |       8
+
+Transforming data...               0.00s
+
+Building MIP model...              0.00s
+Academic license - for non-commercial use only
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |           +Inf |  +4.038920e+00 |         Inf |   4.453e-03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |           +Inf |  +4.757398e+00 |         Inf |   1.106e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    3 |           +Inf |  +5.470706e+00 |         Inf |   1.527e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    4 |           +Inf |  +5.801420e+00 |         Inf |   2.337e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    5 |           +Inf |  +5.817328e+00 |         Inf |   3.268e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    6 |           +Inf |  +5.880143e+00 |         Inf |   4.488e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    7 |           +Inf |  +5.880179e+00 |         Inf |   5.757e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    8 |           +Inf |  +5.900252e+00 |         Inf |   7.069e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    9 |           +Inf |  +5.933462e+00 |         Inf |   8.506e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   10 |           +Inf |  +5.936429e+00 |         Inf |   9.839e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   11 |  +5.936822e+00 |  +5.936822e+00 |   0.000e+00 |   1.125e-01
+
+Iterative algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  +5.936822e+00
+ - Best bound           =  +5.936822e+00
+ - Relative opt. gap    =      0.000e+00
+ - Total time (s)       =       1.13e-01
+
+Timers (s):
+ - Setup                =   3.94e-04
+ -- Transform data      =   9.15e-05
+ -- Create conic data   =   0.00e+00
+ -- Create MIP data     =   3.03e-04
+ - Algorithm            =   1.12e-01
+ -- Solve relaxation    =   0.00e+00
+ -- Get relaxation cuts =   0.00e+00
+ -- Solve MIP models    =   1.09e-01
+ -- Solve subproblems   =   0.00e+00
+ -- Get subproblem cuts =   0.00e+00
+ -- Get separation cuts =   1.95e-03
+
+Counters:
+ - Iterations           =    11
+ -- Integer repeats     =     0
+ -- Conic subproblems   =     0
+ -- Feasible solutions  =     1
+ --- From subproblems   =     0
+ --- From MIP solve     =     1
+
+Solution returned by MIP solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+   Pos. semidef. |      0 |     41 |     41 |      0 |     41
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |        NA |  1.11e-16
+   Pos. semidef. |        NA |  1.35e-08
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Optimal
+#OBJVAL# 5.936822152643476
+#OBJBOUND# 5.936822152643476
+#NODECOUNT# NaN
+#TIMESOLVER# 0.11252808570861816
+#TIMEALL# 0.11288785934448242
+#SOLUTION# [1.7168711857897423,1.3493274356450815,1.3811389416353523,1.4894845895732995,5.936822152643476,0.6588130833106007,-0.17385310259906075,0.1503962002282585,0.030432438893360052,-0.17385310259906075,1.2209884664628443,0.17667938907786002,-0.5854372631943813,0.1503962002282585,0.17667938907786002,0.9020212707703557,0.1829220427336125,0.030432438893360052,-0.5854372631943813,0.1829220427336125,1.0527538473668578,3.0,-0.0,3.0,3.0,-0.0,-0.0,3.0,-0.0]

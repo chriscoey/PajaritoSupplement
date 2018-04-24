@@ -1,0 +1,112 @@
+#SOLVERNAME# PAJ_Gurobi_msd_sep
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 1), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Pajarito.UnsetSolver(), false, false, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, true, true, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# expdesign_E_8_4.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |      26
+     constraints |      50
+   nonzeros in A |     196
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Pos. semidef. |       1 |       4^2 |       4^2
+
+Variable types:
+      continuous |      18
+         integer |       8
+
+Transforming data...               0.00s
+
+Building MIP model...              0.00s
+Academic license - for non-commercial use only
+Optimize a model with 56 rows, 26 columns and 238 nonzeros
+Variable types: 18 continuous, 8 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e-05, 2e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e+00, 1e+01]
+Found heuristic solution: objective 0.0000000
+Presolve removed 29 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 27 rows, 19 columns, 154 nonzeros
+Variable types: 11 continuous, 8 integer (0 binary)
+
+Root relaxation: objective -5.848182e-01, 21 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -0.58482    0    2    0.00000   -0.58482      -     -    0s
+     0     2   -0.58482    0    2    0.00000   -0.58482      -     -    0s
+*   21    20               4      -0.1089413   -0.35418   225%   3.7    0s
+*   47    21               6      -0.1772874   -0.35418   100%   2.7    0s
+*   64    17               7      -0.2184374   -0.35418  62.1%   2.3    0s
+*   82    12               9      -0.3218650   -0.35418  10.0%   2.1    0s
+*   93     6               6      -0.3440454   -0.34479  0.22%   2.0    0s
+
+Cutting planes:
+  Lazy constraints: 24
+
+Explored 107 nodes (235 simplex iterations) in 0.01 seconds
+Thread count was 8 (of 16 available processors)
+
+Solution count 6: -0.344045 -0.321865 -0.218437 ... 0
+
+Optimal solution found (tolerance 1.00e-05)
+Best objective -3.440454473173e-01, best bound -3.440454473173e-01, gap 0.0000%
+
+Starting MIP-solver-driven algorithm
+
+MIP-solver-driven algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  -3.440454e-01
+ - Best bound           =  -3.440454e-01
+ - Relative opt. gap    =      0.000e+00
+ - Total time (s)       =       1.58e-02
+
+Timers (s):
+ - Setup                =   3.17e-04
+ -- Transform data      =   9.10e-05
+ -- Create conic data   =   0.00e+00
+ -- Create MIP data     =   2.26e-04
+ - Algorithm            =   1.55e-02
+ -- Solve relaxation    =   0.00e+00
+ -- Get relaxation cuts =   0.00e+00
+ -- MIP solver driving  =   1.53e-02
+ -- Solve subproblems   =   0.00e+00
+ -- Get subproblem cuts =   0.00e+00
+ -- Get separation cuts =   1.19e-03
+
+Counters:
+ - Lazy callbacks       =    30
+ -- Integer repeats     =     0
+ -- Conic subproblems   =     0
+ -- Feasible solutions  =     7
+ --- From subproblems   =     0
+ --- In lazy callback   =     7
+ - Heuristic callbacks  =     0
+ -- Solutions passed    =     0
+
+Solution returned by MIP solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+   Pos. semidef. |      0 |     24 |     24 |      0 |     24
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |        NA |  2.22e-16
+   Pos. semidef. |        NA |  1.51e-16
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Optimal
+#OBJVAL# -0.34404544731725195
+#OBJBOUND# -0.34404544731725195
+#NODECOUNT# 107
+#TIMESOLVER# 0.015829086303710938
+#TIMEALL# 0.016150951385498047
+#SOLUTION# [0.34404544731725195,0.34404544731725195,0.6812815934993603,-0.20852539822190028,0.1775387104107078,0.13951344761333792,-0.20852539822190028,1.2243149416491061,0.19460528019310674,-0.5603370338360246,0.1775387104107078,0.19460528019310674,0.8635172219281726,0.084133093647828,0.13951344761333792,-0.5603370338360246,0.084133093647828,0.8366876767028333,2.0,-0.0,3.0,3.0,1.0,-0.0,3.0,-0.0]

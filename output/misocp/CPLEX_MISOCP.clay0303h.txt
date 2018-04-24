@@ -1,0 +1,81 @@
+
+Cone linearizations applied:  141
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (10.67 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (10.37 ticks)
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (21.05 ticks)
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 199 rows and 1 columns.
+MIQCP Presolve modified 17 coefficients.
+Aggregator did 102 substitutions.
+Reduced MIQCP has 264 rows, 285 columns, and 825 nonzeros.
+Reduced MIQCP has 21 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 72 quadratic constraints.
+Presolve time = 0.00 sec. (1.14 ticks)
+Probing fixed 0 vars, tightened 144 bounds.
+Probing time = 0.00 sec. (0.19 ticks)
+Cover probing fixed 0 vars, tightened 26 bounds.
+Clique table members: 6.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.61 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000    10                      0.0000       66         
+      0     0        0.0000    16                    Cone: 32      119         
+      0     0        0.0000    12                    Cone: 76      151         
+      0     0        0.0000    16                   Cone: 108      226         
+      0     0        0.0000    16                   Cone: 156      302         
+      0     0        0.0000    10                   Cone: 200      347         
+      0     0        0.0000    10                   Cone: 224      385         
+      0     0        0.0000    10                   Cone: 320      429         
+      0     0        0.0000    10                   Cone: 344      454         
+      0     0        0.0000    10                   Cone: 368      480         
+      0     0        0.0000    10                   Cone: 392      504         
+      0     0        0.0000    10                   Cone: 404      516         
+      0     0        0.0000    10                      0.0000      516         
+      0     0        0.0000     6                    Cuts: 26      536         
+      0     0        0.0000    10                    Cuts: 18      568         
+      0     0        0.0000     7                    Cuts: 17      589         
+      0     0        0.0000     6                     Cuts: 8      601         
+      0     2        0.0000     6                      0.0000      601         
+Elapsed time = 0.13 sec. (131.19 ticks, tree = 0.01 MB, solutions = 0)
+*    15    10      integral     0    55092.5133        0.0000     1329  100.00%
+*    16     7      integral     0    28862.1809        0.0000     1344  100.00%
+*    28    11      integral     0    28351.4193        0.0000     2067  100.00%
+*    60+   15                        28351.4140     2200.0000            92.24%
+     60    17    27802.0391     2    28351.4140     2200.0000     4452   92.24%
+*    77    15      integral     0    26669.1087     4832.5183     5333   81.88%
+*    89     7      integral     0    26669.1084    20424.3963     5535   23.42%
+*    99     1      integral     0    26669.1082    26668.4874     5643    0.00%
+*   100     0      integral     0    26669.1066    26668.4874     5648    0.00%
+#SOLVERNAME# CPLEX_MISOCP
+#SOLVER# CPLEX.CplexSolver(Any[(:CPX_PARAM_THREADS, 1), (:CPX_PARAM_TILIM, 3600.0), (:CPX_PARAM_SCRIND, 1), (:CPX_PARAM_EPINT, 1.0e-9), (:CPX_PARAM_EPRHS, 1.0e-8), (:CPX_PARAM_EPGAP, 1.0e-5)])
+#INSTANCE# clay0303h.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# Optimal
+#OBJVAL# 26669.10662394325
+#OBJBOUND# 26669.106623943255
+#NODECOUNT# 101
+#TIMESOLVER# 0.4859480857849121
+#TIMEALL# 1.0603609085083008
+#SOLUTION# [19.61026925384808,19.610270149610034,1.0885763975065785e-6,30.81400134007022,26.81400203925622,4.000000115822229,26669.10662394325,30.145750930307614,49.75602093217367,49.7560230677693,50.000000719053865,80.81400731183707,76.81400966673428,0.0,0.0,30.145750930307614,0.0,0.0,0.0,30.145750930307614,0.0,0.0,0.0,49.75602093217367,0.0,0.0,0.0,0.0,49.75602093217367,0.0,0.0,49.7560230677693,0.0,0.0,0.0,0.0,49.7560230677693,0.0,0.0,50.000000719053865,0.0,0.0,0.0,50.000000719053865,0.0,0.0,0.0,80.81400731183707,0.0,0.0,0.0,0.0,80.81400731183707,0.0,0.0,76.81400966673428,0.0,0.0,0.0,0.0,76.81400966673428,-0.0,-0.0,-0.0,-0.0,1.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,30.145750930307614,-0.0,49.75602093217367,-0.0,-0.0,49.7560230677693,-0.0,-0.0,-0.0,50.000000719053865,-0.0,80.81400731183707,-0.0,-0.0,76.81400966673428,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,1.0,1.0,-0.0,-0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2475.6616665082593,6530.903528693098,2480.709615805479,5905.381424601017,909.1527921041795,2500.371451886938,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2477.9543393618433,6532.936524256398,2475.66231006607,5900.39657473845,909.1462924240554,2500.369631099216,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2476.5840082075347,6531.785073064837,2481.0433997280747,5905.728494475799,908.7663133161954,2500.0000452975596,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2478.735804050919,6533.875443737802,2476.0735935763987,5900.774493703654,908.7663176721029,2500.00006351294,0.0,0.0,0.0,0.0]
+
+Implied bound cuts applied:  15
+Flow cuts applied:  5
+Mixed integer rounding cuts applied:  6
+Gomory fractional cuts applied:  1
+Cone linearizations applied:  374
+
+Root node processing (before b&c):
+  Real time             =    0.13 sec. (131.22 ticks)
+Sequential b&c:
+  Real time             =    0.36 sec. (377.67 ticks)
+                          ------------
+Total (root+branch&cut) =    0.49 sec. (508.89 ticks)

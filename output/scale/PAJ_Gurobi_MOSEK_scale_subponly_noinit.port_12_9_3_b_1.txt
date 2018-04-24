@@ -1,0 +1,107 @@
+WARNING: Repeated integer solution without converging
+WARNING: Pajarito failed to converge to the desired relative gap; try turning off the MIP solver's presolve functionality
+#SOLVERNAME# PAJ_Gurobi_MOSEK_scale_subponly_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 0), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-6), (:MIPGap, 0.0)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, false, false, false, false, false, true, 10.0, false, false, false, false, 1.0e-12, 1.0e-6, false, "")
+#INSTANCE# port_12_9_3_b_1.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |      91
+     constraints |     170
+   nonzeros in A |     454
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Second order |       1 |        13 |        13
+   Primal expon. |      18 |         3 |         3
+   Pos. semidef. |       1 |       7^2 |       7^2
+
+Variable types:
+      continuous |      67
+         integer |      24
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.16s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.03s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      -0.042571
+Academic license - for non-commercial use only
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |  -2.699430e-02 |  -4.256953e-02 |   5.768e-01 |   2.398e-01
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |  -2.699430e-02 |  -4.175526e-02 |   5.466e-01 |   6.303e-01
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Pajarito failed to converge to the desired relative gap; try turning off the MIP solver's presolve functionality
+
+Iterative algorithm summary:
+ - Status               =     Suboptimal
+ - Best feasible        =  -2.699430e-02
+ - Best bound           =  -4.175526e-02
+ - Relative opt. gap    =      5.466e-01
+ - Total time (s)       =       6.30e-01
+
+Timers (s):
+ - Setup                =   1.56e-01
+ -- Transform data      =   1.17e-04
+ -- Create conic data   =   1.56e-01
+ -- Create MIP data     =   3.31e-04
+ - Algorithm            =   4.74e-01
+ -- Solve relaxation    =   2.79e-02
+ -- Get relaxation cuts =   1.83e-02
+ -- Solve MIP models    =   1.40e-01
+ -- Solve subproblems   =   3.43e-02
+ -- Get subproblem cuts =   5.21e-04
+ -- Get separation cuts =   0.00e+00
+
+Counters:
+ - Iterations           =     2
+ -- Integer repeats     =     0
+ -- Conic subproblems   =     2
+ --- Infeasible         =     0
+ --- Optimal            =     1
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     1
+ -- Feasible solutions  =     1
+ --- From subproblems   =     1
+ --- From MIP solve     =     0
+
+Solution returned by conic solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+    Second order |      2 |      0 |     12 |     12 |      6
+   Primal expon. |     36 |      0 |     18 |     18 |     18
+   Pos. semidef. |      2 |      0 |      7 |      7 |      1
+
+0 numerically unstable disaggregated SOC cuts
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |  0.00e+00 |  1.23e-08
+    Second order |        NA | -3.35e-10
+   Primal expon. |        NA | -1.12e-10
+   Pos. semidef. |        NA | -2.82e-09
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Suboptimal
+#OBJVAL# -0.026994303798844297
+#OBJBOUND# -0.041755262845606975
+#NODECOUNT# NaN
+#TIMESOLVER# 0.6304550170898438
+#TIMEALL# 0.633620023727417
+#SOLUTION# [0.07000535667647009,0.0,0.0,0.040384500454572245,0.0,0.0,0.0,0.0,0.0,0.05033692001204475,0.0,0.0,0.0,0.0,0.0,0.0,0.07834801326070877,0.0,0.0,0.0,0.0,0.0,0.08738906448460329,0.0,-0.0,-0.0,1.0,0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.0,0.0,0.0,1.0,0.0,-0.0,-0.0,-0.0,1.0,0.0,1.0,0.0,0.0,9.11740254729174,0.02821795957598015,0.004690956588652252,0.0015817696877494845,0.022158089096128996,0.0015995107901151206,0.002431135436021046,0.004049866758420151,0.002477594427409064,0.0037441463897663076,0.01502441805493995,0.003441139318471699,0.00237840073839839,0.0021014269925041518,0.0010065621826955695,0.001450232427810505,0.0008786221394572191,0.0398218316237573,0.00017758773413323325,0.0008955051456818186,0.002140919682820819,0.00027395078776937254,-0.000803258756686555,0.029433009398134775,0.0013788231548692864,0.0021036338150810952,0.0010070687686821224,0.0014512836189660386,0.0008790083584206989,0.040604400902787344,0.0001776041681665743,0.0008959063674593969,0.002143210268917769,0.00027398890353834166,-0.0020992170412883885,-0.0010060551669671088,-0.001449179617407201,-0.0008782357046921966,-0.039018201600546025,-0.00017757178692648416,-0.0008951037886360092,-0.002138625922408865,-0.0002739126626678906]

@@ -1,0 +1,122 @@
+#SOLVERNAME# PAJ_Gurobi_MOSEK_msd_nodisagg_subponly_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 1), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, 10.0, false, true, false, false, false, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# port_16_12_4_c_1.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     121
+     constraints |     233
+   nonzeros in A |     717
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Second order |       1 |        17 |        17
+   Primal expon. |      24 |         3 |         3
+   Pos. semidef. |       1 |       9^2 |       9^2
+
+Variable types:
+      continuous |      89
+         integer |      32
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.16s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.03s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      -0.050470
+Academic license - for non-commercial use only
+Optimize a model with 158 rows, 121 columns and 724 nonzeros
+Variable types: 89 continuous, 32 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [3e-08, 2e+00]
+  Objective range  [9e-03, 3e-01]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-03, 8e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 121 rows and 31 columns
+Presolve time: 0.00s
+Presolved: 37 rows, 90 columns, 223 nonzeros
+Variable types: 58 continuous, 32 integer (32 binary)
+
+Root relaxation: objective -5.046784e-02, 11 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      -0.0504675   -0.05047  0.00%     -    0s
+
+Cutting planes:
+  Lazy constraints: 4
+
+Explored 0 nodes (18 simplex iterations) in 0.70 seconds
+Thread count was 8 (of 16 available processors)
+
+Solution count 2: -0.0504675 0 
+
+Optimal solution found (tolerance 1.00e-05)
+Best objective -5.046751932316e-02, best bound -5.046751932316e-02, gap 0.0000%
+
+Starting MIP-solver-driven algorithm
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Pajarito failed to converge to the desired relative gap; try turning off the MIP solver's presolve functionality
+
+MIP-solver-driven algorithm summary:
+ - Status               =     Suboptimal
+ - Best feasible        =  -3.667402e-02
+ - Best bound           =  -5.046752e-02
+ - Relative opt. gap    =      3.760e-01
+ - Total time (s)       =       9.23e-01
+
+Timers (s):
+ - Setup                =   1.64e-01
+ -- Transform data      =   1.40e-04
+ -- Create conic data   =   1.63e-01
+ -- Create MIP data     =   4.22e-04
+ - Algorithm            =   7.60e-01
+ -- Solve relaxation    =   2.94e-02
+ -- Get relaxation cuts =   2.48e-02
+ -- MIP solver driving  =   7.05e-01
+ -- Solve subproblems   =   7.54e-02
+ -- Get subproblem cuts =   1.04e-03
+ -- Get separation cuts =   0.00e+00
+
+Counters:
+ - Lazy callbacks       =     6
+ -- Integer repeats     =     1
+ -- Conic subproblems   =     6
+ --- Infeasible         =     0
+ --- Optimal            =     5
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     1
+ -- Feasible solutions  =     5
+ --- From subproblems   =     5
+ --- In lazy callback   =     0
+ - Heuristic callbacks  =     0
+ -- Solutions passed    =     0
+
+Solution returned by conic solver
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |  0.00e+00 |  1.59e-07
+    Second order |        NA | -1.84e-08
+   Primal expon. |        NA |  1.00e-07
+   Pos. semidef. |        NA | -2.52e-08
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Suboptimal
+#OBJVAL# -0.0366740229607768
+#OBJBOUND# -0.05046751932315635
+#NODECOUNT# 0
+#TIMESOLVER# 0.9233620166778564
+#TIMEALL# 0.9239521026611328
+#SOLUTION# [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.09081121966331243,0.0,0.0,0.0,0.0,0.0,0.0,0.04504319497769939,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07579324851526908,0.09034210632571311,0.0,0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,6.9517261822408845,0.0013506503788054424,0.000980910592772282,0.0002149245477377726,0.00228436431477253,0.0017997246732584255,0.0009016104608098006,0.0010170399005009156,-0.0009291805808814512,0.0029725527713754915,0.0014057148371076182,0.001965745495043612,0.0028412978140707943,0.03948307133535216,0.001211277598390322,0.0008938383666230185,0.0014386176032947194,0.00045571779269404367,0.00020050058203713306,0.002297000026604934,0.027324055561774196,0.002308500842429062,0.0008987480472117948,0.00042590361773564567,-7.334286086035924e-5,-0.0008439868182165133,0.0008272717388746464,0.0018623400364681242,0.02892432639704534,0.028978522299598856,0.0006155326378776487,-0.0003648038267502468,0.0007809100817739202,0.00045581868412247924,0.00020051946846931284,0.002299635876708227,0.02769396487892736,0.0023111632425788144,0.000899151647936719,0.00042599402216601546,-7.334037522386358e-5,-0.0008436306123266496,0.0008276115187617374,0.0018640722846999492,0.02933855588502302,-0.00045560853886631575,-0.0002004746927316714,-0.0022943560752614767,-0.026947277687521178,-0.0023058280858261823,-0.000898342313222574,-0.0004258085832464862,7.334745125628322e-5,0.0008443469099720489,-0.0008269265461387041,-0.0018605998705469567,-0.028501829005346983]

@@ -1,0 +1,120 @@
+
+Cone linearizations applied:  141
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (10.67 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (10.37 ticks)
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (21.05 ticks)
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 235 rows and 1 columns.
+MIQCP Presolve modified 69 coefficients.
+Aggregator did 32 substitutions.
+Reduced MIQCP has 72 rows, 137 columns, and 594 nonzeros.
+Reduced MIQCP has 85 binaries, 4 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 16 quadratic constraints.
+Presolve time = 0.00 sec. (1.12 ticks)
+Probing time = 0.00 sec. (0.21 ticks)
+Clique table members: 52.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.21 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000    14                      0.0000       17         
+      0     0        0.0000    19                    Cone: 16      101         
+      0     0        0.7881    32                    Cone: 27      127         
+      0     0        1.5949    54                    Cone: 40      144         
+      0     0        1.6611    55                    Cone: 55      166         
+      0     0        1.6971    55                    Cone: 70      184         
+      0     0        1.7057    55                    Cone: 85      200         
+      0     0        1.7093    51                   Cone: 116      226         
+      0     0        1.7093    52                   Cone: 131      239         
+      0     0        1.7093    52                   Cone: 145      252         
+      0     0        1.7093    52                   Cone: 159      268         
+      0     0        1.7093    52                   Cone: 173      282         
+      0     0        1.7093    52                   Cone: 186      293         
+      0     0        1.7093    52                   Cone: 198      304         
+      0     0        1.7093    51                   Cone: 209      317         
+      0     0        1.7093    51                   Cone: 220      330         
+      0     0        1.7093    51                   Cone: 227      335         
+      0     0        1.7093    51                   Cone: 234      340         
+      0     0        1.7093    51                   Cone: 238      344         
+      0     0        1.7093    51                   Cone: 242      348         
+      0     0        1.7093    51                   Cone: 244      350         
+      0     0        1.7093    51                   Cone: 245      351         
+      0     0        1.7093    51                      1.7093      351         
+      0     0        1.7805    34                    Cuts: 12      375         
+      0     0        1.8735    38                    Cuts: 33      422         
+      0     0        1.9018    62                    Cuts: 21      468         
+      0     0        2.4862    48                    Cuts: 29      511         
+      0     0        2.5057    53                    Cuts: 40      552         
+      0     0        2.5335    46                    Cuts: 29      615         
+      0     0        2.5552    55                    Cuts: 25      636         
+      0     0        2.5590    56                    Cuts: 21      664         
+      0     0        2.5652    59                    Cuts: 14      677         
+      0     0        2.5709    58                     Cuts: 9      687         
+      0     0        2.5741    62                    Cuts: 17      728         
+      0     0        2.6706    59                    Cuts: 22      753         
+      0     0        2.6828    63                    Cuts: 17      766         
+      0     0        2.6846    63                    Cuts: 16      776         
+      0     0        2.7004    61                    Cuts: 14      792         
+      0     0        2.7053    74                    Cuts: 13      807         
+      0     0        2.7099    68                    Cuts: 12      819         
+      0     0        2.7117    65                    Cuts: 11      827         
+      0     0        2.7211    64                     Cuts: 8      850         
+      0     0        2.7267    69                    Cuts: 17      856         
+      0     0        2.7275    67                     Cuts: 8      859         
+      0     0        2.7330    71                     Cuts: 3      870         
+      0     0        2.7412    72                LiftProj: 19      892         
+      0     0        2.7437    69                    Cuts: 18      902         
+      0     0        2.7591    66                    Cuts: 23      916         
+      0     0        2.7641    66                    Cuts: 12      922         
+      0     0        2.7662    72                     Cuts: 7      927         
+*     0+    0                           17.0000        2.7662            83.73%
+      0     2        2.7671    72       17.0000        2.7694      927   83.71%
+Elapsed time = 2.77 sec. (2111.24 ticks, tree = 0.01 MB, solutions = 1)
+*   100+   58                            8.8000        4.1419            52.93%
+    483   269        7.3857    24        8.8000        5.3320     9074   39.41%
+   1059   519        cutoff              8.8000        5.8970    20064   32.99%
+   1689   762        8.4000    38        8.8000        6.2354    32196   29.14%
+*  2020+  804                            8.6000        6.4235            25.31%
+   2280   895    infeasible              8.6000        6.5553    44036   23.78%
+   2697   963        7.3789    53        8.6000        6.7511    55794   21.50%
+*  2880+  950                            8.4000        6.8221            18.78%
+   3174  1000        7.8000    40        8.4000        6.9541    67086   17.21%
+   3734  1075        7.8000    37        8.4000        7.2157    78914   14.10%
+*  3960   978      integral     0        8.3000        7.3000    82297   12.05%
+   4449   886        8.0000    28        8.3000        7.5283    90790    9.30%
+   5205   611    infeasible              8.3000        7.7000   103419    7.23%
+#SOLVERNAME# CPLEX_MISOCP
+#SOLVER# CPLEX.CplexSolver(Any[(:CPX_PARAM_THREADS, 1), (:CPX_PARAM_TILIM, 3600.0), (:CPX_PARAM_SCRIND, 1), (:CPX_PARAM_EPINT, 1.0e-9), (:CPX_PARAM_EPRHS, 1.0e-8), (:CPX_PARAM_EPGAP, 1.0e-5)])
+#INSTANCE# tls4.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# Optimal
+#OBJVAL# 8.299999999999999
+#OBJBOUND# 8.299999999999999
+#NODECOUNT# 6906
+#TIMESOLVER# 6.06084418296814
+#TIMEALL# 6.64496111869812
+#SOLUTION# [1.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,8.3,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,1.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,1.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,25.0,25.0,1.0,1.0,4.0,4.0,4.0,4.0,1.0,9.0,1.0,25.0,16.0,1.0,16.0,1.0,4.0,9.0,4.0,1.0,10.0,10.0,2.0,2.0,5.0,15.0,1.0,5.0,20.0,5.0,4.0,1.0,10.0,15.0,2.0,1.0]
+
+GUB cover cuts applied:  6
+Clique cuts applied:  3
+Cover cuts applied:  13
+Mixed integer rounding cuts applied:  7
+Zero-half cuts applied:  9
+Lift and project cuts applied:  21
+Gomory fractional cuts applied:  1
+Cone linearizations applied:  238
+
+Root node processing (before b&c):
+  Real time             =    2.77 sec. (2111.24 ticks)
+Sequential b&c:
+  Real time             =    3.29 sec. (2699.87 ticks)
+                          ------------
+Total (root+branch&cut) =    6.06 sec. (4811.11 ticks)

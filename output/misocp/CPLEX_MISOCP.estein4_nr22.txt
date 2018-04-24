@@ -1,0 +1,73 @@
+
+Cone linearizations applied:  141
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (10.67 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (10.37 ticks)
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (21.05 ticks)
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 78 rows and 20 columns.
+Aggregator did 8 substitutions.
+Reduced MIQCP has 22 rows, 39 columns, and 54 nonzeros.
+Reduced MIQCP has 4 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 9 quadratic constraints.
+Presolve time = 0.00 sec. (0.11 ticks)
+Probing time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.02 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000     0                      0.0000        0         
+      0     0        0.0000     4                     Cone: 8        9         
+      0     0        0.0000     3                    Cone: 17       14         
+      0     0        0.0000     4                    Cone: 24       20         
+      0     0        0.0000     4                    Cone: 30       25         
+      0     0        0.0150     4                    Cone: 37       30         
+      0     0        0.0151     4                    Cone: 45       35         
+      0     0        0.0154     4                    Cone: 60       45         
+      0     0        0.0154     4                      0.0154       45         
+*     0+    0                            0.5126        0.0154            96.99%
+*     0+    0                            0.5033        0.0154            96.93%
+      0     0        0.1938     4        0.5033   LiftProj: 4       49   61.49%
+      0     0        0.2693     4        0.5033       Cuts: 8       53   46.49%
+      0     0        0.3150     4        0.5033   LiftProj: 3       62   37.42%
+      0     0        0.3331     4        0.5033       Cuts: 3       65   33.81%
+      0     0        0.3373     4        0.5033       Cuts: 6       70   32.98%
+      0     0        0.3600     4        0.5033   LiftProj: 4       80   28.47%
+      0     0        0.3725     4        0.5033   LiftProj: 4       84   26.00%
+      0     0        0.3769     4        0.5033   LiftProj: 4       90   25.11%
+      0     0        0.3806     4        0.5033   LiftProj: 4       98   24.38%
+      0     0        0.3927     4        0.5033   LiftProj: 3      100   21.97%
+      0     0        0.3927     4        0.5033   LiftProj: 2      102   21.97%
+      0     0        0.3933     4        0.5033   LiftProj: 1      103   21.85%
+      0     0        0.3960     4        0.5033   LiftProj: 2      105   21.32%
+      0     0        0.3970     4        0.5033       Cuts: 5      108   21.11%
+      0     2        0.3970     4        0.5033        0.3973      108   21.06%
+Elapsed time = 0.10 sec. (50.25 ticks, tree = 0.01 MB, solutions = 7)
+
+Lift and project cuts applied:  12
+Cone linearizations applied:  59
+
+Root node processing (before b&c):
+  Real time             =    0.10 sec. (50.26 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (5.64 ticks)
+                          ------------
+Total (root+branch&cut) =    0.11 sec. (55.90 ticks)
+#SOLVERNAME# CPLEX_MISOCP
+#SOLVER# CPLEX.CplexSolver(Any[(:CPX_PARAM_THREADS, 1), (:CPX_PARAM_TILIM, 3600.0), (:CPX_PARAM_SCRIND, 1), (:CPX_PARAM_EPINT, 1.0e-9), (:CPX_PARAM_EPRHS, 1.0e-8), (:CPX_PARAM_EPGAP, 1.0e-5)])
+#INSTANCE# estein4_nr22.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# Optimal
+#OBJVAL# 0.5032861762193056
+#OBJBOUND# 0.5032861762193056
+#NODECOUNT# 28
+#TIMESOLVER# 0.10894513130187988
+#TIMEALL# 0.10924410820007324
+#SOLUTION# [0.7299999999946715,0.5300000000000209,0.6963954949070056,0.5510688036250875,0.364005,-0.12999999999467146,-0.03000000000002088,0.10908764433028727,-0.09639549490700561,-0.0510688036250875,0.364005,-0.029999999999060695,0.11999999999322457,0.09899683869732319,0.0036045050886403056,0.09893119636928974,2.2606172912718985e-11,-3.859261298850133e-13,-1.3688863492689268e-12,0.364005,0.03360450508718278,-0.02106880362631905,0.25553864677552746,0.2199999999893988,-0.12999999999535103,0.364005,0.2536045050772937,-0.15106880362054081,0.03966304639356157,0.03360450508765586,-0.02106880362497475,0.0,0.10908764433028727,0.0,0.09899683869732319,2.2606172912718985e-11,0.0,0.25553864677552746,0.0,0.03966304639356157,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.25491735566971274,0.0,0.26500816130267685,0.36400499997739383,0.0,0.10846635322447257,0.0,0.32434195360643847]

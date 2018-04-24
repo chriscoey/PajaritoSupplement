@@ -1,0 +1,145 @@
+#SOLVERNAME# PAJ_Gurobi_MOSEK_nodisagg_subponly_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 0), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 0.0)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, 10.0, false, false, false, false, false, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# sssd-strong-20-4.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     145
+     constraints |     205
+   nonzeros in A |     432
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Rotated S.O. |      12 |         3 |         3
+
+Variable types:
+      continuous |      53
+         integer |      92
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.01s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.01s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =  194750.070514
+Academic license - for non-commercial use only
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |  +2.889089e+05 |  +1.947501e+05 |   3.259e-01 |   3.308e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |  +2.889089e+05 |  +1.947501e+05 |   3.259e-01 |   6.321e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    3 |  +2.889089e+05 |  +1.947501e+05 |   3.259e-01 |   1.026e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    4 |  +2.889089e+05 |  +1.947565e+05 |   3.259e-01 |   1.579e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    5 |  +2.889089e+05 |  +1.947611e+05 |   3.259e-01 |   1.960e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    6 |  +2.889089e+05 |  +1.947720e+05 |   3.258e-01 |   2.699e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    7 |  +2.889089e+05 |  +1.948770e+05 |   3.255e-01 |   3.641e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    8 |  +2.889089e+05 |  +1.949275e+05 |   3.253e-01 |   4.442e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    9 |  +2.889089e+05 |  +1.951138e+05 |   3.247e-01 |   5.203e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   10 |  +2.889089e+05 |  +1.962035e+05 |   3.209e-01 |   6.956e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   11 |  +2.889089e+05 |  +1.973263e+05 |   3.170e-01 |   8.900e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   12 |  +2.889089e+05 |  +2.003741e+05 |   3.064e-01 |   1.172e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   13 |  +2.889089e+05 |  +2.174565e+05 |   2.473e-01 |   1.641e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   14 |  +2.889089e+05 |  +2.212909e+05 |   2.340e-01 |   2.066e+00
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   15 |  +2.889089e+05 |  +2.277025e+05 |   2.119e-01 |   2.916e+00
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Pajarito failed to converge to the desired relative gap; try turning off the MIP solver's presolve functionality
+
+Iterative algorithm summary:
+ - Status               =     Suboptimal
+ - Best feasible        =  +2.889089e+05
+ - Best bound           =  +2.277025e+05
+ - Relative opt. gap    =      2.119e-01
+ - Total time (s)       =       2.92e+00
+
+Timers (s):
+ - Setup                =   1.41e-02
+ -- Transform data      =   1.67e-04
+ -- Create conic data   =   1.35e-02
+ -- Create MIP data     =   3.88e-04
+ - Algorithm            =   2.90e+00
+ -- Solve relaxation    =   7.27e-03
+ -- Get relaxation cuts =   5.71e-05
+ -- Solve MIP models    =   2.23e+00
+ -- Solve subproblems   =   9.12e-02
+ -- Get subproblem cuts =   1.32e-03
+ -- Get separation cuts =   0.00e+00
+
+Counters:
+ - Iterations           =    15
+ -- Integer repeats     =     0
+ -- Conic subproblems   =    15
+ --- Infeasible         =     0
+ --- Optimal            =    14
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     1
+ -- Feasible solutions  =    14
+ --- From subproblems   =    14
+ --- From MIP solve     =     0
+
+Solution returned by conic solver
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |  0.00e+00 |  2.74e-10
+    Rotated S.O. |        NA |  2.58e-10
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Suboptimal
+#OBJVAL# 288908.9064230322
+#OBJBOUND# 227702.53648707963
+#NODECOUNT# NaN
+#TIMESOLVER# 2.9158310890197754
+#TIMEALL# 2.9539389610290527
+#SOLUTION# [0.0,0.0,0.0,1.0,0.0,1.0,0.0,-0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,-0.0,0.0,0.0,1.0,-0.0,1.0,0.0,0.0,-0.0,1.0,0.0,0.0,-0.0,0.0,1.0,0.0,-0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,-0.0,0.0,0.0,1.0,-0.0,0.0,0.0,1.0,-0.0,0.0,0.0,-0.0,1.0,0.0,1.0,-0.0,0.0,0.0,0.0,-0.0,1.0,0.0,1.0,-0.0,0.0,1.0,0.0,-0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,-0.0,0.0,1.0,0.0,-0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.7389423444344324,0.7091713099154503,0.7618771533599976,0.7679109094185307,0.0,0.0,0.42493780590247987,0.0,0.0,0.41492114105497163,0.0,0.0,0.43242353889215074,0.0,0.0,0.434360637185312,0.0,0.3694711722172162,0.3694711722172162,0.15700226926597627,0.35458565495772515,0.35458565495772515,0.14712508443023933,0.3809385766799988,0.3809385766799988,0.16472680723392344,0.38395545470926534,0.38395545470926534,0.16677513611660935,0.7389423444344324,0.7389423444344324,1.7389423444344323,0.7091713099154503,0.7091713099154503,1.7091713099154502,0.7618771533599976,0.7618771533599976,1.7618771533599977,0.7679109094185307,0.7679109094185307,1.7679109094185308,0.7389423444415495,0.7389423442314361,0.7389423444344324,0.7091713099938902,0.7091713100081822,0.7091713099154503,0.7618771533202048,0.7618771533864214,0.7618771533599976,0.7679109096924456,0.7679109093166948,0.7679109094185307]

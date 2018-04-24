@@ -1,0 +1,106 @@
+#SOLVERNAME# PAJ_Gurobi_MOSEK_msd_nodisagg_subponly_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 1), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, 10.0, false, true, false, false, false, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# expdesign_A_20_10.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     131
+     constraints |    1352
+   nonzeros in A |    3555
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Pos. semidef. |      10 |      11^2 |      11^2
+
+Variable types:
+      continuous |     111
+         integer |      20
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.00s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.06s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      12.624945
+Academic license - for non-commercial use only
+Optimize a model with 803 rows, 131 columns and 3170 nonzeros
+Variable types: 111 continuous, 20 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [9e-06, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-02, 3e+01]
+Presolve removed 801 rows and 101 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 30 columns, 50 nonzeros
+Variable types: 10 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 1.262495e+01, 5 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      12.6249453   12.62495  0.00%     -    0s
+
+Explored 0 nodes (5 simplex iterations) in 0.73 seconds
+Thread count was 8 (of 16 available processors)
+
+Solution count 1: 12.6249 
+
+Optimal solution found (tolerance 1.00e-05)
+Best objective 1.262494528566e+01, best bound 1.262494528566e+01, gap 0.0000%
+
+Starting MIP-solver-driven algorithm
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Pajarito failed to converge to the desired relative gap; try turning off the MIP solver's presolve functionality
+
+MIP-solver-driven algorithm summary:
+ - Status               =       FailedOA
+ - Best feasible        =           +Inf
+ - Best bound           =  +1.262495e+01
+ - Relative opt. gap    =            NaN
+ - Total time (s)       =       7.97e-01
+
+Timers (s):
+ - Setup                =   5.25e-03
+ -- Transform data      =   3.81e-04
+ -- Create conic data   =   2.92e-03
+ -- Create MIP data     =   1.95e-03
+ - Algorithm            =   7.92e-01
+ -- Solve relaxation    =   5.91e-02
+ -- Get relaxation cuts =   1.23e-03
+ -- MIP solver driving  =   7.31e-01
+ -- Solve subproblems   =   1.25e-01
+ -- Get subproblem cuts =   0.00e+00
+ -- Get separation cuts =   0.00e+00
+
+Counters:
+ - Lazy callbacks       =     1
+ -- Integer repeats     =     1
+ -- Conic subproblems   =     1
+ --- Infeasible         =     0
+ --- Optimal            =     0
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     1
+ -- Feasible solutions  =     0
+ --- From subproblems   =     0
+ --- In lazy callback   =     0
+ - Heuristic callbacks  =     0
+ -- Solutions passed    =     0
+
+Solution returned by MIP solver
+
+#STATUS# FailedOA
+#OBJVAL# Inf
+#OBJBOUND# 12.624945286918605
+#NODECOUNT# 0
+#TIMESOLVER# 0.7972068786621094
+#TIMEALL# 0.7974898815155029
+#SOLUTION# [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]

@@ -1,0 +1,1081 @@
+#SOLVERNAME# PAJ_Gurobi_MOSEK_nodisagg_subponly_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 0), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 0.0)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, 10.0, false, false, false, false, false, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# uflquad-nopsc-20-100.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |    6021
+     constraints |   10121
+   nonzeros in A |   14020
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Rotated S.O. |    2000 |         3 |         3
+
+Variable types:
+      continuous |    6001
+         integer |      20
+
+Transforming data...               0.01s
+
+Creating conic subproblem...       0.13s
+
+Building MIP model...              0.03s
+
+Solving conic relaxation...        0.36s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =     163.700320
+Academic license - for non-commercial use only
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |  +3.186267e+03 |  +1.637003e+02 |   9.486e-01 |   8.797e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |  +2.715048e+03 |  +1.637003e+02 |   9.397e-01 |   1.195e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    3 |  +2.715048e+03 |  +1.637003e+02 |   9.397e-01 |   1.568e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    4 |  +2.331092e+03 |  +1.637003e+02 |   9.298e-01 |   1.939e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    5 |  +2.331092e+03 |  +1.637003e+02 |   9.298e-01 |   2.323e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    6 |  +2.331092e+03 |  +1.637003e+02 |   9.298e-01 |   2.770e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    7 |  +2.331092e+03 |  +1.637003e+02 |   9.298e-01 |   3.191e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    8 |  +2.331092e+03 |  +1.637003e+02 |   9.298e-01 |   3.621e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    9 |  +2.331092e+03 |  +1.637003e+02 |   9.298e-01 |   4.092e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   10 |  +2.070266e+03 |  +1.637003e+02 |   9.209e-01 |   4.499e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   11 |  +2.070266e+03 |  +1.637003e+02 |   9.209e-01 |   4.964e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   12 |  +2.070266e+03 |  +1.637003e+02 |   9.209e-01 |   5.449e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   13 |  +2.070266e+03 |  +1.637003e+02 |   9.209e-01 |   5.934e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   14 |  +2.070266e+03 |  +1.637003e+02 |   9.209e-01 |   6.398e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   15 |  +2.070266e+03 |  +1.637003e+02 |   9.209e-01 |   6.875e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   16 |  +2.070266e+03 |  +1.637003e+02 |   9.209e-01 |   7.402e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   17 |  +2.070266e+03 |  +1.637003e+02 |   9.209e-01 |   7.894e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   18 |  +2.055066e+03 |  +1.637003e+02 |   9.203e-01 |   8.401e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   19 |  +2.055066e+03 |  +1.637003e+02 |   9.203e-01 |   8.996e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   20 |  +2.055066e+03 |  +1.637003e+02 |   9.203e-01 |   9.804e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   21 |  +1.157890e+03 |  +1.637003e+02 |   8.586e-01 |   1.072e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   22 |  +1.155095e+03 |  +1.637003e+02 |   8.583e-01 |   1.182e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   23 |  +1.054421e+03 |  +1.637003e+02 |   8.447e-01 |   1.268e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   24 |  +1.054421e+03 |  +1.637003e+02 |   8.447e-01 |   1.400e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   25 |  +7.023981e+02 |  +1.637003e+02 |   7.669e-01 |   1.535e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   26 |  +7.023981e+02 |  +1.637003e+02 |   7.669e-01 |   1.690e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   27 |  +7.023981e+02 |  +1.637003e+02 |   7.669e-01 |   1.809e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   28 |  +7.023981e+02 |  +1.637003e+02 |   7.669e-01 |   1.944e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   29 |  +7.023981e+02 |  +1.637003e+02 |   7.669e-01 |   2.119e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   30 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   2.361e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   31 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   2.586e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   32 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   2.809e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   33 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   3.017e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   34 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   3.250e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   35 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   3.520e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   36 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   3.725e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   37 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   3.947e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   38 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   4.214e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   39 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   4.490e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   40 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   4.762e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   41 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   4.959e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   42 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   5.346e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   43 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   5.642e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   44 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   5.996e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   45 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   6.380e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   46 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   6.759e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   47 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   7.133e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   48 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   7.489e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   49 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   7.910e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   50 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   8.405e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   51 |  +6.925024e+02 |  +1.637003e+02 |   7.636e-01 |   8.848e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   52 |  +6.925024e+02 |  +1.637028e+02 |   7.636e-01 |   9.374e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   53 |  +6.925024e+02 |  +1.637187e+02 |   7.636e-01 |   9.809e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   54 |  +6.925024e+02 |  +1.637427e+02 |   7.635e-01 |   1.031e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   55 |  +6.925024e+02 |  +1.637888e+02 |   7.635e-01 |   1.075e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   56 |  +6.925024e+02 |  +1.638165e+02 |   7.634e-01 |   1.123e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   57 |  +6.925024e+02 |  +1.638241e+02 |   7.634e-01 |   1.184e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   58 |  +6.925024e+02 |  +1.638917e+02 |   7.633e-01 |   1.242e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   59 |  +6.925024e+02 |  +1.639658e+02 |   7.632e-01 |   1.300e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   60 |  +6.925024e+02 |  +1.639742e+02 |   7.632e-01 |   1.353e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   61 |  +6.925024e+02 |  +1.639779e+02 |   7.632e-01 |   1.396e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   62 |  +6.925024e+02 |  +1.640031e+02 |   7.632e-01 |   1.452e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   63 |  +5.543249e+02 |  +1.640031e+02 |   7.041e-01 |   1.512e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   64 |  +5.543249e+02 |  +1.640074e+02 |   7.041e-01 |   1.576e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   65 |  +5.543249e+02 |  +1.640333e+02 |   7.041e-01 |   1.639e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   66 |  +5.543249e+02 |  +1.641577e+02 |   7.039e-01 |   1.690e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   67 |  +5.543249e+02 |  +1.641945e+02 |   7.038e-01 |   1.743e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   68 |  +5.543249e+02 |  +1.642467e+02 |   7.037e-01 |   1.802e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   69 |  +5.543249e+02 |  +1.642467e+02 |   7.037e-01 |   1.863e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   70 |  +5.543249e+02 |  +1.642467e+02 |   7.037e-01 |   1.931e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   71 |  +5.543249e+02 |  +1.644405e+02 |   7.033e-01 |   1.992e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   72 |  +5.543249e+02 |  +1.645736e+02 |   7.031e-01 |   2.056e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   73 |  +5.543249e+02 |  +1.645961e+02 |   7.031e-01 |   2.119e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   74 |  +5.543249e+02 |  +1.647421e+02 |   7.028e-01 |   2.186e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   75 |  +5.543249e+02 |  +1.648149e+02 |   7.027e-01 |   2.238e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   76 |  +5.543249e+02 |  +1.648511e+02 |   7.026e-01 |   2.309e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   77 |  +5.543249e+02 |  +1.648552e+02 |   7.026e-01 |   2.375e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   78 |  +5.543249e+02 |  +1.649533e+02 |   7.024e-01 |   2.440e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   79 |  +5.543249e+02 |  +1.652262e+02 |   7.019e-01 |   2.514e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   80 |  +5.543249e+02 |  +1.655287e+02 |   7.014e-01 |   2.585e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   81 |  +5.543249e+02 |  +1.656234e+02 |   7.012e-01 |   2.648e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   82 |  +5.543249e+02 |  +1.656931e+02 |   7.011e-01 |   2.723e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   83 |  +5.543249e+02 |  +1.658493e+02 |   7.008e-01 |   2.802e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   84 |  +5.543249e+02 |  +1.661481e+02 |   7.003e-01 |   2.875e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   85 |  +5.543249e+02 |  +1.662319e+02 |   7.001e-01 |   2.948e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   86 |  +5.543249e+02 |  +1.662958e+02 |   7.000e-01 |   3.025e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   87 |  +5.543249e+02 |  +1.663028e+02 |   7.000e-01 |   3.109e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   88 |  +5.543249e+02 |  +1.663669e+02 |   6.999e-01 |   3.196e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   89 |  +5.543249e+02 |  +1.663869e+02 |   6.998e-01 |   3.280e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   90 |  +5.543249e+02 |  +1.667562e+02 |   6.992e-01 |   3.375e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   91 |  +5.543249e+02 |  +1.667650e+02 |   6.992e-01 |   3.463e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   92 |  +5.543249e+02 |  +1.668453e+02 |   6.990e-01 |   3.544e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   93 |  +5.543249e+02 |  +1.668559e+02 |   6.990e-01 |   3.644e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   94 |  +5.543249e+02 |  +1.671599e+02 |   6.984e-01 |   3.739e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   95 |  +5.543249e+02 |  +1.671705e+02 |   6.984e-01 |   3.840e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   96 |  +5.543249e+02 |  +1.672320e+02 |   6.983e-01 |   3.944e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   97 |  +5.543249e+02 |  +1.672403e+02 |   6.983e-01 |   4.039e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   98 |  +5.543249e+02 |  +1.673608e+02 |   6.981e-01 |   4.131e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   99 |  +5.543249e+02 |  +1.674303e+02 |   6.980e-01 |   4.230e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  100 |  +5.543249e+02 |  +1.675043e+02 |   6.978e-01 |   4.313e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  101 |  +5.543249e+02 |  +1.675178e+02 |   6.978e-01 |   4.403e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  102 |  +5.543249e+02 |  +1.676218e+02 |   6.976e-01 |   4.488e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  103 |  +5.543249e+02 |  +1.676321e+02 |   6.976e-01 |   4.601e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  104 |  +5.543249e+02 |  +1.678386e+02 |   6.972e-01 |   4.701e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  105 |  +5.543249e+02 |  +1.678455e+02 |   6.972e-01 |   4.801e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  106 |  +5.543249e+02 |  +1.681045e+02 |   6.967e-01 |   4.903e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  107 |  +5.543249e+02 |  +1.681095e+02 |   6.967e-01 |   5.012e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  108 |  +5.543249e+02 |  +1.682148e+02 |   6.965e-01 |   5.125e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  109 |  +5.543249e+02 |  +1.682825e+02 |   6.964e-01 |   5.250e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  110 |  +5.543249e+02 |  +1.683883e+02 |   6.962e-01 |   5.344e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  111 |  +5.543249e+02 |  +1.684182e+02 |   6.962e-01 |   5.447e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  112 |  +5.543249e+02 |  +1.684310e+02 |   6.962e-01 |   5.554e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  113 |  +5.543249e+02 |  +1.684850e+02 |   6.961e-01 |   5.679e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  114 |  +5.543249e+02 |  +1.685118e+02 |   6.960e-01 |   5.784e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  115 |  +5.543249e+02 |  +1.685223e+02 |   6.960e-01 |   5.903e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  116 |  +5.543249e+02 |  +1.686109e+02 |   6.958e-01 |   6.016e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  117 |  +5.543249e+02 |  +1.686499e+02 |   6.958e-01 |   6.131e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  118 |  +5.543249e+02 |  +1.686571e+02 |   6.957e-01 |   6.240e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  119 |  +5.543249e+02 |  +1.687423e+02 |   6.956e-01 |   6.352e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  120 |  +5.543249e+02 |  +1.687995e+02 |   6.955e-01 |   6.463e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  121 |  +5.543249e+02 |  +1.688612e+02 |   6.954e-01 |   6.575e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  122 |  +5.543249e+02 |  +1.688974e+02 |   6.953e-01 |   6.677e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  123 |  +5.543249e+02 |  +1.689540e+02 |   6.952e-01 |   6.779e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  124 |  +5.543249e+02 |  +1.690015e+02 |   6.951e-01 |   6.898e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  125 |  +5.543249e+02 |  +1.690363e+02 |   6.951e-01 |   7.001e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  126 |  +5.543249e+02 |  +1.690983e+02 |   6.949e-01 |   7.128e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  127 |  +5.543249e+02 |  +1.693330e+02 |   6.945e-01 |   7.246e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  128 |  +5.543249e+02 |  +1.693549e+02 |   6.945e-01 |   7.360e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  129 |  +5.543249e+02 |  +1.696252e+02 |   6.940e-01 |   7.485e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  130 |  +5.543249e+02 |  +1.698235e+02 |   6.936e-01 |   7.602e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  131 |  +5.543249e+02 |  +1.698780e+02 |   6.935e-01 |   7.719e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  132 |  +5.543249e+02 |  +1.699002e+02 |   6.935e-01 |   7.837e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  133 |  +5.543249e+02 |  +1.699003e+02 |   6.935e-01 |   7.958e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  134 |  +5.543249e+02 |  +1.701517e+02 |   6.930e-01 |   8.075e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  135 |  +5.543249e+02 |  +1.704006e+02 |   6.926e-01 |   8.196e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  136 |  +5.543249e+02 |  +1.704327e+02 |   6.925e-01 |   8.317e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  137 |  +5.543249e+02 |  +1.705172e+02 |   6.924e-01 |   8.499e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  138 |  +5.543249e+02 |  +1.705380e+02 |   6.924e-01 |   8.665e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  139 |  +5.543249e+02 |  +1.708164e+02 |   6.918e-01 |   8.826e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  140 |  +5.543249e+02 |  +1.709009e+02 |   6.917e-01 |   8.980e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  141 |  +5.543249e+02 |  +1.709286e+02 |   6.916e-01 |   9.128e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  142 |  +5.543249e+02 |  +1.710593e+02 |   6.914e-01 |   9.275e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  143 |  +5.543249e+02 |  +1.710707e+02 |   6.914e-01 |   9.402e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  144 |  +5.543249e+02 |  +1.711157e+02 |   6.913e-01 |   9.574e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  145 |  +5.543249e+02 |  +1.712145e+02 |   6.911e-01 |   9.736e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  146 |  +5.543249e+02 |  +1.712401e+02 |   6.911e-01 |   9.874e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  147 |  +5.543249e+02 |  +1.712778e+02 |   6.910e-01 |   1.001e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  148 |  +5.543249e+02 |  +1.713390e+02 |   6.909e-01 |   1.015e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  149 |  +5.543249e+02 |  +1.715550e+02 |   6.905e-01 |   1.030e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  150 |  +5.543249e+02 |  +1.715605e+02 |   6.905e-01 |   1.046e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  151 |  +5.543249e+02 |  +1.715742e+02 |   6.905e-01 |   1.061e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  152 |  +5.543249e+02 |  +1.717789e+02 |   6.901e-01 |   1.078e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  153 |  +5.543249e+02 |  +1.720926e+02 |   6.895e-01 |   1.092e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  154 |  +5.543249e+02 |  +1.721098e+02 |   6.895e-01 |   1.109e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  155 |  +5.543249e+02 |  +1.722428e+02 |   6.893e-01 |   1.126e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  156 |  +5.098746e+02 |  +1.722780e+02 |   6.621e-01 |   1.141e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  157 |  +5.098746e+02 |  +1.723370e+02 |   6.620e-01 |   1.167e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  158 |  +5.098746e+02 |  +1.724834e+02 |   6.617e-01 |   1.185e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  159 |  +5.098746e+02 |  +1.726976e+02 |   6.613e-01 |   1.203e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  160 |  +5.098746e+02 |  +1.730771e+02 |   6.605e-01 |   1.221e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  161 |  +5.098746e+02 |  +1.731578e+02 |   6.604e-01 |   1.239e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  162 |  +5.098746e+02 |  +1.732237e+02 |   6.603e-01 |   1.258e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  163 |  +5.098746e+02 |  +1.732428e+02 |   6.602e-01 |   1.277e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  164 |  +5.098746e+02 |  +1.732438e+02 |   6.602e-01 |   1.293e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  165 |  +5.098746e+02 |  +1.732639e+02 |   6.602e-01 |   1.312e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  166 |  +5.098746e+02 |  +1.734903e+02 |   6.597e-01 |   1.331e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  167 |  +5.098746e+02 |  +1.738552e+02 |   6.590e-01 |   1.349e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  168 |  +5.098746e+02 |  +1.738698e+02 |   6.590e-01 |   1.371e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  169 |  +5.060156e+02 |  +1.740204e+02 |   6.561e-01 |   1.395e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  170 |  +5.060156e+02 |  +1.741610e+02 |   6.558e-01 |   1.413e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  171 |  +5.060156e+02 |  +1.741950e+02 |   6.558e-01 |   1.434e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  172 |  +5.060156e+02 |  +1.744626e+02 |   6.552e-01 |   1.453e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  173 |  +5.060156e+02 |  +1.745100e+02 |   6.551e-01 |   1.474e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  174 |  +5.060156e+02 |  +1.745215e+02 |   6.551e-01 |   1.494e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  175 |  +5.060156e+02 |  +1.746249e+02 |   6.549e-01 |   1.515e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  176 |  +5.060156e+02 |  +1.746310e+02 |   6.549e-01 |   1.536e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  177 |  +5.060156e+02 |  +1.746470e+02 |   6.549e-01 |   1.558e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  178 |  +5.060156e+02 |  +1.747259e+02 |   6.547e-01 |   1.577e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  179 |  +5.060156e+02 |  +1.747309e+02 |   6.547e-01 |   1.597e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  180 |  +5.060156e+02 |  +1.747903e+02 |   6.546e-01 |   1.621e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  181 |  +5.060156e+02 |  +1.748544e+02 |   6.544e-01 |   1.645e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  182 |  +5.060156e+02 |  +1.751075e+02 |   6.539e-01 |   1.666e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  183 |  +5.060156e+02 |  +1.751692e+02 |   6.538e-01 |   1.688e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  184 |  +5.060156e+02 |  +1.753680e+02 |   6.534e-01 |   1.709e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  185 |  +5.060156e+02 |  +1.756728e+02 |   6.528e-01 |   1.732e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  186 |  +5.060156e+02 |  +1.757816e+02 |   6.526e-01 |   1.757e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  187 |  +5.060156e+02 |  +1.758502e+02 |   6.525e-01 |   1.785e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  188 |  +5.060156e+02 |  +1.763998e+02 |   6.514e-01 |   1.810e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  189 |  +4.958863e+02 |  +1.764285e+02 |   6.442e-01 |   1.833e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  190 |  +4.958863e+02 |  +1.764828e+02 |   6.441e-01 |   1.854e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  191 |  +4.958863e+02 |  +1.764876e+02 |   6.441e-01 |   1.879e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  192 |  +4.958863e+02 |  +1.766555e+02 |   6.438e-01 |   1.904e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  193 |  +4.958863e+02 |  +1.767926e+02 |   6.435e-01 |   1.933e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  194 |  +4.958863e+02 |  +1.768385e+02 |   6.434e-01 |   1.963e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  195 |  +4.741961e+02 |  +1.768489e+02 |   6.271e-01 |   1.986e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  196 |  +4.741961e+02 |  +1.768505e+02 |   6.271e-01 |   2.011e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  197 |  +4.741961e+02 |  +1.769573e+02 |   6.268e-01 |   2.034e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  198 |  +4.741961e+02 |  +1.771865e+02 |   6.263e-01 |   2.062e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  199 |  +4.741961e+02 |  +1.771880e+02 |   6.263e-01 |   2.086e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  200 |  +4.741961e+02 |  +1.774675e+02 |   6.258e-01 |   2.115e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  201 |  +4.741961e+02 |  +1.775402e+02 |   6.256e-01 |   2.139e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  202 |  +4.741961e+02 |  +1.776730e+02 |   6.253e-01 |   2.163e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  203 |  +4.741961e+02 |  +1.776730e+02 |   6.253e-01 |   2.188e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  204 |  +4.741961e+02 |  +1.776771e+02 |   6.253e-01 |   2.214e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  205 |  +4.741961e+02 |  +1.776834e+02 |   6.253e-01 |   2.239e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  206 |  +4.741961e+02 |  +1.777703e+02 |   6.251e-01 |   2.261e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  207 |  +4.741961e+02 |  +1.778502e+02 |   6.249e-01 |   2.284e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  208 |  +4.741961e+02 |  +1.780143e+02 |   6.246e-01 |   2.312e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  209 |  +4.741961e+02 |  +1.780155e+02 |   6.246e-01 |   2.342e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  210 |  +4.741961e+02 |  +1.780881e+02 |   6.244e-01 |   2.371e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  211 |  +4.741961e+02 |  +1.781593e+02 |   6.243e-01 |   2.401e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  212 |  +4.741961e+02 |  +1.782569e+02 |   6.241e-01 |   2.428e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  213 |  +4.741961e+02 |  +1.783130e+02 |   6.240e-01 |   2.454e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  214 |  +4.741961e+02 |  +1.783273e+02 |   6.239e-01 |   2.482e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  215 |  +4.741961e+02 |  +1.784465e+02 |   6.237e-01 |   2.511e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  216 |  +4.741961e+02 |  +1.785444e+02 |   6.235e-01 |   2.538e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  217 |  +4.741961e+02 |  +1.786608e+02 |   6.232e-01 |   2.572e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  218 |  +4.741961e+02 |  +1.787952e+02 |   6.230e-01 |   2.605e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  219 |  +4.741961e+02 |  +1.788139e+02 |   6.229e-01 |   2.636e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  220 |  +4.741961e+02 |  +1.788371e+02 |   6.229e-01 |   2.673e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  221 |  +4.741961e+02 |  +1.789918e+02 |   6.225e-01 |   2.698e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  222 |  +4.741961e+02 |  +1.791387e+02 |   6.222e-01 |   2.725e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  223 |  +4.741961e+02 |  +1.794463e+02 |   6.216e-01 |   2.756e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  224 |  +4.741961e+02 |  +1.796739e+02 |   6.211e-01 |   2.789e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  225 |  +4.741961e+02 |  +1.797128e+02 |   6.210e-01 |   2.814e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  226 |  +4.741961e+02 |  +1.797474e+02 |   6.209e-01 |   2.845e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  227 |  +4.741961e+02 |  +1.797878e+02 |   6.209e-01 |   2.874e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  228 |  +4.741961e+02 |  +1.799672e+02 |   6.205e-01 |   2.900e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  229 |  +4.741961e+02 |  +1.800630e+02 |   6.203e-01 |   2.939e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  230 |  +4.741961e+02 |  +1.800682e+02 |   6.203e-01 |   2.970e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  231 |  +4.741961e+02 |  +1.808859e+02 |   6.185e-01 |   3.003e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  232 |  +4.741961e+02 |  +1.809469e+02 |   6.184e-01 |   3.033e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  233 |  +4.741961e+02 |  +1.809578e+02 |   6.184e-01 |   3.068e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  234 |  +4.741961e+02 |  +1.810461e+02 |   6.182e-01 |   3.096e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  235 |  +4.741961e+02 |  +1.810555e+02 |   6.182e-01 |   3.127e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  236 |  +4.741961e+02 |  +1.816120e+02 |   6.170e-01 |   3.156e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  237 |  +4.741961e+02 |  +1.816247e+02 |   6.170e-01 |   3.187e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  238 |  +4.741961e+02 |  +1.817024e+02 |   6.168e-01 |   3.218e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  239 |  +4.741961e+02 |  +1.817798e+02 |   6.167e-01 |   3.253e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  240 |  +4.741961e+02 |  +1.818117e+02 |   6.166e-01 |   3.292e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  241 |  +4.741961e+02 |  +1.818419e+02 |   6.165e-01 |   3.322e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  242 |  +4.741961e+02 |  +1.819852e+02 |   6.162e-01 |   3.353e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  243 |  +4.741961e+02 |  +1.824566e+02 |   6.152e-01 |   3.387e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  244 |  +4.741961e+02 |  +1.824907e+02 |   6.152e-01 |   3.422e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  245 |  +4.741961e+02 |  +1.827679e+02 |   6.146e-01 |   3.454e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  246 |  +4.741961e+02 |  +1.829072e+02 |   6.143e-01 |   3.486e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  247 |  +4.741961e+02 |  +1.831907e+02 |   6.137e-01 |   3.515e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  248 |  +4.741961e+02 |  +1.833011e+02 |   6.134e-01 |   3.552e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  249 |  +4.741961e+02 |  +1.834184e+02 |   6.132e-01 |   3.588e+03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+  250 |  +4.741961e+02 |  +1.834184e+02 |   6.132e-01 |   3.601e+03
+
+Iterative algorithm summary:
+ - Status               =      UserLimit
+ - Best feasible        =  +4.741961e+02
+ - Best bound           =  +1.834184e+02
+ - Relative opt. gap    =      6.132e-01
+ - Total time (s)       =       3.60e+03
+
+Timers (s):
+ - Setup                =   1.73e-01
+ -- Transform data      =   6.69e-03
+ -- Create conic data   =   1.34e-01
+ -- Create MIP data     =   3.24e-02
+ - Algorithm            =   3.60e+03
+ -- Solve relaxation    =   3.60e-01
+ -- Get relaxation cuts =   5.71e-02
+ -- Solve MIP models    =   3.55e+03
+ -- Solve subproblems   =   3.56e+01
+ -- Get subproblem cuts =   1.42e+01
+ -- Get separation cuts =   0.00e+00
+
+Counters:
+ - Iterations           =   250
+ -- Integer repeats     =     0
+ -- Conic subproblems   =   250
+ --- Infeasible         =     0
+ --- Optimal            =   250
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =   250
+ --- From subproblems   =   250
+ --- From MIP solve     =     0
+
+Solution returned by conic solver
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |  8.66e-12 |  1.99e-11
+    Rotated S.O. |        NA |  1.22e-11
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# UserLimit
+#OBJVAL# 474.19612639479055
+#OBJBOUND# 183.4183811911745
+#NODECOUNT# NaN
+#TIMESOLVER# 3600.5429208278656
+#TIMEALL# 3600.6044409275055
+#SOLUTION# [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.39922597062359194,0.21328334617714503,0.23061336235055221,0.3361727718394139,0.12253807326537688,0.23747952688911028,0.2862753339986317,0.1551083495876825,0.21694081832604795,0.22534835616935633,0.08374903815110608,0.15901372709118222,0.15572678258782027,0.8119597001516933,0.12258627453069501,0.10942492145206155,0.48393900503346593,0.09811641985109565,0.2901238560478025,0.12451282052498726,0.1353405257368288,0.13691192416730594,0.10706082759990146,0.4047949959710079,0.1226184224617458,0.2336208636029375,0.09471203600584556,0.18427873837720576,0.1353718863504357,0.5095369300374623,0.22619963548225575,0.36577630562544516,0.21165878299086113,0.18410389355767706,0.3665219876031842,0.11471952312792856,0.13019567110212213,0.13072953096023412,0.13121901948884637,0.12683808885850692,0.12474862289876688,0.22110500284090176,0.14678526762325966,0.09617544609396853,0.12312307091806367,0.48006198031389324,0.12381686371709208,0.23463138856394983,0.1308808438310323,0.11874182835247704,0.21799704985831925,0.1575746123036635,0.13570940557735195,0.1309658046873654,0.23009122581618216,0.2176207620085379,0.2184111734191886,0.11665640290300372,0.10336257357768779,0.09417499889128074,0.1604326871280563,0.1238591386716561,0.1426977651254933,0.1314196174948637,0.156708363535363,0.1331554353179331,0.0626845372541096,0.16667836969987337,0.10569426226965287,0.18324026361233015,0.2549773437715608,0.1469442289247432,0.1305901108552138,0.16999001577475192,0.16139784340961058,0.2771157755023065,0.15558830762666911,0.08251826657548492,0.20510050350083833,0.3779982838115583,0.13138766256510956,0.1730192377872058,0.22941893072941894,0.21481549514830092,0.1189241457008355,0.05824083565839442,0.24015386043074444,0.2102695039278515,0.2064613880301362,0.1883218305461165,0.28321960164519416,0.1187659170842758,0.14336244064716042,0.3161192949985122,0.1285644059401628,0.02340768842962823,0.09838813798612567,0.22376436181481704,0.13662528792059273,0.14540710827841938,0.19545615528315505,0.1301580717765558,0.16173488659839513,0.18268475003473536,0.22496176604871054,0.12983917659399002,0.16384325739481204,0.34789046781206534,0.14677544002292836,0.19567883866188013,0.14147641824892487,0.21811653427460745,0.23233655866518316,0.061404528418917505,0.18114899715340044,0.1701722126699129,0.1444322812307201,0.6956530945650393,0.18853602159412491,0.177550236901803,0.1761868321073846,0.18854115140900704,0.16606511618557096,0.169900839455266,0.5348217589617286,0.129995819700572,0.15456916362623302,0.13275520985777722,0.15872983885546327,0.18640234226700653,0.19526372899233382,0.2074882936053258,0.2346191582632398,0.2613572837431324,0.27877227047058517,0.19570675781823907,0.18412158430997913,0.18504609979297168,0.18300044416352934,0.19087111890053238,0.1880968610509065,0.2355351210306523,0.20990702718302326,0.7171194372255403,0.18676462289811116,0.18910173657335907,0.19105568369056417,0.195965989070176,0.193989577275096,0.16393877106333107,0.22742500544394667,0.21826015911165425,0.1869410002911078,0.18477083333669594,0.19511412084464533,0.19371223740818788,0.27696601109104024,0.1887215810805402,0.1698790589499196,0.11429769291457967,0.17279834286365162,0.144296851595795,0.2179489622515103,0.16078932674081214,0.21669459607439914,0.47576296998949896,0.11491543875503431,0.24065266709865102,0.13402811693030053,0.44896319016621905,0.13743072814673754,0.16225311124522734,0.18971359056706194,0.11688393963821524,0.22289888051419313,0.20089002011780227,0.16985975328282635,0.16792159001344112,0.19196258031838487,0.1742552122365301,0.2370400067944856,0.2467899169398619,0.19593012744080987,0.19325264494915267,0.30804736360695795,0.10640296307580674,0.19563973781882985,0.19126124846102932,0.19258401530630306,0.18537974160854173,0.1973115381406493,0.19922591560707084,0.32500552666597177,0.20590208403186097,0.19662837151613738,0.04444969878928456,0.13385391798798174,0.141525694245035,0.1888608907365749,0.25650103954725484,0.16299720415432478,0.49092904386358094,0.44874666060276364,0.2157077387333211,0.09429338229673631,0.4707974315444552,0.39555479807169375,0.10232937504211968,0.4413954217035654,0.15832475574956026,0.07251815853347325,0.16746697207126415,0.10026773055830757,0.0661032251972326,0.09666234796191249,0.09886053027219563,0.23762549382143766,0.06879068723209518,0.3516725281390524,0.09881983628469897,0.10925870919529261,0.11468250325593964,0.07791012343551601,0.20475272046146412,0.0952301563545074,0.4736151753387537,0.08303784965379582,0.5160837261458643,0.1034243905208256,0.1339488777602,0.16284776474716556,0.1604322944003052,0.30045223310561886,0.2111451358535552,0.1394750524516371,0.09275096025683621,0.10577508248751212,0.10658692669646255,0.10664268160487518,0.12144470711301829,0.11861457323874147,0.3093246111349679,0.1483309264617674,0.06350486453202393,0.10465235430115664,0.1411591517405606,0.10125771678510391,0.16983468684032504,0.12610516050560786,0.09270816066895113,0.32065190290678564,0.1652826287301746,0.11258663069705938,0.10677569692413995,0.17313014581787733,0.16173468140021677,0.25356232078449364,0.08436364963353694,0.08794284079414763,0.06747307355124076,0.10904436346081434,0.08562071534358245,0.09424517095590945,0.10235788726383904,0.16361716541637158,0.0907214772168094,0.05589983624407097,0.1810410804926175,0.07992150662403222,0.10520376011732714,0.43406685190334404,0.10727333320458365,0.1102126425675024,0.5882808356401306,0.1721935588317527,0.17304866471387767,0.11678166953051773,0.06805927841071703,0.14127151629181736,0.21302228792640698,0.09411161192335765,0.19240105709868738,0.16284864146443062,0.15706409844179872,0.09750485793346618,0.049536719196824605,0.17907135437773458,0.3905409239354685,0.141396274485266,0.13751038063937643,0.18384377336387156,0.09502933208405773,0.09968484400737508,0.30264784861364247,0.12464423887560339,0.020264448349893546,0.06712686882342478,0.4495210928326872,0.11461514645110818,0.14227650822659832,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.14002660927760857,0.07996367084398119,0.07159191553906301,0.15037140599633406,0.2524709365589374,0.07952972776791516,0.07152680694275329,0.21904092639065603,0.09301331872955781,0.275859323235404,0.11838331497852911,0.14325190932810777,0.36548431479241333,0.03171465086226511,0.364983195036952,0.1437839966883379,0.0654838945358227,0.057591581553240734,0.07752736814649117,0.37384730921725834,0.3708959483054053,0.28889195347290086,0.4912851974682289,0.12241694420206668,0.08993765346614747,0.07980037724707949,0.13284849863646284,0.07669883459367349,0.4519500574984695,0.09135089066528651,0.2687411387182177,0.15702334220049902,0.10197031506706275,0.11929941955493872,0.11478179011526535,0.21893603907245224,0.3284669802550662,0.32125753595637985,0.33471659508010027,0.13965178507660148,0.1403702249605811,0.09655945406760154,0.1431210138499493,0.05392701102246735,0.21802958072403422,0.10448088111803178,0.2646345109308764,0.2534165697964978,0.14323733934633567,0.43553675423485727,0.09655476875241388,0.14224989484555706,0.30369887437849225,0.32300383158256923,0.2515045434424156,0.2756506434501897,0.10075530420051511,0.43525479463166333,0.16380797154106919,0.62685558545532,0.4278807235400018,0.5331969734863542,0.39852345924384064,0.4416708048552986,0.14350938581948158,0.13758088772770938,0.07077983876074118,0.1294339396144345,0.5488446758531362,0.13828382358177904,0.0860424464820111,0.4459348422488409,0.25222924441297384,0.05655679097178062,0.13944553176473096,0.21743430817832812,0.40840983148219656,0.10966980960667967,0.31910455066853705,0.13085143077017278,0.3315117651711573,0.12668848098670815,0.26647994778909306,0.2851556603364598,0.12013322925360292,0.07966987738781267,0.238113465392924,0.08855231540402504,0.3175258867346242,0.3395365921301096,0.20438348739841605,0.24667577776316787,0.22536362873442184,0.08044901915852179,0.1334763855591238,0.02832038573886883,0.598294846550404,0.08962616342511881,0.28504670036408314,0.12044442996888972,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.10229406065911782,0.08566586733754135,0.08731317490812827,0.11506333338832513,0.3057358418231476,0.0823541372008622,0.08279980358774638,0.17563088116406536,0.10187500121435752,0.14478872617806512,0.583873070089488,0.3121508572350165,0.14618461338927213,0.02881789537589616,0.2346191853190846,0.4777583389133942,0.06851932537643865,0.07984821679728456,0.09214022607918847,0.22526979706582992,0.20831798465013743,0.2709724676974848,0.15767873531038137,0.09813449990510045,0.15739200875750003,0.08296776410500767,0.5348324520826964,0.0901834910262649,0.15052382678091297,0.07876095926829264,0.14694773205687126,0.10927976416610895,0.15129951057524063,0.22409426728485254,0.1004488993562928,0.3778867197260462,0.2514406818449093,0.2563799065887102,0.24442125966997286,0.4211943000510101,0.42816971785146385,0.13747581091880912,0.3518557648778632,0.06927324112751292,0.3674303711582996,0.08519625025116141,0.31923522487065126,0.1461513657248402,0.4057870790368774,0.18907448567737936,0.13737127303648705,0.3166327050142936,0.26106408905287287,0.254483833456444,0.15015996407630156,0.15128167573016235,0.15030519050765517,0.1750035717541915,0.47500755512947745,0.09719864916765128,0.12984388300214555,0.11302632090215284,0.14658464242329483,0.1637623636424886,0.3194704891501362,0.1627792297474122,0.6957203489790925,0.28219394309619406,0.13151143832123788,0.12430896251624798,0.0874826296882319,0.13759448437098082,0.3172544115951441,0.06828841796952011,0.30406418547189557,0.13151123147915642,0.14936043807137087,0.5718310553926238,0.1425608492191083,0.10387278525762461,0.20594895355153894,0.2611013071789982,0.1453223525796075,0.14971210113167174,0.35539040349887946,0.7061496046903396,0.14702158197636936,0.11937600827118647,0.14203243544135247,0.1492514550707923,0.1312415994483822,0.3403030574545705,0.2065835599399896,0.0948817531966655,0.41668659811323217,0.8835577786967599,0.10233622865126697,0.09556268767978687,0.27485197451914206,0.33537091397253405,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-0.0,-0.0,0.0,-0.0,-0.0,-0.0,1.0,1.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,1.0,-0.0,5.976007411619251e-12,-2.067497749594795e-12,6.721251797133505e-12,1.3149524341476618e-13,1.2826477818102431e-11,2.705818838672684e-12,3.947526459622747e-12,-2.076133258117556e-12,2.067607656066903e-11,1.0392677497896711e-11,9.648924700218206e-12,1.1523693600509568e-11,1.2083039038915664e-11,1.0610527826539084e-11,1.6650202487357962e-11,9.988692708277376e-12,1.1312280650947798e-11,1.1802934544286478e-11,7.49389429605179e-12,1.6100199099081035e-11,3.593666871746892e-11,2.1104790306512635e-11,9.3210108902221e-12,6.0814391202198665e-12,1.492145218572419e-11,1.3738152004237165e-11,1.0093810398386255e-11,3.194431611815075e-12,1.6904321951795932e-11,1.8048212812569996e-11,2.806461765274314e-12,1.3130918745841215e-11,9.190614711528412e-12,3.233605418659235e-13,1.1514273045757465e-11,1.0471103616207965e-11,2.247414644435369e-11,1.9231120470942352e-11,2.3602257875917983e-11,1.018126454833494e-12,1.0286068219952082e-11,1.3112784177943417e-11,1.5363433212843676e-11,7.178227207233418e-12,1.4326936676243581e-11,1.0646796962334679e-11,1.1704332737881136e-11,1.7992867053401392e-11,1.0402255061894682e-11,1.9362223191242447e-11,8.187561144298282e-12,4.980647297436671e-12,2.7637631008604087e-11,1.8589894710815898e-11,5.448377840878568e-12,-9.586984552723132e-13,1.337389055382253e-11,9.902494632295635e-12,8.540596433633329e-12,1.180693828005612e-11,1.5721806816538246e-11,2.6885478216271624e-12,1.0488217624007618e-11,1.3681157647986944e-11,1.5085448343033711e-12,5.0396042692602475e-12,1.562760126901722e-11,9.372274408998126e-12,1.0253567306057328e-11,1.3726140796928233e-11,-7.761673564880308e-12,8.813321493706701e-12,1.7002452730463666e-11,1.2511124747775794e-11,9.397552897582934e-12,2.2484509054581003e-12,3.358349264501661e-12,1.064530537449893e-11,1.461724677185421e-11,4.723152134212532e-12,1.0604404465950217e-11,7.84810715473085e-12,3.5939416379271616e-13,1.3728103412501589e-12,5.1115930084908985e-12,4.768213787776757e-12,-8.152705091715502e-13,8.925897122994327e-12,1.1159903177832538e-11,-4.631772753117137e-15,4.296636517811085e-12,1.1882302718072943e-11,8.504170288591866e-12,6.951898379314151e-12,1.4407482419374057e-11,8.29864518575016e-12,1.2472735987160975e-11,1.8807038497851864e-11,2.0963089462116425e-11,1.4072189174822138e-11,1.6403776475967545e-11,4.468483137414024e-13,1.3326709275439081e-11,9.447560342392012e-12,7.0148590869073705e-12,9.384599634798792e-12,2.0622379398582046e-12,9.426442598822715e-12,1.0107627212022671e-11,2.684622590480453e-11,4.067246009597386e-12,2.1399575165630513e-12,1.2611453655885687e-11,1.0157477647585881e-11,1.5026255857341335e-11,-3.690502324136213e-12,7.6169895448126e-12,1.1390628264636119e-11,1.151042631923369e-11,7.677673618340726e-12,4.405208411329068e-12,2.0265183364231486e-12,7.153655260255016e-12,7.000178722418678e-12,9.377848237226452e-12,9.541922899158906e-12,9.423616432397085e-12,1.742567115270188e-12,9.567672415481321e-12,1.0581402611430501e-11,1.7287267502468903e-11,1.6818359389682996e-11,6.881793751033921e-12,4.87772773676995e-12,1.0756938948311347e-11,1.96151650863364e-12,1.955864175782379e-12,3.859522777313522e-12,1.5819623576714245e-11,1.8870941260920292e-12,1.0420703648284216e-12,1.1471409521635398e-11,1.1269181612956928e-11,7.2003655109008585e-12,4.978213654125712e-12,1.3052257113661158e-11,5.405906839871172e-12,1.3398541005423863e-11,1.0531787689736094e-11,8.875026127332974e-12,-5.708071133544865e-13,7.468223284352311e-12,1.3459617602066662e-11,8.152548082469634e-12,1.6734045424651675e-11,1.5239552917853525e-11,1.2223797827836664e-11,1.1628811290618447e-11,1.2047790463218213e-11,9.22131001909568e-12,1.955589409602109e-11,1.3546993247392415e-11,9.728214369381737e-12,4.7155371857879166e-12,8.657411312559402e-12,1.1642314085763127e-11,8.609052464831942e-12,9.484614524416949e-12,7.844888465190548e-12,9.067126939652933e-12,1.1081320050275414e-11,1.9020728081478728e-11,1.0789675376074903e-11,1.0313152314864377e-12,7.282088823375349e-13,3.0301528378629916e-11,1.3551075487784993e-11,9.840475980177627e-12,2.5419718401467386e-11,9.699246163519022e-12,7.9657855845092e-12,6.32684457151214e-12,2.139557142986087e-11,1.2322007111127333e-11,1.4321205838769385e-11,5.132789256683129e-12,8.590132850704802e-12,-2.117740708272676e-12,2.7974494345614692e-11,1.2732664793696075e-11,1.801531937556057e-11,9.995444105849716e-12,1.2537502301081681e-11,7.331860754315624e-12,-1.3172290682127532e-12,7.511243817720247e-12,1.0814953864659713e-11,7.400709308628908e-12,8.995609228159887e-12,1.107974995781673e-11,-2.9101663721703773e-12,3.87616575737557e-12,5.856287861644613e-12,-6.07625781510621e-14,1.1141376086820069e-11,5.483547911953085e-12,4.694026919103949e-12,8.846057921470258e-12,-9.111246537741948e-13,4.001851658693206e-12,1.7655611193276117e-11,1.3028627222157967e-11,8.007079016172582e-12,4.185866494850944e-12,2.8736852738928598e-11,1.310532623876467e-11,-3.7685359193327975e-12,2.080765030870673e-12,8.734659861526644e-12,2.8044127946157317e-11,1.5607582590169002e-11,3.541445596571069e-11,1.4727231748585008e-11,1.4467145932804041e-11,1.2390384637703013e-12,9.332237051301689e-12,1.2474934116603134e-11,5.047611740799535e-12,5.42647505107993e-12,4.072427314711042e-12,8.81779625721395e-12,1.5532375161398048e-11,7.849912761058337e-12,1.2527453709346105e-11,7.59752039832492e-12,1.6331473718245156e-11,4.580572038039459e-11,5.258930484813784e-11,3.721048472919907e-11,1.8327061233232236e-11,7.027812349691512e-12,9.250278224958396e-12,3.6123902243166957e-12,1.463302620106398e-11,2.5027195286796442e-11,5.923566323499213e-12,3.6043120986167677e-11,8.587699207393842e-12,3.6017135955976463e-12,1.9010993508234886e-11,8.180809746725942e-12,1.0423058786972242e-12,3.7667852662413645e-11,4.9563108643270735e-11,1.113258356905144e-11,9.34668190192158e-12,4.388172908152349e-12,1.3051786085923552e-11,1.60450103491583e-11,1.1679917800148603e-11,5.109865906786346e-13,1.2705737708029648e-11,1.1172228403633206e-11,8.1432845369634e-12,9.119803541641774e-12,1.3216724298708283e-11,1.5930001076559715e-11,5.1044490878038875e-12,7.598776472291866e-12,1.2489221957977156e-11,1.2261480046845075e-11,5.624228196251151e-12,4.3097703412279746e-11,3.455694996940055e-12,3.276861465895973e-12,1.2795939519781031e-11,6.2843735705047446e-12,1.7766067197744522e-11,5.793170144805525e-12,3.42955295750297e-12,1.0300513070571974e-11,8.01806966338337e-12,7.442866291144569e-12,7.812937083656334e-12,1.2016938146405076e-11,9.182293221497388e-12,7.696828746336669e-12,8.985482131801378e-12,3.379624017316826e-12,1.4026656493520308e-11,1.0577869903398462e-11,2.0511059843261365e-11,1.4281639508810554e-11,3.0860167275429603e-12,1.0654019387644625e-11,1.557641625486413e-11,1.0378311151899754e-11,7.556462480530339e-12,3.838357930970465e-11,8.38727690504286e-12,1.9924630309942974e-11,1.3644888512191349e-11,1.9412780168412066e-11,1.2281969753430898e-11,1.3089860828046634e-12,1.6171010268967675e-11,2.6847795997263215e-11,1.2842885284295677e-11,7.474503654187046e-12,1.3964794850648167e-11,1.534200145078264e-11,4.377025251695694e-12,7.430227046852163e-12,6.61251504390736e-11,-6.011098978070833e-13,1.1530602007327776e-11,5.844472915893018e-11,1.8250362216625533e-11,2.1988987874620403e-11,4.951679091573956e-12,1.098193319764073e-11,9.015313888516369e-12,1.2687681644754784e-11,1.872186098196827e-11,1.220032494557934e-11,1.2756922722182739e-11,6.109151252115635e-12,1.0724202520547789e-11,1.4563942132881897e-11,3.25520204042843e-11,2.711235657655143e-12,1.8652070372179775e-11,1.1271929274759625e-11,7.267565468132524e-12,2.1783933799516304e-11,7.600111050881748e-12,1.0368027046295375e-11,9.552913546369694e-12,8.940341973614219e-12,7.314432728024234e-12,-1.2283618350512514e-12,1.1811177529694568e-11,7.054503921489136e-12,8.920166285520131e-12,1.049520453544876e-11,2.429545369642687e-11,1.0618692307324241e-11,1.2123233405857967e-11,4.9154099557783606e-12,1.2132575455987136e-11,1.0811813679742345e-11,4.1937169571443635e-13,2.777493559411598e-12,3.771833113496033e-12,7.622798886909728e-12,4.072348810088108e-12,8.749183216769469e-12,1.1171050834289192e-11,-7.260107528953777e-13,9.713455500270109e-12,9.459414540455074e-12,9.47731359448407e-12,5.552082447774632e-12,1.0356408362101116e-11,1.195366342032012e-11,1.509800908270318e-11,2.2153219545798727e-12,6.0972185494296385e-12,-2.2264696110365273e-12,1.4244428317539747e-11,1.0681967033409197e-11,1.1053293899887909e-11,1.0169096331780141e-11,1.5099893193653603e-11,6.647300442329499e-12,4.842714674941302e-12,9.26535111256176e-12,1.2683756413608075e-11,1.0206229018428013e-11,1.136927500719802e-11,7.337042059429281e-12,9.51703693368877e-12,1.0023627265483089e-11,8.493493659872816e-12,1.3353165333367903e-11,8.285456409097217e-12,3.4249996893727873e-12,9.326192195335757e-12,1.0013814187616316e-11,3.401919330230136e-12,2.4666152525922107e-12,1.2207861389381022e-11,1.403364340496145e-11,2.44911657214018e-11,4.473585937904747e-12,1.1875472815877668e-11,8.939321413516074e-12,1.4048559283318946e-11,6.224239029337156e-12,1.0513653121838295e-11,4.315878000892255e-11,1.2106354911927117e-11,1.5275822053649118e-11,1.5744259138697424e-11,8.60112349791559e-12,1.3545109136441995e-11,9.983589907786654e-12,1.4889657813435846e-11,1.4543530930919006e-11,7.139838446618599e-12,5.158146249890873e-12,3.665851872534878e-12,1.4164903134507415e-11,1.7103645189425835e-11,6.073039125565908e-12,7.657733444115443e-12,1.3877183691453613e-11,1.4604057995201267e-11,6.168971774791487e-12,2.7463272241067254e-12,9.00840548169816e-12,1.1917158770655722e-11,7.96916128329537e-12,1.3635232443570443e-11,1.4003026602017118e-11,1.1527775840902146e-11,1.011924589621693e-11,6.35887445766929e-12,1.21598165601453e-11,2.5682394869805182e-11,9.98932074526085e-12,5.776181744402567e-11,9.83867037385014e-12,1.8542006890826044e-12,2.4281479873544583e-11,9.638405080745026e-12,5.7225159841647555e-12,3.185403580177643e-12,1.227977162398874e-11,1.0725537099137671e-11,1.3715935195946789e-11,8.372282522062429e-12,4.291455212697429e-12,9.746427441902468e-12,1.0609978294178545e-11,3.142257439413013e-11,3.270659600684172e-12,1.3609168908756292e-11,1.4467616960541647e-11,9.872662875580644e-12,7.693610056796368e-12,5.361237709421619e-12,3.662711687617511e-12,6.199353063867018e-12,9.948419836712136e-12,7.685759594502948e-12,1.3803781869010146e-11,7.1075730465926475e-12,8.005979951451504e-12,8.479990864728136e-12,1.4701874755377265e-11,9.403362239680064e-12,1.5489511637275982e-11,7.018941327299949e-12,1.0132670186738678e-11,1.2894855344678109e-11,9.50243507382301e-12,7.885710869116327e-12,6.357539879079409e-12,1.6813099579946406e-11,1.1209832118018681e-11,7.575617608526282e-12,5.765615022155625e-12,9.252476354400552e-12,1.3687123999329942e-11,1.7557951442345988e-11,1.1738011221119903e-12,8.667381399672044e-12,1.352179326343054e-11,1.4892719493730277e-11,1.1372729210607123e-11,1.0628269871322211e-11,1.2872089004027194e-11,1.1249790971092184e-11,9.554405134205444e-12,7.12916181789955e-12,1.4675418697448445e-11,1.0783080987748431e-11,1.5689933939626966e-11,1.172764861089259e-11,1.1469525410684977e-11,1.110055368289429e-11,9.789997507630944e-12,1.4043770501319962e-11,1.0939776215125072e-11,1.1636033715928393e-11,1.3823094006251957e-11,6.930937644990723e-12,-1.9847538770221604e-12,5.2622433799016065e-12,8.34551244564187e-12,8.929900858763971e-13,5.49901332267112e-12,2.6673515734349315e-12,1.5662143303108264e-11,2.2187761579889768e-12,4.7369689478489495e-12,1.621811304272819e-11,3.873653609441676e-12,7.688899779420316e-12,1.8254601466263977e-11,1.1905383077215594e-11,1.1270280677678007e-11,5.01471830379011e-12,9.780655457501775e-12,1.3694267920016953e-11,1.003226277400585e-11,1.4148103145199499e-11,7.73623806704963e-12,9.275242695051467e-12,-7.804929612117047e-13,1.5089216564934554e-11,9.116898870593209e-12,8.396069422811488e-13,1.2431913583235198e-11,1.1017495791829919e-11,1.5138752982006026e-11,1.2810619884269724e-11,7.699340894270563e-12,4.423578493095668e-12,8.561164644842087e-12,1.305586832631613e-11,1.0780882858306274e-11,7.637400746775488e-12,7.057722611029438e-12,1.4481276764932195e-11,1.2700242384424255e-11,5.122976178816356e-12,7.589905449900304e-12,1.9558092225463248e-11,1.5758546980071446e-11,1.3343038237009392e-11,1.3285572853021567e-11,1.133967876435183e-11,4.463066318431565e-12,4.708628778969708e-12,1.2233375391834635e-11,3.469904333691143e-14,1.9041688815802153e-11,7.93092953192642e-12,4.741365206733264e-12,1.2237536136850147e-11,1.2239263238554698e-11,8.443093691949067e-12,4.6459035852452905e-12,7.686701649978158e-12,1.503646145832278e-11,5.541798342170253e-12,1.3785176273374743e-11,8.857519596418649e-12,1.3874828552765588e-11,1.2514186428070227e-11,1.0821862271477921e-11,2.4607274058721466e-12,1.2406007057666915e-11,9.769821819536857e-12,5.4095730057621986e-11,1.7345988960423678e-11,1.1203473243561012e-11,8.581732856050844e-12,4.627062475741085e-12,-5.4475142900262925e-12,1.1280250764790648e-11,4.026816128786278e-12,1.61701467181154e-11,6.711438719266732e-12,4.355279471142924e-12,1.7332250651410193e-11,5.235473303481048e-13,7.82581184181754e-12,6.670459306095085e-12,1.6140864493760945e-11,1.2305599644934089e-12,5.900250450487759e-12,1.9584234264900332e-11,2.2671428561787308e-11,1.4246469437736036e-11,1.1893764393021335e-11,1.132711802468236e-11,-1.99543050574121e-12,4.35425891104478e-12,1.1320288122487085e-11,1.4564334655996567e-11,1.267315828951196e-11,2.2218927915194642e-11,3.1642701356837595e-11,7.946473447267388e-12,6.574919179984177e-12,1.2111143693926102e-11,2.4797804778582743e-11,0.15938137562946558,0.045489785761471405,0.053182522904907846,0.11301213253311079,0.01501557941166798,0.05639652569363968,0.08195356686708195,0.02405860012324762,0.04706331866103495,0.050781881637221596,0.007013901402222881,0.025285365416389836,0.024250830817634572,0.6592785547065821,0.015027394715260604,0.01197381344384122,0.23419696060918482,0.00962683185165372,0.08417185185926614,0.01550344247332348,0.01831705791717808,0.018744874991576684,0.01146202081574054,0.16385898877171004,0.015035277538445817,0.05457870792064396,0.008970369762949794,0.0339586534247007,0.018325547625461774,0.25962788308927554,0.051166275101485185,0.13379230576900386,0.04479944042691937,0.03389424362848149,0.13433836741042532,0.013160568997824978,0.016950912780390875,0.017090210268107076,0.01721843108208787,0.016087900780788318,0.01556221892187615,0.04888742228341209,0.02154591479870808,0.009249716444950873,0.01515929060144869,0.23045950495916448,0.015330615735413064,0.05505188850641959,0.017129795293409834,0.014099621812725232,0.047522713752939996,0.02482975845458586,0.018417042778341167,0.017152042003676798,0.05294197219801981,0.04735879606499141,0.04770344068114272,0.013608716351134892,0.010683821624123062,0.00886893041814569,0.025738647104272597,0.01534108624132098,0.020362652177413027,0.017271115877817426,0.02455751120993619,0.01773036996614641,0.003929351223155622,0.02778167892446401,0.011171277086925707,0.03357699421920519,0.06501344584459838,0.021592606418613415,0.017053777053564954,0.02889660546430545,0.026049263860754013,0.07679315303452257,0.02420772147776944,0.006809264329491042,0.04206621654794156,0.14288270257752483,0.01726271788049151,0.029935656641824803,0.05263304579369795,0.04614569697448192,0.014142952434246875,0.003391994939453144,0.057673876689626064,0.0442132642912191,0.04262630474931249,0.035465111869835905,0.0802133427650984,0.014105343063922674,0.020552789398351957,0.09993140868270017,0.01652880647785646,0.0005479198941859234,0.009680225704252837,0.050070489623632516,0.01866646930463837,0.021143227136053447,0.03820310865027449,0.016941123647855504,0.026158173555452788,0.03337371789803373,0.05060779619370764,0.016858211788463712,0.026844613003392956,0.12102777760295041,0.02154302980333518,0.03829020790706486,0.020015576926418893,0.04757482253224189,0.053980276495863726,0.0037705161193957682,0.03281495917681154,0.02895858197250584,0.020860683870559206,0.4839332280042288,0.035545831454111415,0.031524086626769796,0.031041799819172294,0.03554776578251052,0.027577622828719447,0.028866295251395696,0.2860343138780147,0.016898913141729574,0.023891626356752214,0.01762394574608561,0.02519516175257309,0.03474583321001735,0.038127923855812595,0.04305139199036448,0.05504614943581255,0.06830762977576739,0.07771397879210873,0.03830113506581735,0.03390075781529849,0.03424205905387346,0.03348916257438778,0.03643178403963209,0.03538042915134571,0.055476793243949496,0.044060960066425646,0.5142602872746327,0.03488102436446987,0.035759466784972986,0.036502274278871344,0.03840266887230248,0.03763195609024448,0.02687592066396245,0.05172213311177081,0.04763749706475148,0.0349469375929639,0.03414026085590031,0.03806952016185364,0.03752443092234473,0.07671017131314294,0.03561583517007219,0.028858894678050712,0.013063962606459653,0.029859267301519915,0.020821581393242163,0.04750175015505148,0.02585320760391691,0.04695654798306464,0.22635040363132453,0.013205558072204221,0.05791370619230299,0.017963536126419696,0.2015679461396441,0.018887205041923646,0.02632607212203255,0.0359912464599198,0.013661855360508133,0.049683910935219615,0.04035680018024825,0.028852335789584602,0.028197660404420875,0.036849632252800635,0.0303648789983257,0.056187964832974974,0.060905263106784104,0.03838861483875191,0.03734658479338495,0.09489317823437653,0.011321590558902193,0.03827490701325474,0.03658086517340965,0.03708860295757118,0.03436564860162317,0.0389318430852939,0.03969096545701523,0.10562859236975719,0.04239566821855438,0.03866271649099438,0.0019757757316659734,0.017916871367082827,0.020029522144554134,0.03566843605034102,0.06579278330637274,0.02656808857705916,0.24101132612222054,0.20137356541556323,0.0465298285544765,0.008891241942846925,0.22165022156089606,0.1564635982890286,0.010471301003954547,0.1948299183076994,0.025066728288650492,0.00525888333123246,0.028045186747823678,0.010053617798802825,0.0043696363850159025,0.00934360951746144,0.009773404450736087,0.05646587532610378,0.004732158654577165,0.12367356706445361,0.00976536004272343,0.011937465549283915,0.013152076565052793,0.006069987338322315,0.04192367654637042,0.0090687826853842,0.2243113343207242,0.0068952844823013636,0.2663424124044654,0.010696604568288314,0.017942301865809848,0.026519394490767973,0.025738521096161145,0.09027154438718467,0.04458226840397989,0.0194532902629069,0.00860274063534296,0.011188368087238524,0.01136077294951766,0.011372661542477054,0.014748816884505956,0.01406941699540983,0.09568171505838519,0.02200206375405772,0.004032867825577068,0.010952115258149406,0.019925906121880027,0.01025312520637526,0.028843820862530085,0.015902511508510322,0.008594803058560833,0.10281764284631224,0.027318347366724626,0.012675749416239616,0.011401049456496724,0.02997404739489182,0.026158107178587874,0.06429385053255957,0.0071172253833644925,0.007733943264350032,0.0045526156591501055,0.011890673212767149,0.007330906907248061,0.00888215225116351,0.010477137090238528,0.02677057681852032,0.00823038643492555,0.0031247917033326547,0.032775872840949745,0.0063874472335651135,0.011067831155134543,0.18841403192808548,0.01150756801466497,0.012146826587504257,0.34607434159612843,0.029650621710361518,0.029945840369594714,0.013637958340059458,0.004632065387033508,0.019957641320550716,0.04537849516267973,0.008856995511136315,0.03701816677669064,0.026519680039132,0.024669131015237766,0.009507197329060761,0.002453886553558458,0.03206654997082772,0.15252221327812915,0.019992906451629003,0.018909104786118718,0.03379853301420235,0.009030573970666159,0.009937068134276061,0.09159572028165663,0.015536186283457822,0.0004106478746800302,0.004506016525282535,0.20206921291064375,0.013136631798811246,0.020242604792831395,1.110636302499142e-11,4.2613094374907e-12,1.2353094941809272e-11,6.365704359864564e-12,7.39623454512166e-12,2.5024133606502008e-12,1.0741002509855705e-12,6.014003649119398e-12,-1.959710902306154e-12,1.3890764991221228e-11,1.2438586476184604e-11,5.278101313734313e-12,1.3287378459349053e-11,7.041786172573798e-12,8.557867450678851e-12,6.380384724353258e-12,5.766478573007901e-12,1.3197961693827011e-11,7.691254918108341e-12,1.1746175701905059e-11,1.1424856280235424e-11,8.924091516666841e-12,1.4159093792410285e-11,1.0928628558668418e-12,3.743178926125054e-12,1.66996603998065e-11,1.0037444079119507e-11,-5.435738596586164e-12,4.1044886027173643e-11,3.1697811602137395e-12,1.0796897801384849e-11,1.1133447119903716e-11,9.804285349004966e-12,3.380409063546168e-13,9.367799645490876e-12,7.045083366737033e-12,9.333493125268636e-12,5.716078605084152e-12,4.890523990308223e-12,-2.127867804631186e-12,1.2388029499014986e-11,1.4663014967024842e-11,1.4428914181435092e-11,1.3298918638920379e-11,1.0218083216491075e-11,7.247860807776043e-12,8.894102750705982e-12,7.697692297188945e-12,4.643862465049002e-12,1.663089035011615e-11,7.433288727146596e-12,1.2423356579335372e-12,1.3059401034348169e-11,5.0746173310888956e-12,4.343189759211059e-12,4.988576264353025e-12,4.453567259056528e-12,1.3446664339282521e-11,8.875575659693513e-12,2.945414947867828e-11,1.6468464285265317e-11,2.2328441864187837e-11,7.781142711367987e-12,1.767570837674727e-11,1.2752369454052557e-11,7.726817512297528e-12,1.9441669869651846e-12,1.1587753372823866e-11,2.1905380451195492e-11,8.239295690811913e-12,3.266891378783331e-12,4.6182385561232826e-11,6.961946971049728e-12,2.734080502928992e-12,2.122843508763398e-12,1.1523850609755436e-11,3.693359892411018e-11,2.3133742286246742e-12,1.2475405144340738e-11,6.660096695867772e-12,1.3361486823398927e-11,-3.2708166099300404e-12,4.611832578891853e-12,9.475350978910714e-12,5.901349515208837e-12,5.175260257690526e-12,2.2937480728911274e-12,-2.313060210132938e-12,1.1402168444207444e-11,1.515680904528089e-11,8.945209260236138e-12,1.0228838349833058e-11,6.025857847182461e-12,6.914373169551609e-12,1.149974969051464e-11,1.4609474814183726e-11,1.745958514980945e-11,1.2554694813504268e-11,8.173194798301327e-12,9.7216984856782e-12,3.313366115560371e-12,1.0137066445622991e-11,1.1145536831835581e-11,5.863117763839887e-12,9.848247937848111e-12,1.2398941641602839e-11,6.724391982050872e-12,1.965127721288613e-12,-1.0840703380982126e-12,8.924091516666841e-12,1.1586497298856918e-11,4.505498067127494e-11,7.504492420147907e-12,2.7351795676500707e-12,5.825514049454411e-12,9.299971651275738e-12,4.480180326231218e-12,6.3650763228810905e-12,1.2370365958854794e-11,1.645715961956279e-11,1.2204407185971918e-11,5.44727877615749e-12,6.4577117779434335e-12,2.355138688025663e-12,1.2794840455059952e-11,-3.989683442138407e-12,9.19092873002015e-12,3.255665217703742e-12,8.626087968008661e-13,3.289265196319575e-12,7.943411766972955e-12,4.79113713767354e-13,1.179492707274719e-11,9.245175424467674e-12,1.3755972553643226e-11,1.5397896742311783e-12,5.06158556368182e-12,7.419393408887245e-12,8.07883224153443e-12,1.5552786363360936e-11,1.5035519402847568e-11,1.455687671681782e-11,3.218658138452565e-11,7.071853443157592e-12,9.780105925141236e-12,7.015173105399107e-12,6.5560780704799715e-12,1.9613516489254786e-11,1.5221418349955726e-11,2.5994450745968583e-12,1.0026610441154589e-11,5.2076826669623456e-11,7.265524347936235e-12,7.934933267696064e-12,1.2849636681868017e-11,1.5064173590218547e-11,8.43940397467116e-12,1.0637533416828446e-11,1.3430178368466342e-11,2.2293742820850922e-12,1.461481312854325e-11,8.179789186627797e-12,9.00110455176528e-12,7.857684718728822e-12,4.213193954094336e-11,8.583381453132462e-12,1.0350520515381052e-11,2.7791657078800965e-11,3.2088764624349657e-12,4.4848120989843355e-12,8.455575926995603e-12,7.708604439776796e-12,5.966743866113017e-12,2.9364654208533308e-12,6.306668883418053e-11,5.472871283234035e-12,-3.9487825335896946e-14,8.005194905222163e-12,3.385354854791022e-12,7.434152277998873e-12,1.0259926180514998e-11,2.262558186199374e-11,2.3105480621990438e-12,-3.2753698780602233e-12,8.554805770384418e-12,8.634566467285554e-12,5.718512248395112e-12,6.1725044828235255e-12,8.317564799877299e-13,1.0850045431111294e-11,4.908894072074823e-12,9.77398256455237e-12,1.2691135848163888e-11,2.8382561375626604e-12,2.253561556411116e-11,1.2011913850537288e-11,9.880199319382326e-12,4.476333599707443e-12,3.715309784983417e-12,1.728028059102776e-11,1.0759529600868175e-11,7.961232316379016e-12,1.0671839937050686e-11,7.428342935901742e-12,9.050876482705556e-12,2.094503339884156e-12,6.090781170349035e-12,1.1315813358979837e-11,1.5448296710235534e-11,1.5614726510856012e-11,1.7107570420572547e-11,1.4824106453285798e-11,8.208914401736381e-12,6.091409207332509e-12,1.3299075648166247e-11,1.907293365572996e-11,8.601044993292654e-12,3.0486485270262862e-12,3.38119410977551e-13,1.120363025280688e-11,1.0773032396012855e-11,9.044360599002018e-12,5.401589085609792e-12,3.714838757245812e-12,9.258992238104091e-12,-7.132144993571049e-13,1.6865540668066444e-11,2.2343985779528803e-12,1.03428270623335e-11,9.626943405796633e-12,1.0888277182480245e-11,6.1952708234744404e-12,1.2543154633932944e-11,9.934367509206917e-12,4.161765575610149e-12,9.972442251329998e-12,1.2599991980937295e-11,1.1901065322954214e-11,1.1658721551956373e-12,4.607375871447879e-10,1.1327000267747959e-10,1.9552361387989052e-12,2.647458501983408e-11,1.2086650251570636e-11,5.3127218524482905e-12,4.567398962311102e-13,9.678991970802e-12,2.3133742286246742e-12,1.613157739686783e-10,1.0405316742189115e-11,4.274027186406039e-12,1.548872659104664e-11,1.0274528040380756e-11,5.797016871329301e-12,-1.5311541657084175e-12,1.8855946877939865e-11,1.2615378887032397e-11,6.761603173321678e-12,1.614000094290867e-11,4.04989648792893e-12,-8.657646826428205e-12,9.090835335779058e-14,-1.825310987842823e-12,1.1470153447668451e-11,1.4283052592023369e-11,1.3144735559477631e-11,1.7827379308256123e-11,1.2360709890233888e-11,5.158538773005544e-12,1.1959786780908986e-11,1.0055421637771436e-11,3.8930442513064205e-12,1.5567780746341368e-11,9.22751188430748e-12,1.5158614651608378e-11,2.2617181867339782e-13,1.923912794248164e-12,9.215422172375616e-12,4.934094056036698e-12,-9.297302494095975e-13,3.283848377337116e-12,1.2766421781557776e-11,1.2129356766446835e-11,-2.612712355872736e-12,7.746286658785207e-12,1.6300856915300823e-11,-3.639160300737254e-12,8.67931410235804e-12,8.416794643266114e-12,1.325377848073322e-11,9.78936947064747e-12,9.852408682863624e-12,1.0723338969695514e-11,8.979594285081312e-12,5.526042464347361e-11,1.259331908798789e-11,4.7822661152819766e-12,1.648055399719718e-11,8.847156986191337e-12,1.316663834927627e-11,1.4917134431462812e-11,1.142854599751333e-11,-8.410200254939641e-13,2.3804564289219387e-11,1.2597793851495139e-11,2.175991138489844e-12,7.19534121503307e-12,5.724400095115176e-12,1.6359892391747334e-11,1.3701961373064503e-11,3.925152642086504e-12,5.350875099194306e-12,1.3592368919448376e-11,1.1698444891161072e-11,9.463025753110048e-12,1.0520875547148241e-11,1.9952734964953414e-12,-4.082397401823684e-12,8.965149434461422e-12,8.614704797683203e-12,1.5353698639599834e-11,-2.5799759281091794e-12,4.599821371582922e-12,1.6224864440300527e-11,1.2362358487315506e-11,6.931801195842999e-12,2.9479270958017222e-12,2.4061666929328857e-12,1.149205623746709e-11,1.148624689536996e-11,1.2351132326235918e-11,1.7853521347693207e-11,1.5866255322737152e-11,1.2184859534861306e-11,6.129326940209721e-12,9.930834801174878e-12,1.3068350561362666e-11,4.861712793691376e-12,1.2860627329078803e-11,1.88560253825628e-12,1.284539743222957e-11,9.812763848281857e-12,4.43017288142214e-12,1.2072048391704876e-11,4.689787669465502e-12,1.1424620766366623e-11,1.5099579175161867e-11,1.6149971030021312e-11,3.5323940135467574e-12,7.937759434121694e-12,9.322816496549586e-12,-6.486836993052017e-13,1.241001079343656e-11,2.446753582989861e-12,1.3667733357465197e-11,8.628364602073753e-12,6.658448098786154e-12,9.038629761527823e-12,1.2572201344418593e-11,8.084955602123297e-12,7.617539077173138e-12,4.5705391472284695e-12,1.0100326282089792e-11,4.386288797201929e-12,1.0339294354301462e-11,4.030819864555922e-12,3.675664950401652e-12,1.701038169738002e-11,1.4124237739827505e-11,2.7734113190190204e-12,2.8523869696908143e-12,8.585893601066356e-12,1.1828370042117155e-11,1.0092946847533978e-11,4.576898021686139e-12,3.1420925797048514e-11,1.9139898099092826e-11,8.434693697295108e-12,7.0932852052186256e-12,1.6233028921085683e-11,2.6145964668231566e-12,1.9005105661514824e-11,1.525815851348893e-11,1.4342559096207483e-11,8.735287898510118e-12,1.430464136333027e-11,1.8483756460608875e-11,8.802095332627112e-12,9.133541850655257e-12,1.5052476401401354e-11,7.063437747579047e-11,1.5994531876611617e-12,3.683907935809742e-12,9.821634870673421e-12,6.924657275155988e-12,1.0220281345933232e-11,8.428177813591571e-12,1.2857487144161436e-12,1.819690056840735e-11,4.473585937904747e-12,1.5844509542184385e-11,3.9509728125695586e-11,9.717145217548016e-12,9.350528628445355e-12,4.7333577351939774e-12,3.3173855522546016e-11,6.974036682981593e-12,4.27779540830688e-12,3.239359807520311e-11,4.433862598700047e-12,4.024146971606516e-13,1.9861669602349756e-13,6.070212959140278e-12,1.2974930060070981e-11,3.848924653217407e-12,1.0018838483484104e-11,1.3457733491116242e-11,1.200241479116225e-11,5.6874244177131735e-12,1.117136485278093e-11,6.0339438233446826e-12,1.0801922097252636e-11,6.205554929078819e-12,9.904300238623123e-12,2.5663946283415647e-12,3.6974185814167157e-11,-7.873228634069791e-13,1.8117689403866755e-11,2.354275137173387e-12,7.66801754971982e-12,-1.8180885625328776e-12,1.2731330215106193e-11,6.931879700465934e-12,9.263074478496669e-12,5.244815353610217e-12,3.4141660514078693e-13,2.4286975197149978e-12,1.1666964537364463e-11,1.5756898382989828e-11,1.6800460335654e-11,-5.419095616524116e-12,8.679235597735106e-12,2.2107686864496898e-12,1.0982796748493007e-13,3.3178408790676195e-12,5.656807614768839e-12,5.236964891316798e-12,9.616266777077584e-12,8.806962619249032e-12,5.500504910506869e-12,1.2004534415981474e-11,2.275849018862132e-13,-1.621591491328603e-12,7.422769107673416e-12,1.559572839210594e-12,-3.454438922973108e-12,1.0143111301588925e-11,1.2682578844264062e-11,6.457397759451697e-12,1.0398800858485578e-11,8.462876856928483e-12,8.208207860129975e-12,1.927735969385059e-11,2.139690600845075e-11,8.096181763202888e-12,1.0496931637153314e-11,1.4580742122189813e-11,6.34089689901736e-12,1.858314331324356e-11,1.2324676268307096e-11,3.428375388158957e-11,6.870253571462595e-12,9.574816336168332e-12,1.595331694957117e-11,1.0519226950066623e-11,4.28211316256826e-12,1.6624138952543812e-12,-1.8476063007561323e-12,3.278981090715196e-12,1.404039480253379e-11,8.924641049027381e-12,8.726809399233225e-12,7.945845410283915e-12,1.503128015320912e-11,9.61618827245465e-12,9.647904140120062e-12,8.967661582395317e-12,1.1590736548495366e-11,3.717586419048509e-12,-1.280567409302487e-12,1.5072573584872507e-11,8.852181282059124e-12,6.906915230372861e-12,1.2570945270451646e-11,5.246542455314769e-12,4.797417507508275e-13,1.0603854933589678e-11,5.5197306926634524e-11,1.7659536424422828e-11,6.274403483392102e-12,8.566345949955744e-12,3.0608952482040197e-12,6.847330221565812e-12,9.797612456055559e-12,1.145248990750826e-11,1.66445501545067e-12,4.386995338808336e-12,1.0573081121399476e-11,2.247587354605824e-13,9.893466600658205e-12,6.946717074200495e-12,1.6801480895752145e-11,5.687188903844371e-12,2.318241515246594e-13,1.4671257952432932e-11,8.386962886551122e-12,7.425516769476112e-12,9.598995760032062e-12,2.0233781515057813e-12,1.448716461165226e-11,9.011231648123791e-12,9.568928489448268e-12,1.3318152271539255e-11,6.973722664489856e-12,3.089706444820867e-12,2.4889105655055204e-12,5.530258162598927e-12,1.6931170532839423e-11,7.637353644001727e-11,-2.5382899733311252e-12,1.423657785524633e-11,7.642739061135013e-12,3.1464652872022854e-13,6.440754779389648e-12,1.7038564857013393e-11,1.511143337322493e-11,1.0305851384931499e-11,4.366427127599579e-12,7.823221189260713e-12,9.163295102747315e-12,8.01210331204037e-12,9.271866996265298e-12,8.628600115942556e-12,7.2143393337831444e-12,1.649028857044102e-11,6.901419906767468e-12,1.1167675135503022e-11,9.762049861866372e-12,2.4714040345911964e-12,1.2689330241836402e-11,4.673929735632796e-12,1.3617254884918514e-11,1.1677327147591775e-11,6.392788454776859e-12,1.3178885070454005e-11,9.783874147042076e-12,5.891693446587932e-12,2.7277216284713226e-12,9.565160267547427e-12,2.184045712802892e-11,1.07986249030894e-11,1.7730504603555332e-11,4.964082821997558e-12,2.1254655631694e-11,1.3946895796619173e-11,1.6585828696551927e-11,5.626661839562111e-12,-2.4721890808205384e-12,2.1210300519736186e-11,5.140561214353614e-12,8.345904968756542e-12,2.4992888766574203e-11,1.2070007271508587e-11,-4.589380256732675e-13,1.9797138802297854e-11,3.530588407219271e-12,3.4636710666301683e-11,2.8542710806412348e-12,1.0167526239321458e-11,9.243134304271385e-12,1.056452411749965e-11,3.9951787657438e-12,5.988097123551116e-12,1.259575273129885e-11,1.7278867507814946e-12,2.453504980562201e-12,1.0355073783511234e-11,7.443808346619778e-12,1.3811946349795301e-11,1.511221841945427e-11,1.0645619392990667e-11,7.655692323919154e-12,8.806413086888493e-12,5.298983543434807e-12,5.9187775415002274e-12,-3.328046480049064e-12,7.892776285180403e-12,1.487105221780044e-11,1.1247749850895895e-11,5.186015391032509e-13,0.01960745130541994,0.006394188661675002,0.005125402382000522,0.022611559743874295,0.06374157380876082,0.00632497759725712,0.005116084128189596,0.04797892744324261,0.008651477475421759,0.07609836621896605,0.014014609278770114,0.02052110953994362,0.13357878437137352,0.0010058190875899316,0.13321273267309,0.020673837708071317,0.00428814044717526,0.0033167902712977274,0.006010492822706895,0.1397618106164463,0.13756380447222383,0.08345856078675834,0.24136114526421792,0.014985908232500336,0.008088781509810562,0.0063681002164346755,0.017648723596217008,0.005882711245852573,0.20425885448442935,0.00834498523118073,0.07222179965420632,0.024656329999426702,0.010397945168474691,0.014232351502019739,0.013174859351734354,0.047932989217556336,0.1078905571260934,0.10320640441282378,0.11203519903499788,0.019502621091322506,0.019703800061551893,0.009323728186448657,0.02048362460480165,0.002908122531700272,0.04753689807654813,0.010916254523011277,0.07003142438529959,0.06421995785081949,0.020516935383565728,0.189692264296042,0.009322823368196223,0.02023503258850056,0.09223300630642457,0.10433147521988387,0.06325453537874814,0.07598327723799014,0.010151631340796188,0.189446736265069,0.02683305154198299,0.39294792502639975,0.18308191358348438,0.2842990125460955,0.1588209475807082,0.19507309986810867,0.020594943827515512,0.018928500678522746,0.005009785572641134,0.01675314473831304,0.3012304782237437,0.019122415863112183,0.007403302602129611,0.19885788353897785,0.06361959174576329,0.003198670623997997,0.019445056333665327,0.047277678375343496,0.16679859045670087,0.012027467143421426,0.10182771426355228,0.017122096944423907,0.1099000504612054,0.01604997122281698,0.07101156258027547,0.08131375063407179,0.014431992776863368,0.0063472893755081115,0.056698022405836636,0.007841512572465537,0.10082268875443891,0.11528509740221603,0.04177260992682305,0.06084893934004094,0.05078876516548847,0.006472044691352079,0.01781594551899435,0.0008020442526890693,0.35795672342396495,0.008032849174492936,0.08125162139314729,0.014506860721680403,1.1561297314895044e-11,2.5146600818279342e-12,1.712562648384741e-11,8.671463640064621e-12,-3.08169897328158e-12,7.6812848309957e-12,5.822844892274648e-12,1.2702047990751742e-12,1.6095331812459115e-11,1.5733032977617837e-11,1.0299806528965565e-11,1.1779697175897957e-11,1.1598430001542915e-11,2.9330112174442263e-12,1.5038424073896134e-11,1.567541058438414e-11,9.635971437434064e-12,1.2916365611362077e-12,-1.2944627275618384e-12,8.869295289858778e-12,1.5798584337767884e-11,5.187271464999456e-12,6.2144259514703825e-12,6.097532567921375e-12,3.867530248852809e-12,8.983755030096825e-12,3.196158713519627e-12,5.778960808054437e-12,5.4073199230839876e-12,4.900337068174996e-12,2.1994875721340468e-11,5.7872822980854615e-12,-1.5012439043704916e-12,-4.0484834047161145e-13,1.3998002306149329e-11,9.325485653729349e-12,2.910794409153851e-12,9.822812440017434e-12,1.1711398153945214e-11,8.127819126245365e-12,9.92581050530709e-12,1.215589132899859e-11,1.4280775957958277e-11,4.4943896629823067e-13,1.2905610478020094e-11,1.461818882732942e-11,6.701547136777023e-12,2.827006425096191e-11,1.8170915538216134e-11,5.961170037884689e-12,3.9105507822207445e-12,1.66137763423165e-11,1.654013900600423e-12,7.531733524306069e-13,9.679117578198695e-11,2.736836015193982e-11,7.166137495301553e-12,1.3406783990831954e-11,6.945853523348219e-12,9.16957547258205e-12,6.748021873554063e-12,7.61494842461631e-14,7.700361454368708e-12,1.0506587705774219e-11,4.8027558218678e-12,6.8778685198872116e-12,-3.2313287845941434e-12,1.2110829675434366e-11,5.844512168204485e-12,9.067833481259342e-12,8.398503066122448e-12,6.1005942482158086e-12,6.0514503542590066e-12,8.741489763721919e-12,8.714484173432557e-12,7.305797219501475e-12,1.2808814277942238e-11,-5.330463897231417e-13,1.4103983547110484e-11,1.782133445229019e-12,1.3859598655916355e-11,4.593541001748187e-12,2.4270410721710863e-11,1.7747383097486184e-11,1.2035543742040478e-12,1.4367445061677622e-11,3.818197943800965e-11,1.7902194213912405e-12,9.334356676120912e-12,1.0233862645700847e-11,8.783646746237578e-12,5.576026357769559e-12,6.700526576678879e-12,8.121852774902366e-12,7.201229061753135e-12,6.215682025437329e-12,6.961946971049728e-12,-2.3308022549160642e-12,8.72971407028179e-13,-3.756446207400932e-13,8.890962565788614e-12,4.340834620523034e-12,1.4369800200365647e-11,9.063908250112632e-12,2.4864219689585067e-11,3.2281100950538417e-12,1.1144359262491569e-11,4.5908718445684245e-11,9.366308057655127e-12,3.743257430747988e-12,1.2326717388503385e-11,9.333964153006242e-12,3.1537426657482845e-11,5.445159151338267e-12,1.4531284209741273e-11,2.8462636091019478e-12,9.760715283276492e-12,1.0859858508978067e-11,9.052603584410108e-12,1.5625952671935602e-11,1.4949478336111697e-11,6.451117389616961e-12,2.739026294173846e-11,4.6194475273164695e-12,1.703432560737495e-11,-2.883474800372753e-12,1.0093574884517452e-11,3.672603270107218e-12,1.8859558090594837e-11,1.3343823283238734e-11,1.069311468986585e-11,1.2937090831816703e-11,5.115125716522937e-12,1.2143644607820857e-11,1.800236611277643e-11,1.669235946987362e-11,1.562030033908434e-11,1.1734635522333733e-11,6.852590031302403e-12,9.945986193401176e-12,6.522949119601744e-12,8.82737382121192e-12,8.089037842515875e-12,1.6286255055435062e-11,1.1273185348726572e-11,5.8414504879100516e-12,8.260491939004143e-12,6.168029719316277e-12,3.4971454378493066e-12,1.5682633009694087e-11,6.297640851780622e-13,9.087145618501151e-12,1.656675207317892e-11,1.1184239610942136e-11,5.380314332794627e-12,5.570688043410034e-13,1.3024152458650718e-11,3.443534630847549e-11,8.655056173871377e-12,1.1480516057895765e-11,1.564620686465262e-11,7.409266312528736e-12,4.0821304861057075e-11,7.974892120769566e-12,8.176963020202167e-12,2.603378156205861e-11,7.747385723506286e-12,1.0929335100274825e-11,1.313963275898691e-11,1.9908301348372663e-11,1.7147058245908442e-11,8.568779593266704e-12,8.852181282059124e-12,-4.211773020419227e-13,1.3025251523371797e-11,6.321820275644352e-12,2.643486168062938e-12,1.4222839546232846e-11,8.576159027822517e-12,5.186407914147181e-12,6.793758666875521e-11,1.8236231384497377e-11,9.440494926327936e-12,1.3167894423243217e-11,1.3114197261156232e-11,6.751083553848497e-12,4.9399033981338276e-12,9.52944066411237e-12,1.2114597897335207e-11,3.102188679867403e-12,7.269763597574682e-12,1.7228467539891198e-11,5.3977188076991363e-11,4.607671833876341e-12,5.6593197627027336e-12,8.148465842077056e-12,2.3479162627157174e-11,4.4812008863293626e-12,7.579307325804189e-12,5.734291677604884e-12,0.010464074852656382,0.007338640826189556,0.00762359051717146,0.013239570693804305,0.09347440498340406,0.0067822039222282205,0.006855807470036555,0.030846206427921713,0.010378515884313549,0.020963775227079807,0.34090776198843314,0.09743815767264091,0.021369941194416767,0.0008304711112515467,0.055046162125227574,0.22825303041049436,0.004694897967772455,0.006375737739932928,0.008489821273695389,0.0507464814841316,0.0433963827296019,0.073426078260624,0.02486258357347528,0.009630380077381576,0.024772244433467747,0.0068836498793737955,0.28604575181473363,0.008133062062943232,0.022657422437574213,0.006203288717562077,0.02159363595188511,0.011942066858560602,0.022891541907304337,0.05021824063218428,0.010089981387344201,0.14279837295465014,0.06322241649447367,0.06573065651195155,0.0597417521937656,0.17740463840661994,0.18332930729319072,0.01889959860155082,0.12380247928461502,0.004798781943582877,0.13500507766526487,0.007258401066801352,0.10191112880621091,0.02136022171402339,0.16466315352329036,0.03574916114866937,0.018870866670781774,0.10025626989757166,0.06815445859618625,0.06476202148988232,0.022548014824413074,0.02288614542246559,0.022591650301075458,0.030626250137431695,0.22563217743719005,0.009447577404940895,0.01685943396831846,0.012774949221782713,0.021487057408926563,0.026818111750824603,0.10206139343823964,0.026497077643520266,0.48402680400094145,0.07963342152728392,0.017295258413866914,0.01545271816679805,0.00765321050563894,0.018932242135764457,0.1006503616815778,0.004663308038186091,0.09245502889177733,0.017295204019082053,0.022308540468327243,0.3269907559271126,0.02032359573149871,0.010789555520059557,0.042414971482317626,0.068173892618162,0.021118586169325233,0.022413713232822787,0.12630233890903825,0.4986472642239363,0.02161534556807302,0.014250631359669383,0.020173212723668964,0.022275996842474104,0.017224357427937414,0.11580617091860726,0.042676767245440436,0.009002547098012964,0.17362772106183966,0.7806743483003264,0.010472703696498248,0.009132227283769716,0.0755436079021649,0.11247364994142664,1.4838472799282755e-11,-2.4655161878711323e-12,5.256198523935674e-12,1.1161316261045353e-11,1.9787011705939342e-11,7.026634780347499e-12,8.319919938565324e-12,2.4160268735734196e-11,3.332521243556313e-13,8.687086060028525e-12,4.056333867009533e-12,8.611800126634639e-12,4.299706048567812e-11,9.81449094998641e-12,1.4829994300005863e-11,9.24172122105857e-12,1.4491639375159509e-11,1.2904511413299014e-11,7.886495915345669e-12,1.0096479555566017e-11,1.3032552453304676e-11,8.15977050777958e-12,3.237946724307496e-11,1.0585563356446012e-11,8.764648627487505e-12,2.084376243525646e-12,1.0751129606214216e-11,3.2577848425229653e-12,5.969334518669845e-12,1.16702617315277e-11,1.237028745423186e-11,1.3766099650001735e-11,3.454988455333647e-12,8.021759380661276e-12,8.659844955870362e-12,1.4149516228412314e-11,9.749253608328099e-12,1.4274495588123543e-11,9.225156745619456e-12,3.136259686220841e-12,9.278696898460572e-12,4.7367334339801475e-12,1.2110201638450892e-11,1.0896991195625939e-11,9.227982912045086e-12,1.4775198073197797e-11,1.08842734467106e-11,1.4585138381074127e-11,6.718268621462006e-12,1.3076986069885427e-11,5.599342230781013e-12,1.1356400249036812e-11,6.805094734427218e-12,1.0855462250093754e-11,3.857638666363102e-12,1.3780151977506956e-11,1.5090394134278566e-11,3.344398993006256e-11,1.1025503263369207e-11,2.1260621983037e-11,1.5292151015219432e-11,1.844356209366657e-11,6.165054394107072e-11,7.066279614929264e-12,1.479804291847165e-11,1.539051730775597e-11,1.271814143845325e-11,9.69641999709339e-12,1.4715377550521945e-11,1.6071937434824727e-11,1.1753476631837938e-11,1.0848553843275546e-11,1.1699543955882152e-11,4.818770764946375e-12,1.4558996341637042e-11,1.043373541569129e-11,1.1429095529873871e-11,6.6715583708161634e-12,3.011515840378415e-12,9.968438515560355e-12,2.8227750259200385e-11,-1.3114197261156232e-12,1.1671674814740514e-11,4.896647350897089e-12,1.0205129953706933e-11,1.2055954944003368e-11,3.970685323388333e-12,6.84748723081168e-12,9.911993691670673e-12,1.4325445088407831e-11,1.2782515229259284e-11,1.2598343383855677e-11,2.332223188591173e-11,7.509595220638629e-12,5.257768616394358e-12,7.953146340216795e-12,7.45125058487394e-11,1.5897186144173224e-11,1.2825457258004286e-11,1.0444726062902078e-11,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.0]

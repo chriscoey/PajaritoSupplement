@@ -1,0 +1,91 @@
+numerics/lpfeastol = 1e-08
+presolving:
+(round 1, fast)       12 del vars, 90 del conss, 0 add conss, 84 chg bounds, 0 chg sides, 0 chg coeffs, 4 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       13 del vars, 91 del conss, 6 add conss, 90 chg bounds, 0 chg sides, 19 chg coeffs, 4 upgd conss, 0 impls, 30 clqs
+(round 3, fast)       13 del vars, 92 del conss, 10 add conss, 90 chg bounds, 2 chg sides, 21 chg coeffs, 4 upgd conss, 0 impls, 30 clqs
+(round 4, fast)       13 del vars, 92 del conss, 10 add conss, 90 chg bounds, 6 chg sides, 25 chg coeffs, 4 upgd conss, 0 impls, 30 clqs
+(round 5, exhaustive) 13 del vars, 92 del conss, 10 add conss, 90 chg bounds, 14 chg sides, 25 chg coeffs, 4 upgd conss, 0 impls, 30 clqs
+(round 6, exhaustive) 13 del vars, 92 del conss, 10 add conss, 90 chg bounds, 14 chg sides, 25 chg coeffs, 26 upgd conss, 0 impls, 30 clqs
+(round 7, fast)       13 del vars, 92 del conss, 10 add conss, 90 chg bounds, 16 chg sides, 35 chg coeffs, 26 upgd conss, 4 impls, 30 clqs
+(round 8, medium)     13 del vars, 98 del conss, 16 add conss, 90 chg bounds, 22 chg sides, 59 chg coeffs, 26 upgd conss, 4 impls, 31 clqs
+(round 9, fast)       13 del vars, 100 del conss, 16 add conss, 90 chg bounds, 22 chg sides, 59 chg coeffs, 26 upgd conss, 4 impls, 31 clqs
+(round 10, exhaustive) 13 del vars, 100 del conss, 16 add conss, 90 chg bounds, 22 chg sides, 63 chg coeffs, 26 upgd conss, 4 impls, 31 clqs
+(round 11, fast)       13 del vars, 100 del conss, 16 add conss, 90 chg bounds, 22 chg sides, 65 chg coeffs, 26 upgd conss, 4 impls, 31 clqs
+(round 12, medium)     13 del vars, 102 del conss, 20 add conss, 90 chg bounds, 26 chg sides, 85 chg coeffs, 26 upgd conss, 4 impls, 39 clqs
+(round 13, exhaustive) 13 del vars, 108 del conss, 20 add conss, 90 chg bounds, 26 chg sides, 85 chg coeffs, 26 upgd conss, 4 impls, 39 clqs
+(round 14, exhaustive) 13 del vars, 108 del conss, 20 add conss, 90 chg bounds, 26 chg sides, 85 chg coeffs, 28 upgd conss, 4 impls, 39 clqs
+(round 15, medium)     13 del vars, 110 del conss, 22 add conss, 90 chg bounds, 28 chg sides, 102 chg coeffs, 28 upgd conss, 4 impls, 49 clqs
+(round 16, exhaustive) 13 del vars, 114 del conss, 24 add conss, 90 chg bounds, 28 chg sides, 102 chg coeffs, 28 upgd conss, 4 impls, 49 clqs
+(round 17, medium)     15 del vars, 114 del conss, 24 add conss, 90 chg bounds, 30 chg sides, 104 chg coeffs, 28 upgd conss, 4 impls, 40 clqs
+(round 18, fast)       15 del vars, 116 del conss, 24 add conss, 90 chg bounds, 30 chg sides, 104 chg coeffs, 28 upgd conss, 4 impls, 40 clqs
+   (0.0s) probing cycle finished: starting next cycle
+(round 19, exhaustive) 27 del vars, 116 del conss, 24 add conss, 94 chg bounds, 30 chg sides, 104 chg coeffs, 28 upgd conss, 34 impls, 58 clqs
+(round 20, fast)       27 del vars, 128 del conss, 25 add conss, 94 chg bounds, 30 chg sides, 104 chg coeffs, 28 upgd conss, 36 impls, 58 clqs
+(round 21, fast)       27 del vars, 128 del conss, 25 add conss, 94 chg bounds, 32 chg sides, 106 chg coeffs, 28 upgd conss, 36 impls, 58 clqs
+(round 22, exhaustive) 27 del vars, 129 del conss, 25 add conss, 94 chg bounds, 32 chg sides, 106 chg coeffs, 28 upgd conss, 36 impls, 58 clqs
+(round 23, exhaustive) 27 del vars, 129 del conss, 25 add conss, 94 chg bounds, 32 chg sides, 106 chg coeffs, 32 upgd conss, 36 impls, 58 clqs
+   (0.0s) probing cycle finished: starting next cycle
+presolving (24 rounds: 24 fast, 14 medium, 10 exhaustive):
+ 27 deleted vars, 129 deleted constraints, 25 added constraints, 94 tightened bounds, 0 added holes, 32 changed sides, 106 changed coefficients
+ 42 implications, 58 cliques
+presolved problem has 27 variables (17 bin, 0 int, 6 impl, 4 cont) and 15 constraints
+      4 constraints of type <soc>
+      4 constraints of type <varbound>
+      2 constraints of type <setppc>
+      5 constraints of type <linear>
+transformed objective value is always integral (scale: 0.1)
+Presolving Time: 0.01
+numerics/lpfeastol = 1e-08
+
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |     8 |     - |1021k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |    12 |     - |1021k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |    14 |     - |1021k| 5.563143e-01 |      --      |    Inf 
+      1 |     0 |    21 |     - |1033k| 2.110320e+00 |      --      |    Inf 
+      1 |     0 |    25 |     - |1044k| 2.169947e+00 |      --      |    Inf 
+      1 |     0 |    33 |     - |1072k| 2.214464e+00 |      --      |    Inf 
+      1 |     0 |    37 |     - |1101k| 2.216703e+00 |      --      |    Inf 
+      1 |     0 |    48 |     - |1138k| 2.292219e+00 |      --      |    Inf 
+      1 |     0 |    53 |     - |1186k| 2.299647e+00 |      --      |    Inf 
+      1 |     0 |    64 |     - |1229k| 2.316484e+00 |      --      |    Inf 
+      1 |     0 |    75 |     - |1682k| 2.344664e+00 |      --      |    Inf 
+      1 |     0 |    89 |     - |1682k| 2.384803e+00 |      --      |    Inf 
+      1 |     0 |    99 |     - |2115k| 2.437482e+00 |      --      |    Inf 
+      1 |     0 |   112 |     - |2129k| 2.519633e+00 |      --      |    Inf 
+      1 |     0 |   121 |     - |2129k| 2.559947e+00 |      --      |    Inf 
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |   129 |     - |2136k| 2.580181e+00 |      --      |    Inf 
+      1 |     0 |   141 |     - |2136k| 2.595775e+00 |      --      |    Inf 
+      1 |     0 |   156 |     - |2514k| 2.709554e+00 |      --      |    Inf 
+      1 |     0 |   168 |     - |2514k| 3.000000e+00 |      --      |    Inf 
+      1 |     0 |   178 |     - |2526k| 3.060000e+00 |      --      |    Inf 
+      1 |     0 |   188 |     - |2558k| 3.100000e+00 |      --      |    Inf 
+      1 |     0 |   196 |     - |2561k| 3.107780e+00 |      --      |    Inf 
+      1 |     0 |   207 |     - |2561k| 3.200000e+00 |      --      |    Inf 
+      1 |     0 |   213 |     - |2561k| 3.200000e+00 |      --      |    Inf 
+s     1 |     0 |   213 |     - |2561k| 3.200000e+00 | 1.230000e+01 | 284.38%
+      1 |     0 |   216 |     - |2561k| 3.200000e+00 | 1.230000e+01 | 284.38%
+      1 |     0 |   220 |     - |2561k| 3.200000e+00 | 1.230000e+01 | 284.38%
+      1 |     0 |   413 |     - |2596k| 3.200000e+00 | 1.230000e+01 | 284.38%
+      1 |     2 |   456 |     - |2604k| 3.216396e+00 | 1.230000e+01 | 282.42%
+c     6 |     4 |   502 |  57.2 |2617k| 3.216396e+00 | 9.300000e+00 | 189.14%
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+d    21 |     6 |   598 |  19.1 |2881k| 3.265638e+00 | 5.300000e+00 |  62.30%
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 0.15
+Solving Nodes      : 31
+Primal Bound       : +5.30000000000000e+00 (3 solutions)
+Dual Bound         : +5.30000000000000e+00
+Gap                : 0.00 %
+#SOLVERNAME# SCIP_MISOCP
+#SOLVER# SCIP.SCIPSolver(("limits/gap", 1.0e-5, "numerics/feastol", 1.0e-8, "limits/time", 3600.0))
+#INSTANCE# tls2.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# Optimal
+#OBJVAL# 5.300000000000001
+#OBJBOUND# 5.300000000000001
+#NODECOUNT# NaN
+#TIMESOLVER# 0.15
+#TIMEALL# 0.70682692527771
+#SOLUTION# [1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,5.300000000000001,0.0,-0.0,-0.0,1.0,0.0,-0.0,0.0,0.0,-0.0,-0.0,0.0,0.0,-0.0,1.0,9.0,16.0,25.0,1.0,1.0,16.0,14.999999997968757,3.999999999158341,2.0601404118390563,15.403627251581268]

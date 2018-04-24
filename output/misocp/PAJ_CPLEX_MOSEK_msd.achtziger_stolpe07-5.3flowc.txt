@@ -1,0 +1,146 @@
+#SOLVERNAME# PAJ_CPLEX_MOSEK_msd
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, CPLEX.CplexSolver(Any[(:CPX_PARAM_THREADS, 1), (:CPX_PARAM_SCRIND, 1), (:CPX_PARAM_EPINT, 1.0e-9), (:CPX_PARAM_EPRHS, 1.0e-8), (:CPX_PARAM_EPGAP, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 1), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, true, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# achtziger_stolpe07-5.3flowc.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     499
+     constraints |     358
+   nonzeros in A |     974
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Rotated S.O. |      83 |         3 |         3
+
+Variable types:
+      continuous |     416
+         integer |      83
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.00s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.01s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =       6.102585
+
+Mixed integer rounding cuts applied:  3
+Gomory fractional cuts applied:  3
+User cuts applied:  165
+
+Root node processing (before b&c):
+  Real time             =    0.34 sec. (17.23 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (7.71 ticks)
+                          ------------
+Total (root+branch&cut) =    0.35 sec. (24.94 ticks)
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 2 times.
+MIP Presolve eliminated 166 rows and 0 columns.
+Aggregator did 249 substitutions.
+Reduced MIP has 939 rows, 416 columns, and 3630 nonzeros.
+Reduced MIP has 83 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.84 ticks)
+Probing time = 0.00 sec. (0.07 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (14.66 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        6.1026     8                      6.1026      428         
+*     0+    0                            9.7217        6.1026            37.23%
+      0     0        6.1026     8        9.7217   Flowcuts: 1      430   37.23%
+*     0+    0                            9.7217        6.1026            37.23%
+      0     0        6.1026     9        9.7217    MIRcuts: 1      446   37.23%
+      0     2        6.1026     9        9.7217        6.1026      446   37.23%
+Elapsed time = 0.12 sec. (98.27 ticks, tree = 0.01 MB, solutions = 1)
+*    10+   10                            7.7544        6.3394            18.25%
+*    11+   11                            7.7544        6.3394            18.25%
+     42    37        7.5000    11        7.7544        6.3394     2149   18.25%
+    146    86        6.6663     8        7.7544        6.5892     5832   15.03%
+    290   152        6.9071     3        7.7544        6.7911    11592   12.42%
+*   330+  167                            7.7161        6.8266            11.53%
+    404   213        7.0583     3        7.7161        6.8577    16347   11.12%
+    533   269        7.1673     6        7.7161        6.9779    20868    9.57%
+    700   318        7.3657     6        7.7161        7.1024    26670    7.95%
+    838   315        7.6592     9        7.7161        7.2311    32218    6.29%
+    986   265        7.5678    10        7.7161        7.3683    37673    4.51%
+   1201   123        cutoff              7.7161        7.5908    42867    1.62%
+
+Starting MIP-solver-driven algorithm
+
+MIP-solver-driven algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  +7.716052e+00
+ - Best bound           =  +7.716052e+00
+ - Relative opt. gap    =      0.000e+00
+ - Total time (s)       =       2.73e+00
+
+Timers (s):
+ - Setup                =   5.91e-03
+ -- Transform data      =   4.12e-04
+ -- Create conic data   =   4.16e-03
+ -- Create MIP data     =   1.34e-03
+ - Algorithm            =   2.72e+00
+ -- Solve relaxation    =   9.96e-03
+ -- Get relaxation cuts =   2.76e-04
+ -- MIP solver driving  =   2.71e+00
+ -- Solve subproblems   =   3.42e-02
+ -- Get subproblem cuts =   3.86e-03
+ -- Get separation cuts =   3.15e-04
+
+Counters:
+ - Lazy callbacks       =    15
+ -- Integer repeats     =     9
+ -- Conic subproblems   =     7
+ --- Infeasible         =     0
+ --- Optimal            =     7
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =    11
+ --- From subproblems   =     7
+ --- In lazy callback   =     4
+ - Heuristic callbacks  =   694
+ -- Solutions passed    =     3
+
+Solution returned by MIP solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+    Second order |   1328 |      0 |     53 |    166 |     53
+
+16 numerically unstable disaggregated SOC cuts
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |  0.00e+00 |  1.11e-15
+    Rotated S.O. |  2.17e-10 |        NA
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+
+Cover cuts applied:  24
+Mixed integer rounding cuts applied:  1
+User cuts applied:  53
+
+Root node processing (before b&c):
+  Real time             =    0.12 sec. (98.26 ticks)
+Sequential b&c:
+  Real time             =    2.59 sec. (2231.63 ticks)
+                          ------------
+Total (root+branch&cut) =    2.71 sec. (2329.89 ticks)
+#STATUS# Optimal
+#OBJVAL# 7.716052157131162
+#OBJBOUND# 7.716052157131162
+#NODECOUNT# 1329
+#TIMESOLVER# 2.7308568954467773
+#TIMEALL# 2.7774739265441895
+#SOLUTION# [7.716052157131162,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,-0.0,-0.0,1.0,-0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.17677669529635565,0.0,0.0,0.0,0.176776695296606,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.5909902576697206,0.0,0.0,0.0,2.7950849718745983,0.0,0.0,0.0,0.0,0.0,0.0,0.9999999999993463,0.0,0.0,0.0,1.9764235369945353,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-0.4204482076268571,0.0,0.0,0.0,-0.4204482076268571,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.2613446228805714,0.0,0.0,0.0,1.6718507624410561,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-1.4058533129758728,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9999999999999999,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.08838834764817782,-0.4204482076268571,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.088388347648303,-0.4204482076268571,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.7954951288348603,1.2613446228805714,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.3975424859372991,1.6718507624410561,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.49999999999967315,0.9999999999999999,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.9882117684972677,-1.4058533129758728,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]

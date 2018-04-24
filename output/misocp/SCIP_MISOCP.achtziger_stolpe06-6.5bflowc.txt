@@ -1,0 +1,113 @@
+numerics/lpfeastol = 1e-08
+presolving:
+(round 1, fast)       5382 del vars, 7176 del conss, 0 add conss, 5063 chg bounds, 0 chg sides, 0 chg coeffs, 299 upgd conss, 0 impls, 299 clqs
+(round 2, fast)       5980 del vars, 7774 del conss, 0 add conss, 5362 chg bounds, 0 chg sides, 0 chg coeffs, 299 upgd conss, 0 impls, 310 clqs
+(round 3, exhaustive) 5980 del vars, 7774 del conss, 0 add conss, 5362 chg bounds, 0 chg sides, 0 chg coeffs, 598 upgd conss, 0 impls, 310 clqs
+   (2.0s) probing: 1000/1794 (55.7%) - 0 fixings, 0 aggregations, 10590 implications, 0 bound changes
+   (2.0s) probing: 1001/1794 (55.8%) - 0 fixings, 0 aggregations, 10600 implications, 0 bound changes
+   (2.0s) probing aborted: 1000/1000 successive useless probings
+presolving (4 rounds: 4 fast, 2 medium, 2 exhaustive):
+ 5980 deleted vars, 7774 deleted constraints, 0 added constraints, 5362 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 10600 implications, 310 cliques
+presolved problem has 5383 variables (1794 bin, 0 int, 0 impl, 3589 cont) and 2141 constraints
+    299 constraints of type <soc>
+    299 constraints of type <setppc>
+     48 constraints of type <linear>
+   1495 constraints of type <quadratic>
+Presolving Time: 2.01
+numerics/lpfeastol = 1e-08
+
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |     0 |     - |  48M| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |    42 |     - |  48M| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |    84 |     - |  48M| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   138 |     - |  48M| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   246 |     - |  48M| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   376 |     - |  48M| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   565 |     - |  48M| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  1384 |     - |  49M| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  1610 |     - |  49M| 0.000000e+00 |      --      |    Inf 
+      1 |     2 |  1610 |     - |  49M| 0.000000e+00 |      --      |    Inf 
+    100 |    81 |  2026k|20457.3 | 123M| 0.000000e+00 |      --      |    Inf 
+    200 |   125 |  2935k|14745.3 | 162M| 0.000000e+00 |      --      |    Inf 
+    300 |   169 |  3675k|12289.7 | 193M| 0.000000e+00 |      --      |    Inf 
+    400 |   215 |  5170k|12956.0 | 227M| 0.000000e+00 |      --      |    Inf 
+    500 |   255 |  6904k|13834.4 | 242M| 3.855729e-02 |      --      |    Inf 
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+    600 |   289 |  7465k|12462.0 | 260M| 3.857176e-02 |      --      |    Inf 
+    700 |   333 |  8414k|12036.7 | 281M| 3.857401e-02 |      --      |    Inf 
+    800 |   365 |  9173k|11479.7 | 303M| 3.858159e-02 |      --      |    Inf 
+    900 |   407 |  9952k|11069.9 | 324M| 3.859428e-02 |      --      |    Inf 
+   1000 |   437 | 10585k|10595.2 | 341M| 3.859607e-02 |      --      |    Inf 
+   1100 |   479 | 11630k|10581.5 | 368M| 3.859814e-02 |      --      |    Inf 
+   1200 |   511 | 12185k|10162.0 | 379M| 3.859911e-02 |      --      |    Inf 
+
+signal (15): Terminated
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 372
+_ZN6soplex9CLUFactor13colSingletonsEv at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex9CLUFactor6factorEPPKNS_11SVectorBaseIdEEdd at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex9SLUFactor4loadEPPKNS_11SVectorBaseIdEEi at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex8SPxBasis9factorizeEv at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex9SPxSolver9factorizeEv at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex8SPxBasis6changeEiRNS_5SPxIdEPKNS_11SVectorBaseIdEEPKNS_12SSVectorBaseIdEE at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex9SPxSolver5enterERNS_5SPxIdEb at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex9SPxSolver5solveEv at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex6SoPlex31_solveRealLPAndRecordStatisticsEv at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex6SoPlex23_preprocessAndSolveRealEb at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex6SoPlex13_optimizeRealEv at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+_ZN6soplex6SoPlex8optimizeEv at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+SCIPlpiSolveDual at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+unknown function (ip: 0x7f22ddf5c9c8)
+unknown function (ip: 0x7f22de283463)
+SCIPlpSolveAndEval at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+unknown function (ip: 0x7f22de46f8ec)
+unknown function (ip: 0x7f22de472cc9)
+SCIPsolveCIP at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+SCIPsolve at /home/ubuntu/.julia/v0.6/SCIP/deps/src/CSIP-0.4.3/lib/libscipopt.so (unknown line)
+CSIPsolve at /home/ubuntu/.julia/v0.6/SCIP/deps/usr/lib/libcsip.so (unknown line)
+optimize! at /home/ubuntu/.julia/v0.6/SCIP/src/mpb_interface.jl:59
+unknown function (ip: 0x7f2302f092f2)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+solveprint at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+unknown function (ip: 0x7f2302ef8ef6)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+do_call at /home/centos/buildbot/slave/package_tarball64/build/src/interpreter.c:75
+eval at /home/centos/buildbot/slave/package_tarball64/build/src/interpreter.c:242
+eval_body at /home/centos/buildbot/slave/package_tarball64/build/src/interpreter.c:543
+eval_body at /home/centos/buildbot/slave/package_tarball64/build/src/interpreter.c:589
+jl_interpret_toplevel_thunk at /home/centos/buildbot/slave/package_tarball64/build/src/interpreter.c:692
+jl_toplevel_eval_flex at /home/centos/buildbot/slave/package_tarball64/build/src/toplevel.c:592
+jl_parse_eval_all at /home/centos/buildbot/slave/package_tarball64/build/src/ast.c:873
+jl_load at /home/centos/buildbot/slave/package_tarball64/build/src/toplevel.c:616
+include_from_node1 at ./loading.jl:569
+unknown function (ip: 0x7f231563eb1b)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+include at ./sysimg.jl:14
+unknown function (ip: 0x7f23154e386b)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+process_options at ./client.jl:305
+_start at ./client.jl:371
+unknown function (ip: 0x7f231564a6e8)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+jl_apply at /home/centos/buildbot/slave/package_tarball64/build/ui/../src/julia.h:1424 [inlined]
+true_main at /home/centos/buildbot/slave/package_tarball64/build/ui/repl.c:127
+main at /home/centos/buildbot/slave/package_tarball64/build/ui/repl.c:264
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x40170c)
+unknown function (ip: 0xffffffffffffffff)
+Allocations: 24391898 (Pool: 24384858; Big: 7040); GC: 40
+#SOLVERNAME# SCIP_MISOCP
+#SOLVER# SCIP.SCIPSolver(("limits/gap", 1.0e-5, "numerics/feastol", 1.0e-8, "limits/time", 3600.0))
+#INSTANCE# achtziger_stolpe06-6.5bflowc.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# KilledTime

@@ -1,0 +1,139 @@
+#SOLVERNAME# PAJ_Gurobi_MOSEK_msd_nodisagg_subponly_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 1), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, 10.0, false, true, false, false, false, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# expdesign_E_20_10.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     122
+     constraints |     242
+   nonzeros in A |    2241
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Pos. semidef. |       1 |      10^2 |      10^2
+
+Variable types:
+      continuous |     102
+         integer |      20
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.00s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.01s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      -0.422389
+Academic license - for non-commercial use only
+Optimize a model with 198 rows, 122 columns and 2252 nonzeros
+Variable types: 102 continuous, 20 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [2e-05, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [9e+00, 3e+01]
+Found heuristic solution: objective 0.0000000
+Presolve removed 176 rows and 91 columns
+Presolve time: 0.00s
+Presolved: 22 rows, 31 columns, 276 nonzeros
+Variable types: 11 continuous, 20 integer (0 binary)
+
+Root relaxation: objective -4.223889e-01, 15 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -0.42239    0    2    0.00000   -0.42239      -     -    0s
+     0     0   -0.42239    0    4    0.00000   -0.42239      -     -    0s
+     0     0   -0.42239    0    4    0.00000   -0.42239      -     -    0s
+     0     2   -0.42239    0    5    0.00000   -0.42239      -     -    0s
+H   81    65                      -0.0000000   -0.42239      -   1.9    0s
+H  377   177                      -0.0109248   -0.42239  3766%   1.7    0s
+H  585   331                      -0.0204485   -0.42239  1966%   1.7    0s
+H  633   381                      -0.0302534   -0.42239  1296%   1.7    0s
+H  994   487                      -0.0442879   -0.42239   854%   1.6    0s
+H 1052   500                      -0.1664769   -0.42239   154%   1.6    0s
+H 1911   976                      -0.1992633   -0.42239   112%   1.8    0s
+H 2495  1406                      -0.2005584   -0.42239   111%   1.8    0s
+H 3035  1845                      -0.2451273   -0.42239  72.3%   1.9    0s
+H 3137  1905                      -0.3070442   -0.42239  37.6%   1.9    0s
+H 3447  2043                      -0.3101856   -0.42239  36.2%   2.1    0s
+H 3889  2154                      -0.3304636   -0.42239  27.8%   2.1    0s
+H 4225  2133                      -0.3544865   -0.42239  19.2%   2.1    0s
+H 4616  2180                      -0.3617189   -0.42239  16.8%   2.1    0s
+H 4810  2143                      -0.3779403   -0.42239  11.8%   2.2    0s
+H 6305  2293                      -0.3790704   -0.42239  11.4%   2.5    1s
+H 7077  2302                      -0.3810919   -0.42239  10.8%   2.7    1s
+H 7343  2224                      -0.3827126   -0.42239  10.4%   2.8    1s
+H 7897  2104                      -0.3858222   -0.42239  9.48%   3.0    1s
+H 9997  2251                      -0.3858679   -0.42002  8.85%   3.9    1s
+H11742  2184                      -0.3911014   -0.41561  6.27%   4.0    2s
+
+Cutting planes:
+  Gomory: 2
+  Lazy constraints: 290
+
+Explored 26129 nodes (106403 simplex iterations) in 4.16 seconds
+Thread count was 8 (of 16 available processors)
+
+Solution count 10: -0.391101 -0.385868 -0.385822 ... -0.330464
+
+Optimal solution found (tolerance 1.00e-05)
+Best objective -3.911014264230e-01, best bound -3.911014264230e-01, gap 0.0000%
+
+Starting MIP-solver-driven algorithm
+
+MIP-solver-driven algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  -3.911014e-01
+ - Best bound           =  -3.911014e-01
+ - Relative opt. gap    =      0.000e+00
+ - Total time (s)       =       4.18e+00
+
+Timers (s):
+ - Setup                =   2.19e-03
+ -- Transform data      =   2.36e-04
+ -- Create conic data   =   1.14e-03
+ -- Create MIP data     =   8.15e-04
+ - Algorithm            =   4.18e+00
+ -- Solve relaxation    =   1.37e-02
+ -- Get relaxation cuts =   2.63e-04
+ -- MIP solver driving  =   4.17e+00
+ -- Solve subproblems   =   1.18e+00
+ -- Get subproblem cuts =   7.17e-02
+ -- Get separation cuts =   0.00e+00
+
+Counters:
+ - Lazy callbacks       =   376
+ -- Integer repeats     =    23
+ -- Conic subproblems   =   354
+ --- Infeasible         =     0
+ --- Optimal            =   354
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =   354
+ --- From subproblems   =   354
+ --- In lazy callback   =     0
+ - Heuristic callbacks  = 18315
+ -- Solutions passed    =    23
+
+Solution returned by conic solver
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |        NA |  4.65e-16
+   Pos. semidef. |        NA |  6.20e-14
+
+Distance to integrality of integer/binary variables:
+         integer |  4.44e-16
+
+#STATUS# Optimal
+#OBJVAL# -0.3911014264230056
+#OBJBOUND# -0.3911014264230056
+#NODECOUNT# 26129
+#TIMESOLVER# 4.182286977767944
+#TIMEALL# 4.183172941207886
+#SOLUTION# [0.3911014264230056,0.3911014264230056,0.9945166832328848,-0.34425513267087643,0.14295624466968804,0.07758219544608885,-0.0735366185626331,-0.2749839807724243,-0.29133142871313894,0.05380982451305406,0.2997317176662571,-0.06706491727301221,-0.34425513267087643,1.0870417641458157,0.22226952615484558,-0.10222883454567976,-0.300794108025185,0.28389339645087214,0.07985921337825083,0.09171288993252381,-0.327167412188771,0.3581327348513194,0.14295624466968804,0.22226952615484552,0.7479369330844302,0.10561922453226291,-0.3759537906742127,-0.012944829944959293,0.19733059411623577,0.30340499996669706,0.11710894022498808,0.20657580188483615,0.07758219544608885,-0.1022288345456797,0.10561922453226291,0.9512308734866546,-0.108213695803762,-0.3036294432708282,0.02644796228411206,0.15590780942234692,0.23654462262639908,-0.1917560442643479,-0.07353661856263308,-0.3007941080251849,-0.3759537906742127,-0.108213695803762,0.8956864320536373,-0.0265699442212376,-0.2269797373575017,-0.4046313195209591,0.004699949797047468,-0.1596270078065979,-0.2749839807724242,0.283893396450872,-0.012944829944959355,-0.3036294432708282,-0.026569944221237592,1.1615858689405931,0.04238929714202561,-0.3528106166311775,-0.5756906946758742,0.27207085603006825,-0.29133142871313894,0.07985921337825085,0.19733059411623577,0.026447962284112114,-0.2269797373575017,0.042389297142025634,1.7607971370859579,0.846675691639488,0.35354380575064187,0.3489813938334955,0.05380982451305401,0.09171288993252386,0.30340499996669706,0.15590780942234692,-0.40463131952095904,-0.3528106166311775,0.8466756916394879,1.7808179173530128,0.24759423270334086,0.3160554202295699,0.2997317176662572,-0.3271674121887709,0.11710894022498809,0.23654462262639914,0.004699949797047499,-0.5756906946758742,0.3535438057506418,0.2475942327033409,1.3328334216451632,0.00026487288725103586,-0.06706491727301221,0.3581327348513194,0.20657580188483612,-0.19175604426434795,-0.15962700780659786,0.27207085603006825,0.34898139383349547,0.3160554202295699,0.0002648728872510775,0.9924539609820288,3.0,2.0,4.0,-0.0,2.0,1.0,-0.0,2.0,-0.0,2.9999999999999996,-0.0,3.0,2.0,3.0,1.0,-0.0,1.0,1.0,1.0,1.0]

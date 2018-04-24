@@ -1,0 +1,95 @@
+numerics/lpfeastol = 1e-08
+presolving:
+(round 1, fast)       88 del vars, 171 del conss, 0 add conss, 458 chg bounds, 0 chg sides, 0 chg coeffs, 2 upgd conss, 0 impls, 0 clqs
+(round 2, fast)       88 del vars, 171 del conss, 0 add conss, 498 chg bounds, 0 chg sides, 0 chg coeffs, 3 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       88 del vars, 171 del conss, 0 add conss, 636 chg bounds, 0 chg sides, 0 chg coeffs, 3 upgd conss, 0 impls, 0 clqs
+(round 4, fast)       88 del vars, 171 del conss, 0 add conss, 685 chg bounds, 0 chg sides, 27 chg coeffs, 3 upgd conss, 0 impls, 0 clqs
+(round 5, fast)       88 del vars, 171 del conss, 0 add conss, 685 chg bounds, 0 chg sides, 36 chg coeffs, 3 upgd conss, 0 impls, 0 clqs
+(round 6, exhaustive) 88 del vars, 172 del conss, 41 add conss, 685 chg bounds, 0 chg sides, 36 chg coeffs, 3 upgd conss, 0 impls, 0 clqs
+(round 7, fast)       88 del vars, 172 del conss, 41 add conss, 725 chg bounds, 0 chg sides, 36 chg coeffs, 3 upgd conss, 0 impls, 0 clqs
+(round 8, exhaustive) 88 del vars, 172 del conss, 41 add conss, 725 chg bounds, 0 chg sides, 36 chg coeffs, 44 upgd conss, 0 impls, 0 clqs
+(round 9, exhaustive) 88 del vars, 172 del conss, 41 add conss, 725 chg bounds, 0 chg sides, 36 chg coeffs, 45 upgd conss, 41 impls, 0 clqs
+   (0.0s) probing cycle finished: starting next cycle
+presolving (10 rounds: 10 fast, 4 medium, 4 exhaustive):
+ 88 deleted vars, 172 deleted constraints, 41 added constraints, 725 tightened bounds, 0 added holes, 0 changed sides, 36 changed coefficients
+ 41 implications, 0 cliques
+presolved problem has 203 variables (41 bin, 0 int, 0 impl, 162 cont) and 166 constraints
+     40 constraints of type <soc>
+     41 constraints of type <varbound>
+      1 constraints of type <knapsack>
+     83 constraints of type <linear>
+      1 constraints of type <quadratic>
+Presolving Time: 0.02
+numerics/lpfeastol = 1e-08
+
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |   277 |     - |4378k|-1.680803e-01 |      --      |    Inf 
+      1 |     0 |   300 |     - |4379k|-1.680803e-01 |      --      |    Inf 
+      1 |     0 |   321 |     - |4402k|-1.115504e-01 |      --      |    Inf 
+      1 |     0 |   321 |     - |4403k|-1.115504e-01 |      --      |    Inf 
+      1 |     0 |   365 |     - |4508k|-9.660556e-02 |      --      |    Inf 
+      1 |     0 |   365 |     - |4508k|-9.660556e-02 |      --      |    Inf 
+      1 |     0 |   441 |     - |4510k|-8.277506e-02 |      --      |    Inf 
+      1 |     0 |   441 |     - |4510k|-8.277506e-02 |      --      |    Inf 
+      1 |     0 |   491 |     - |4692k|-7.976952e-02 |      --      |    Inf 
+      1 |     0 |   530 |     - |4707k|-7.852016e-02 |      --      |    Inf 
+      1 |     0 |   530 |     - |4707k|-7.852016e-02 |      --      |    Inf 
+      1 |     0 |   607 |     - |4707k|-7.669789e-02 |      --      |    Inf 
+      1 |     0 |   651 |     - |4810k|-7.646076e-02 |      --      |    Inf 
+      1 |     0 |   699 |     - |4973k|-7.619354e-02 |      --      |    Inf 
+      1 |     0 |   743 |     - |4974k|-7.615021e-02 |      --      |    Inf 
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |   772 |     - |5091k|-7.611802e-02 |      --      |    Inf 
+      1 |     0 |   776 |     - |5091k|-7.611697e-02 |      --      |    Inf 
+      1 |     0 |  6886 |     - |5149k|-7.611697e-02 |      --      |    Inf 
+E     1 |     0 |  6937 |     - |5192k|-7.611697e-02 |-7.601001e-02 |   0.14%
+      1 |     0 |  6938 |     - |5192k|-7.611697e-02 |-7.601001e-02 |   0.14%
+      1 |     0 | 10909 |     - |5293k|-7.611697e-02 |-7.601001e-02 |   0.14%
+      1 |     0 | 10919 |     - |5750k|-7.611697e-02 |-7.601001e-02 |   0.14%
+      1 |     0 | 10919 |     - |5763k|-7.611697e-02 |-7.601001e-02 |   0.14%
+(run 1, node 1) restarting after 7 global fixings of integer variables
+
+(restart) converted 37 cuts from the global cut pool into linear constraints
+
+presolving:
+(round 1, fast)       8 del vars, 17 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 80 chg coeffs, 0 upgd conss, 41 impls, 0 clqs
+(round 2, exhaustive) 8 del vars, 20 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 80 chg coeffs, 0 upgd conss, 41 impls, 0 clqs
+(round 3, exhaustive) 8 del vars, 20 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 80 chg coeffs, 6 upgd conss, 41 impls, 0 clqs
+(round 4, medium)     8 del vars, 26 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 80 chg coeffs, 6 upgd conss, 41 impls, 0 clqs
+presolving (5 rounds: 5 fast, 4 medium, 3 exhaustive):
+ 8 deleted vars, 26 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 80 changed coefficients
+ 41 implications, 0 cliques
+presolved problem has 195 variables (34 bin, 0 int, 0 impl, 161 cont) and 174 constraints
+     40 constraints of type <soc>
+     34 constraints of type <varbound>
+      1 constraints of type <knapsack>
+     97 constraints of type <linear>
+      1 constraints of type <logicor>
+      1 constraints of type <quadratic>
+Presolving Time: 0.03
+numerics/lpfeastol = 1e-08
+
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 | 11037 |     - |6223k|-7.611697e-02 |-7.601001e-02 |   0.14%
+      1 |     0 | 11120 |     - |6223k|-7.611697e-02 |-7.601001e-02 |   0.14%
+      1 |     0 | 14371 |     - |6245k|-7.611697e-02 |-7.601001e-02 |   0.14%
+      1 |     0 | 14373 |     - |6246k|-7.611697e-02 |-7.601001e-02 |   0.14%
+      1 |     2 | 14373 |     - |6246k|-7.611697e-02 |-7.601001e-02 |   0.14%
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 5.38
+Solving Nodes      : 7 (total of 8 nodes in 2 runs)
+Primal Bound       : -7.60100108596355e-02 (1 solutions)
+Dual Bound         : -7.60100108596355e-02
+Gap                : 0.00 %
+#SOLVERNAME# SCIP_MISOCP
+#SOLVER# SCIP.SCIPSolver(("limits/gap", 1.0e-5, "numerics/feastol", 1.0e-8, "limits/time", 3600.0))
+#INSTANCE# robust_40_0.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# Optimal
+#OBJVAL# -0.0760100108596355
+#OBJBOUND# -0.0760100108596355
+#NODECOUNT# NaN
+#TIMESOLVER# 5.38
+#TIMEALL# 6.299694061279297
+#SOLUTION# [0.0760100108596355,0.0,0.0,0.0,0.0,0.0,0.08791757814448531,1.0,0.0,0.0,0.04473952520030529,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.08812633588881846,1.0,0.0,0.0,0.07348452990201526,1.0,0.12828056716114628,1.0,0.0,0.0,0.0617458335885288,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.17181021976750324,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1451088268362648,1.0,0.0,0.0,0.0,0.0,0.18265583637039962,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016130747140532975,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.018348841828524268,0.011758692858079622,0.07963274717018062,0.022078240577422893,0.04108468956010502,0.018173296678116364,0.009313284257026216,0.012056174284815258,0.05720323872225771,0.017912554412886337,0.03847347846936677,0.07119385511510729,0.01997897163653699,0.03873361430650284,0.010155355342093319,0.013485679116863315,0.009134091526281812,0.010815312686381156,0.09063262728474532,0.01571318560836462,0.0015087827664258772,0.009835983867486938,0.03236549947221972,0.019108797590864073,0.016563087414219826,0.05921703229751241,0.013420294961320862,0.02212327478473916,0.013169099138262003,0.023299007118720155,0.01065141491286631,0.024826051400451216,0.014747600968736362,0.01797496805261506,0.02453977150914497,0.017035251936169993,0.012700868682433836,0.01829305211577062,0.007485685797590797,0.008049644185107917,0.0,0.2,0.004767168946057359,0.003054998019122616,0.020689194606748337,0.005736095163278918,0.01067411545969962,0.004721560978126208,0.0024196622277733192,0.0031322859609287353,0.014861837373660836,0.004653818150466118,0.00999570291792547,0.018496706136911376,0.005190689093616514,0.010063288190932848,0.002638438713211399,0.003503682210751356,0.002373106590679063,0.0028099006608837624,0.023547047292109193,0.0040824053733684125,0.00039199326135653444,0.0025554635701320353,0.00840880342471631,0.004964611244837305,0.004303216339753552,0.01538503629190908,0.003486694908837399,0.005747795393543501,0.0034214323196129675,0.006053259614326642,0.002767318770243136,0.006449997356535708,0.0038315391251388733,0.004670033689733783,0.006375619658998643,0.004425888280977086,0.003299782478736756,0.004752674353505489,0.0019448382196314506,0.002091358906719613,0.0,0.051961525881956336]

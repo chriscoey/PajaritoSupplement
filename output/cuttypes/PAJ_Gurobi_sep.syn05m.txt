@@ -1,0 +1,101 @@
+#SOLVERNAME# PAJ_Gurobi_sep
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 0), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 0.0)]), Pajarito.UnsetSolver(), 0, false, true, Pajarito.UnsetSolver(), false, false, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, false, true, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# syn05m.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |      24
+     constraints |      65
+   nonzeros in A |     117
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Primal expon. |       3 |         3 |         3
+
+Variable types:
+      continuous |      19
+         integer |       5
+
+Transforming data...               0.00s
+
+Building MIP model...              0.00s
+Academic license - for non-commercial use only
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |           +Inf |  -1.253483e+03 |         Inf |   3.594e-03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |           +Inf |  -9.989760e+02 |         Inf |   6.376e-03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    3 |           +Inf |  -8.615019e+02 |         Inf |   9.163e-03
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    4 |           +Inf |  -8.435485e+02 |         Inf |   1.295e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    5 |           +Inf |  -8.387400e+02 |         Inf |   1.672e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    6 |           +Inf |  -8.378597e+02 |         Inf |   2.056e-02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    7 |  -8.377324e+02 |  -8.377324e+02 |   0.000e+00 |   2.448e-02
+
+Iterative algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  -8.377324e+02
+ - Best bound           =  -8.377324e+02
+ - Relative opt. gap    =      0.000e+00
+ - Total time (s)       =       2.45e-02
+
+Timers (s):
+ - Setup                =   3.02e-04
+ -- Transform data      =   9.64e-05
+ -- Create conic data   =   0.00e+00
+ -- Create MIP data     =   2.06e-04
+ - Algorithm            =   2.42e-02
+ -- Solve relaxation    =   0.00e+00
+ -- Get relaxation cuts =   0.00e+00
+ -- Solve MIP models    =   2.36e-02
+ -- Solve subproblems   =   0.00e+00
+ -- Get subproblem cuts =   0.00e+00
+ -- Get separation cuts =   1.98e-04
+
+Counters:
+ - Iterations           =     7
+ -- Integer repeats     =     0
+ -- Conic subproblems   =     0
+ -- Feasible solutions  =     1
+ --- From subproblems   =     0
+ --- From MIP solve     =     1
+
+Solution returned by MIP solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+   Primal expon. |      0 |      8 |      8 |      0 |      8
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |        NA |  2.50e-15
+   Primal expon. |        NA | -3.55e-15
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Optimal
+#OBJVAL# -837.7324008979805
+#OBJBOUND# -837.7324008979805
+#NODECOUNT# NaN
+#TIMESOLVER# 0.02450394630432129
+#TIMEALL# 0.02489495277404785
+#SOLUTION# [0.0,5.75494865471608,0.0,2.4980018054066022e-15,2.87747432735804,-0.0,1.0,-0.0,0.0,1.0,837.7324008979805,9.999999999999961,0.0,9.999999999999961,0.0,2.87747432735804,2.87747432735804,2.87747432735804,0.0,-1.6653345369377348e-16,2.87747432735804,-1.0,2.3978952727983667,-0.6666666666666449]

@@ -1,0 +1,160 @@
+WARNING: Solver does not appear to support adding constraints to an existing model. JuMP's internal model will be discarded.
+WARNING: Repeated integer solution without converging
+#SOLVERNAME# PAJ_CBC_ECOS
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Cbc.CbcMathProgSolverInterface.CbcSolver(Any[(:logLevel, 0), (:integerTolerance, 1.0e-9), (:primalTolerance, 1.0e-8), (:ratioGap, 0.0), (:check_warmstart, false)]), Pajarito.UnsetSolver(), 0, false, true, ECOS.ECOSSolver(Any[(:verbose, false), (:reltol, 1.0e-10), (:feastol, 1.0e-10), (:reltol_inacc, 1.0e-5), (:feastol_inacc, 1.0e-8)]), true, true, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, false, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# clay0203m.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |      79
+     constraints |     301
+   nonzeros in A |     367
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Second order |      48 |         3 |         3
+
+Variable types:
+      continuous |      61
+         integer |      18
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.00s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.00s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      -0.000000
+Coin0505I Presolved problem not optimal, resolve after postsolve
+Coin0505I Presolved problem not optimal, resolve after postsolve
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |           +Inf |  +3.560000e+03 |         Inf |   8.900e-01
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |           +Inf |  +3.560000e+03 |         Inf |   2.096e+00
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    3 |  +4.186250e+04 |  +4.128192e+04 |   1.387e-02 |   3.529e+00
+Presolve 613 (-386) rows, 108 (-67) columns and 1585 (-684) elements
+Perturbing problem by 0.001 % of 14000.991 - largest nonzero change 0.00065323961 (% 5.3144706e-06) - largest zero change 0.00065010095
+0  Obj 37487.696 Primal inf 12534.821 (208)
+87  Obj 37488.365 Primal inf 57329.619 (180)
+154  Obj 41849.802 Primal inf 1.356744 (10)
+162  Obj 41863.273
+162  Obj 41862.495 Dual inf 3.688161e-06 (2)
+163  Obj 41862.495
+Optimal - objective value 41862.495
+After Postsolve, objective 41862.495, infeasibilities - dual 0 (0), primal 0 (0)
+Optimal objective 41862.49546 - 163 iterations time 0.002, Presolve 0.00
+Cbc0045I Solution with objective value 41862.5 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    4 |  +4.170977e+04 |  +4.132600e+04 |   9.201e-03 |   4.682e+00
+Presolve 627 (-457) rows, 108 (-67) columns and 1619 (-857) elements
+Perturbing problem by 0.001 % of 14000.991 - largest nonzero change 0.00065323961 (% 5.3144706e-06) - largest zero change 0.00065010095
+0  Obj 37712.741 Primal inf 13330.689 (214)
+87  Obj 40281.891 Primal inf 4473.8109 (106)
+137  Obj 41710.394
+Optimal - objective value 41709.769
+After Postsolve, objective 41709.769, infeasibilities - dual 0 (0), primal 0 (0)
+Optimal objective 41709.76924 - 137 iterations time 0.002, Presolve 0.00
+Cbc0045I Solution with objective value 41709.8 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    5 |  +4.157326e+04 |  +4.153623e+04 |   8.908e-04 |   6.517e+00
+Presolve 634 (-516) rows, 108 (-67) columns and 1639 (-988) elements
+Perturbing problem by 0.001 % of 14000.991 - largest nonzero change 0.00065323961 (% 5.3144706e-06) - largest zero change 0.00065010095
+0  Obj 37218.974 Primal inf 13151.19 (224)
+87  Obj 38084.663 Primal inf 6291.2646 (139)
+158  Obj 41574.059
+158  Obj 41573.263 Dual inf 4.6968839e-06 (2)
+159  Obj 41573.263
+Optimal - objective value 41573.263
+After Postsolve, objective 41573.263, infeasibilities - dual 6.7685025e-08 (1), primal 0 (0)
+Presolved model was optimal, full model needs cleaning up
+0  Obj 41573.263 Primal inf 474.53246 (32)
+25  Obj 41573.263
+Optimal - objective value 41573.263
+Optimal objective 41573.26252 - 184 iterations time 0.002, Presolve 0.00
+Cbc0045I Solution with objective value 41573.3 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    6 |  +4.157326e+04 |  +4.154533e+04 |   6.718e-04 |   7.888e+00
+Presolve 643 (-588) rows, 108 (-67) columns and 1662 (-1160) elements
+Perturbing problem by 0.001 % of 14000.991 - largest nonzero change 0.00065323961 (% 5.3144706e-06) - largest zero change 0.00065010095
+0  Obj 37218.975 Primal inf 13151.19 (224)
+87  Obj 37767.187 Primal inf 10056.485 (159)
+146  Obj 41574.094
+146  Obj 41573.263 Dual inf 3.688161e-06 (2)
+148  Obj 41573.263
+Optimal - objective value 41573.263
+After Postsolve, objective 41573.263, infeasibilities - dual 0 (0), primal 0 (0)
+Optimal objective 41573.26252 - 148 iterations time 0.002, Presolve 0.00
+Cbc0045I Solution with objective value 41573.3 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    7 |  +4.157326e+04 |  +4.157326e+04 |  -2.152e-10 |   9.700e+00
+WARNING: Repeated integer solution without converging
+
+Iterative algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  +4.157326e+04
+ - Best bound           =  +4.157326e+04
+ - Relative opt. gap    =     -2.152e-10
+ - Total time (s)       =       9.70e+00
+
+Timers (s):
+ - Setup                =   1.23e-03
+ -- Transform data      =   2.10e-04
+ -- Create conic data   =   1.33e-04
+ -- Create MIP data     =   8.91e-04
+ - Algorithm            =   9.70e+00
+ -- Solve relaxation    =   2.04e-03
+ -- Get relaxation cuts =   1.67e-04
+ -- Solve MIP models    =   9.66e+00
+ -- Solve subproblems   =   2.90e-02
+ -- Get subproblem cuts =   1.69e-03
+ -- Get separation cuts =   1.81e-04
+
+Counters:
+ - Iterations           =     7
+ -- Integer repeats     =     1
+ -- Conic subproblems   =     6
+ --- Infeasible         =     2
+ --- Optimal            =     4
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =     4
+ --- From subproblems   =     4
+ --- From MIP solve     =     0
+
+Solution returned by conic solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+    Second order |    335 |      8 |    514 |     96 |    124
+
+0 numerically unstable disaggregated SOC cuts
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |        NA |  8.85e-10
+    Second order |        NA |  1.08e-08
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Optimal
+#OBJVAL# 41573.262511369285
+#OBJBOUND# 41573.262520314696
+#NODECOUNT# NaN
+#TIMESOLVER# 9.699622869491577
+#TIMEALL# 9.70039987564087
+#SOLUTION# [35.651981698466756,3.9999999985464116,31.65198169998771,66.88117456483538,1.804939006681915e-8,66.8811745839684,41573.262511369285,14.312490941973476,49.96447264108526,18.312490941088083,12.083284971351024,78.96445953683148,12.083284952851985,1.0,1.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,10.160213972802099,25.839786014435894,1.0,1145.5672877917925,5285.163982398815,-0.0,8.650091318062499,18.067255020179267,1.0,1698.731874488937,4466.692213616908,0.0,15.34264955338791,4.831851580443558,1.0,1527.8983925754424,4836.317301037529,0.0,16.159067719600415,7.226504124859176,1136.576058538803,4584.445376363242,12.001880079745364,8.467493283154461,1715.716314297625,5299.757820932901,12.499953676184525,12.500046323248643,1541.200036434749,5254.827534561357,5.019959695054406,28.120985993490827,1640.7800237442136,5289.4408728346925,23.160068928178067,12.839931070839091,1334.338047404912,4460.138679804474,14.553346270842361,4.937143995599325,1324.0731936442733,4823.01200389133,12.096333160675337,8.638164274932286,1632.1158623410745,4588.631008555619,26.731343020056944,3.3495275522030656,1351.6644791346223,5293.1477357665,12.113010617360082,12.633998237401672,1337.3858333514413,5241.567536276716]

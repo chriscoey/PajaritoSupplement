@@ -1,0 +1,117 @@
+#SOLVERNAME# PAJ_Gurobi_MOSEK_msd_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 1), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, false, false, false, false, false, true, 10.0, true, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# expdesign_D_16_8.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     217
+     constraints |     534
+   nonzeros in A |    1601
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Primal expon. |       8 |         3 |         3
+   Pos. semidef. |       2 |       8^2 |      16^2
+
+Variable types:
+      continuous |     201
+         integer |      16
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.19s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.05s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =       2.880391
+Academic license - for non-commercial use only
+Warning for adding constraints: zero or small (< 1e-13) coefficients, ignored
+Optimize a model with 410 rows, 217 columns and 3922 nonzeros
+Variable types: 201 continuous, 16 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 1e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 2e+01]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 349 rows and 121 columns
+Presolve time: 0.00s
+Presolved: 61 rows, 96 columns, 1390 nonzeros
+Variable types: 80 continuous, 16 integer (0 binary)
+Warning: Markowitz tolerance tightened to 0.125
+
+Root relaxation: unbounded, 24 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  postponed    0               -          -      -     -    0s
+
+Explored 0 nodes (24 simplex iterations) in 0.65 seconds
+Thread count was 8 (of 16 available processors)
+
+Solution count 0
+
+Model is unbounded
+Best objective -, best bound -, gap -
+
+Starting MIP-solver-driven algorithm
+Mosek problem is Mosek.MSK_PRO_STA_ILL_POSED, solution is Mosek.MSK_SOL_STA_PRIM_ILLPOSED_CER, response is Mosek.MSK_RES_OK
+
+WARNING: Conic solver failure: returned status Unknown
+WARNING: MIP solver returned status Unbounded but the conic relaxation solve succeeded; try tightening the conic solver tolerances (or submit an issue)
+
+MIP-solver-driven algorithm summary:
+ - Status               =    UnboundedOA
+ - Best feasible        =           +Inf
+ - Best bound           =  +2.880391e+00
+ - Relative opt. gap    =            NaN
+ - Total time (s)       =       9.28e-01
+
+Timers (s):
+ - Setup                =   1.94e-01
+ -- Transform data      =   3.83e-04
+ -- Create conic data   =   1.93e-01
+ -- Create MIP data     =   9.81e-04
+ - Algorithm            =   7.34e-01
+ -- Solve relaxation    =   4.66e-02
+ -- Get relaxation cuts =   2.71e-02
+ -- MIP solver driving  =   6.59e-01
+ -- Solve subproblems   =   6.39e-02
+ -- Get subproblem cuts =   1.09e-03
+ -- Get separation cuts =   3.04e-05
+
+Counters:
+ - Lazy callbacks       =     1
+ -- Integer repeats     =     0
+ -- Conic subproblems   =     1
+ --- Infeasible         =     0
+ --- Optimal            =     0
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     1
+ -- Feasible solutions  =     0
+ --- From subproblems   =     0
+ --- In lazy callback   =     0
+ - Heuristic callbacks  =     0
+ -- Solutions passed    =     0
+
+Solution returned by MIP solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+   Primal expon. |     16 |      0 |      8 |      8 |      8
+   Pos. semidef. |      4 |      0 |      0 |     24 |      0
+
+#STATUS# UnboundedOA
+#OBJVAL# Inf
+#OBJBOUND# 2.8803913021988983
+#NODECOUNT# 0
+#TIMESOLVER# 0.9278149604797363
+#TIMEALL# 0.9283580780029297
+#SOLUTION# [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]

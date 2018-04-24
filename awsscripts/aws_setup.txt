@@ -1,0 +1,99 @@
+# spin up ami-f4cc1de2 Ubuntu Server 16.04 LTS (HVM), SSD Volume Type. 16GiB root
+
+# on local
+scp -i ~/xxx.pem mosek.lic ubuntu@ec2-xxx-xxx-xxx-xxx.compute-1.amazonaws.com:
+scp -i ~/xxx.pem scipoptsuite-4.0.0.tgz ubuntu@ec2-xxx-xxx-xxx-xxx.compute-1.amazonaws.com:
+scp -i ~/xxx.pem cplex_studio127.linux-x86-64.bin ubuntu@ec2-xxx-xxx-xxx-xxx.compute-1.amazonaws.com:
+
+# on instance
+sudo apt-get update --yes
+sudo apt-get -y install build-essential libssl-dev libffi-dev python-dev gfortran pkg-config unzip libgmp-dev libz-dev libreadline-dev libncurses-dev
+sudo apt-get -y --force-yes install git python-pip python-paramiko python-boto
+
+# install julia
+wget https://julialang.s3.amazonaws.com/bin/linux/x64/0.6/julia-0.6.0-linux-x86_64.tar.gz
+tar -xvzf julia-0.6.0-linux-x86_64.tar.gz
+echo "export PATH=\$PATH:$HOME/julia-903644385b/bin" >> ~/.bashrc
+
+# install mosek
+wget https://d2i6rjz61faulo.cloudfront.net/alpha/9/mosektoolslinux64x86.tar.bz2
+tar -xvjf mosektoolslinux64x86.tar.bz2
+mv mosek.lic mosek
+
+# install CPLEX to /home/ubuntu/CPLEX_Studio127:
+chmod +x cplex_studio127.linux-x86-64.bin
+./cplex_studio127.linux-x86-64.bin
+echo "export LD_LIBRARY_PATH=/home/ubuntu/CPLEX_Studio127/cplex/bin/x86-64_linux" >> ~/.bashrc
+
+# get Mosek.jl
+cd
+source .bashrc
+julia
+Pkg.update()
+ENV["MOSEKBINDIR"] = "/home/ubuntu/mosek/9/tools/platform/linux64x86/bin/"
+Pkg.clone("https://github.com/chriscoey/Mosek.jl","Mosek")
+Pkg.build("Mosek")
+exit()
+
+# get on chriscoey's special branch of Mosek.jl with status fixes
+cd
+cd .julia/v0.6/Mosek
+git remote remove origin
+git remote add origin https://github.com/chriscoey/Mosek.jl.git
+git fetch
+git branch --set-upstream-to=origin/master master
+git checkout master
+git pull
+cd
+
+# get more julia packages
+julia
+Pkg.add("CPLEX")
+Pkg.add("JuMP")
+Pkg.add("ECOS")
+Pkg.add("Cbc")
+Pkg.add("Ipopt")
+exit()
+
+# compile scip for scip.jl, after Pkg.add("Ipopt"), before Pkg.add("SCIP")
+echo "export SCIPOPTDIR=/home/ubuntu/scipoptsuite-4.0.0" >> ~/.bashrc
+tar xvzf scipoptsuite-4.0.0.tgz
+cd scipoptsuite-4.0.0
+make SHARED=true GMP=false READLINE=false ZLIB=false OPT=opt IPOPT=true scipoptlib
+# upon "> Enter soft-link target file or directory for "lib/shared/ipopt.linux.x86_64.gnu.opt" (return if not needed):" input:
+/home/ubuntu/.julia/v0.6/Ipopt/deps/usr
+
+# get more julia packages
+cd
+julia
+Pkg.add("SCIP")
+Pkg.add("CoinOptServices")
+Pkg.add("AmplNLWriter")
+exit()
+
+# get v0.3.0 of AmplNLWriter.jl
+cd .julia/v0.6/AmplNLWriter
+git fetch
+git checkout v0.3.0
+cd
+julia
+
+# get more julia packages
+Pkg.add("SCS")
+Pkg.add("GLPKMathProgInterface")
+Pkg.add("ConicBenchmarkUtilities")
+Pkg.add("Pajarito")
+Pkg.test("Pajarito")
+exit()
+
+# tidy up to reduce size of AMI
+rm -rf .julia/v0.6/CoinOptServices/deps/src
+rm -rf .julia/v0.6/Cbc/deps/src/
+rm -rf .julia/v0.6/Ipopt/deps/src/
+rm julia-0.6.0-linux-x86_64.tar.gz
+rm cplex_studio127.linux-x86-64.bin
+rm scipoptsuite-4.0.0.tgz
+rm mosektoolslinux64x86.tar.bz2
+
+# clone supplement repo with data instances and scripts
+git clone https://github.com/mlubin/PajaritoSupplement.git

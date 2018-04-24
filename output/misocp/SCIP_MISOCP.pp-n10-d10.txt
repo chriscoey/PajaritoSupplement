@@ -1,0 +1,65 @@
+numerics/lpfeastol = 1e-08
+presolving:
+(round 1, fast)       30 del vars, 30 del conss, 0 add conss, 48 chg bounds, 1 chg sides, 0 chg coeffs, 10 upgd conss, 0 impls, 0 clqs
+numerics/lpfeastol = 1e-08
+presolving (2 rounds: 2 fast, 1 medium, 1 exhaustive):
+ 32 deleted vars, 31 deleted constraints, 0 added constraints, 48 tightened bounds, 0 added holes, 1 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 18 variables (0 bin, 9 int, 0 impl, 9 cont) and 10 constraints
+      9 constraints of type <soc>
+      1 constraints of type <linear>
+Presolving Time: 0.03
+numerics/lpfeastol = 1e-08
+
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |     0 |     - | 838k| 5.099958e+00 |      --      |    Inf 
+WARNING: could not enforce feasibility by separating or branching; declaring solution with viol 0.000169483 feasible
+WARNING: could not enforce feasibility by separating or branching; declaring solution with viol 0.000169483 feasible
+WARNING: could not enforce feasibility by separating or branching; declaring solution with viol 0.000169483 feasible
+WARNING: could not enforce feasibility by separating or branching; declaring solution with viol 0.000169483 feasible
+WARNING: could not enforce feasibility by separating or branching; declaring solution with viol 0.000169483 feasible
+WARNING: could not enforce feasibility by separating or branching; declaring solution with viol 0.000169483 feasible
+WARNING: could not enforce feasibility by separating or branching; declaring solution with viol 0.000169483 feasible
+WARNING: could not enforce feasibility by separating or branching; declaring solution with viol 0.000169483 feasible
+WARNING: could not enforce feasibility by separating or branching; declaring solution with viol 0.000169483 feasible
+      1 |     0 |     9 |     - | 843k| 1.606756e+01 |      --      |    Inf 
+      1 |     0 |    18 |     - | 860k| 3.150009e+01 |      --      |    Inf 
+      1 |     0 |    28 |     - | 877k| 6.423905e+01 |      --      |    Inf 
+      1 |     0 |    36 |     - | 904k| 7.045528e+01 |      --      |    Inf 
+      1 |     0 |    44 |     - | 914k| 7.188882e+01 |      --      |    Inf 
+      1 |     0 |    52 |     - | 914k| 7.226794e+01 |      --      |    Inf 
+      1 |     0 |    60 |     - | 931k| 7.230545e+01 |      --      |    Inf 
+      1 |     0 |    68 |     - | 963k| 7.232665e+01 |      --      |    Inf 
+      1 |     0 |    79 |     - | 963k| 7.234456e+01 |      --      |    Inf 
+      1 |     0 |    87 |     - | 964k| 7.234973e+01 |      --      |    Inf 
+      1 |     0 |    94 |     - | 964k| 7.235200e+01 |      --      |    Inf 
+      1 |     0 |    98 |     - | 965k| 7.235272e+01 |      --      |    Inf 
+      1 |     0 |   100 |     - | 965k| 7.235274e+01 |      --      |    Inf 
+      1 |     0 |   109 |     - | 965k| 7.241723e+01 |      --      |    Inf 
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |   110 |     - | 965k| 7.241748e+01 |      --      |    Inf 
+      1 |     0 |   111 |     - | 965k| 7.241749e+01 |      --      |    Inf 
+s     1 |     0 |   498 |     - | 972k| 7.241749e+01 | 7.369179e+01 |   1.76%
+      1 |     0 |   498 |     - | 972k| 7.241749e+01 | 7.369179e+01 |   1.76%
+      1 |     2 |   498 |     - | 972k| 7.243352e+01 | 7.369179e+01 |   1.74%
+q     7 |     5 |   572 |  76.8 | 983k| 7.245421e+01 | 7.259549e+01 |   0.19%
+q    11 |     3 |   597 |  48.6 | 989k| 7.247137e+01 | 7.248128e+01 |   0.01%
+*    12 |     2 |   603 |  44.7 | 989k| 7.247137e+01 | 7.248128e+01 |   0.01%
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 0.35
+Solving Nodes      : 14
+Primal Bound       : +7.24812765096420e+01 (4 solutions)
+Dual Bound         : +7.24812765096420e+01
+Gap                : 0.00 %
+#SOLVERNAME# SCIP_MISOCP
+#SOLVER# SCIP.SCIPSolver(("limits/gap", 1.0e-5, "numerics/feastol", 1.0e-8, "limits/time", 3600.0))
+#INSTANCE# pp-n10-d10.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# Optimal
+#OBJVAL# 72.48127650964196
+#OBJBOUND# 72.48127650964196
+#NODECOUNT# NaN
+#TIMESOLVER# 0.35
+#TIMEALL# 0.5288469791412354
+#SOLUTION# [5.0,9.0,6.0,3.9999999999999996,3.0,7.0,5.0,9.0,2.0,5.0,0.19999999882321776,0.11111111073398178,0.16666666610730993,0.24999999916097157,0.3333333322140848,0.14285714237765249,0.19999999910452698,0.111111110738225,0.499999998011624,0.1999999993287873,5.0,0.19999999882321776,1.41421356,9.0,0.11111111073398178,1.41421356,6.0,0.16666666610730993,1.41421356,3.9999999999999996,0.24999999916097157,1.41421356,3.0,0.3333333322140848,1.41421356,7.0,0.14285714237765249,1.41421356,5.0,0.19999999910452698,1.41421356,9.0,0.111111110738225,1.41421356,2.0,0.499999998011624,1.41421356,5.0,0.1999999993287873,1.41421356]

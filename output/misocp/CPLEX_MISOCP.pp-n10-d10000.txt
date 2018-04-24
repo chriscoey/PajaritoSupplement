@@ -1,0 +1,126 @@
+
+Cone linearizations applied:  141
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (10.67 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (10.37 ticks)
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (21.05 ticks)
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 20 rows and 20 columns.
+Aggregator did 10 substitutions.
+Reduced MIQCP has 41 rows, 70 columns, and 109 nonzeros.
+Reduced MIQCP has 0 binaries, 10 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 10 quadratic constraints.
+Presolve time = 0.00 sec. (0.08 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.04 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000     0                      0.0000        0         
+      0     0       11.5263    10                    Cone: 10       10         
+      0     0       27.8270    10                    Cone: 20       20         
+      0     0       57.9467    10                    Cone: 30       30         
+      0     0      117.0287    10                    Cone: 40       40         
+      0     0      234.6237    10                    Cone: 50       50         
+      0     0      469.5304    10                    Cone: 60       60         
+      0     0     1481.4555    10                    Cone: 80       80         
+      0     0     1481.4559    10                    Cone: 90       90         
+      0     0     1481.4561    10                   Cone: 100      100         
+      0     0     1481.4561    10                   Cone: 110      110         
+      0     0     1481.4562    10                   Cone: 120      120         
+      0     0     1481.4562    10                   Cone: 124      124         
+      0     0     1481.4562    10                   1481.4562      124         
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+*     0+    0                         1481.6625     1481.4562             0.01%
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+      0     2     1481.4562    10     1481.6625     1481.4562      124    0.01%
+Elapsed time = 0.03 sec. (18.35 ticks, tree = 0.01 MB, solutions = 3)
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+
+Warning:  Barrier optimality criterion affected by large objective shift.
+*    30+    1                         1481.4107     1481.4562            -0.00%
+#SOLVERNAME# CPLEX_MISOCP
+#SOLVER# CPLEX.CplexSolver(Any[(:CPX_PARAM_THREADS, 1), (:CPX_PARAM_TILIM, 3600.0), (:CPX_PARAM_SCRIND, 1), (:CPX_PARAM_EPINT, 1.0e-9), (:CPX_PARAM_EPRHS, 1.0e-8), (:CPX_PARAM_EPGAP, 1.0e-5)])
+#INSTANCE# pp-n10-d10000.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# Optimal
+#OBJVAL# 1481.4106573076383
+#OBJBOUND# 1481.4106573076383
+#NODECOUNT# 30
+#TIMESOLVER# 0.0921018123626709
+#TIMEALL# 0.2855069637298584
+#SOLUTION# [230.0,72.0,86.0,249.0,200.0,131.0,211.0,176.0,87.0,139.0,0.004346523499539716,0.013888489014293839,0.01162742676331275,0.004014654521552012,0.004998875137608983,0.007632852668180214,0.004738147882515218,0.005680830107886299,0.011493766904267767,0.007193465052579003,230.0,0.004346523499539716,1.41421356,72.0,0.013888489014293839,1.41421356,86.0,0.01162742676331275,1.41421356,249.0,0.004014654521552012,1.41421356,200.0,0.004998875137608983,1.41421356,131.0,0.007632852668180214,1.41421356,211.0,0.004738147882515218,1.41421356,176.0,0.005680830107886299,1.41421356,87.0,0.011493766904267767,1.41421356,139.0,0.007193465052579003,1.41421356]
+
+Cone linearizations applied:  20
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (18.35 ticks)
+Sequential b&c:
+  Real time             =    0.07 sec. (66.08 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (84.44 ticks)

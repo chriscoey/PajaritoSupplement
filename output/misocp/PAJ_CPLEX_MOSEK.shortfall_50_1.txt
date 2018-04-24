@@ -1,0 +1,102 @@
+#SOLVERNAME# PAJ_CPLEX_MOSEK
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, CPLEX.CplexSolver(Any[(:CPX_PARAM_THREADS, 1), (:CPX_PARAM_SCRIND, 0), (:CPX_PARAM_EPINT, 1.0e-9), (:CPX_PARAM_EPRHS, 1.0e-8), (:CPX_PARAM_EPGAP, 0.0)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 1), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, false, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# shortfall_50_1.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     205
+     constraints |     361
+   nonzeros in A |    5612
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Second order |       2 |        51 |        51
+
+Variable types:
+      continuous |     154
+         integer |      51
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.01s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.01s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      -1.104595
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |  -1.101823e+00 |  -1.104595e+00 |   2.516e-03 |   1.789e-01
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |  -1.101823e+00 |  -1.103038e+00 |   1.103e-03 |   8.661e-01
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    3 |  -1.101823e+00 |  -1.102832e+00 |   9.161e-04 |   3.471e+00
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    4 |  -1.101823e+00 |  -1.101963e+00 |   1.274e-04 |   4.400e+00
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    5 |  -1.101823e+00 |  -1.101823e+00 |   7.709e-11 |   5.687e+00
+
+Iterative algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  -1.101823e+00
+ - Best bound           =  -1.101823e+00
+ - Relative opt. gap    =      7.709e-11
+ - Total time (s)       =       5.69e+00
+
+Timers (s):
+ - Setup                =   1.24e-02
+ -- Transform data      =   5.39e-04
+ -- Create conic data   =   1.01e-02
+ -- Create MIP data     =   1.79e-03
+ - Algorithm            =   5.67e+00
+ -- Solve relaxation    =   1.32e-02
+ -- Get relaxation cuts =   1.61e-04
+ -- Solve MIP models    =   5.64e+00
+ -- Solve subproblems   =   1.66e-02
+ -- Get subproblem cuts =   2.93e-03
+ -- Get separation cuts =   3.06e-04
+
+Counters:
+ - Iterations           =     5
+ -- Integer repeats     =     0
+ -- Conic subproblems   =     5
+ --- Infeasible         =     0
+ --- Optimal            =     5
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =     5
+ --- From subproblems   =     5
+ --- From MIP solve     =     0
+
+Solution returned by conic solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+    Second order |     12 |      1 |    507 |    100 |    159
+
+0 numerically unstable disaggregated SOC cuts
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |  0.00e+00 |  5.67e-11
+    Second order |        NA | -1.67e-10
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Optimal
+#OBJVAL# -1.1018227552265394
+#OBJBOUND# -1.1018227553114786
+#NODECOUNT# NaN
+#TIMESOLVER# 5.6871490478515625
+#TIMEALL# 5.6875879764556885
+#SOLUTION# [0.09866289292157637,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.09465446755901748,0.0,0.0,0.0,0.0,0.0,0.0,0.18304302316922588,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.11174425793728565,0.09700181503150866,0.0,0.0,0.0,0.0,0.14341165948912657,0.0,0.1040019648933108,0.0,0.0,0.09669633031380366,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03813041821067343,0.0,0.0,0.03265317045471687,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,-0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,-0.0,-0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,-0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,-0.0,1.0,0.0,0.0,0.034975449656731716,0.007413452838241308,0.0057648499858483585,0.003471271309055199,0.01146021839850363,0.03814148566090392,0.009398620952662489,0.01076142955950262,0.010969985578621565,0.05081377466396885,0.010276407965208014,0.018763329276998378,0.005607605832013918,0.00850187907157553,0.010545591435945603,0.02257068880946398,0.048283013467252354,0.01375775042378198,0.018048165786219955,0.01766134048026508,0.021099115191822844,0.02318830394005124,0.010594258460605271,0.005391858880617527,0.006809561749633646,0.010083248384058918,0.05104193756111422,0.06933640971495562,0.0065557177645243336,0.009135849495849427,0.006571482115466562,0.02685637923477135,0.05215559051382713,0.009441015206840738,0.061875318780679506,0.009677259595900453,0.004205621933247937,0.04057592623980536,0.00923082748199219,0.006199921042841164,0.013278157108563272,0.01944876944941825,0.010316893913352073,0.006803783093318533,0.01237349030427857,0.03789226865166077,0.0069589382163069745,0.012097743318289967,0.038813814460637655,0.00905930273771286,0.20182275528327892,0.07816044984603995,0.016567015276056914,0.01288284418387013,0.007757330633809355,0.025610416282058786,0.08523566405327375,0.021003316577845963,0.02404881663031345,0.024514881611089032,0.1135547226724917,0.022964927606231613,0.04193084781738616,0.012531447020446302,0.01899934666439069,0.023566478161545477,0.05043924261155985,0.10789917183510435,0.03074476447182733,0.04033265535087375,0.039468207853485836,0.047150682862766746,0.051819441491380805,0.023675235492122932,0.012049312296235293,0.015217485831626038,0.022533269403037876,0.11406460359894194,0.1549476855113475,0.0146502147811667,0.020416095098967715,0.014685443742437982,0.06001657456382454,0.11655330972312432,0.021098056002483566,0.1382742122755151,0.021625996826796678,0.00939840103304736,0.09067596496828474,0.02062834461100146,0.013855107581878861,0.029673006149094405,0.04346261689380783,0.023055402495050673,0.01520457213410938,0.027651326225678802,0.08467873301326881,0.015551300891783828,0.027035108030342467,0.08673813284060032,0.0202450342803513,0.40182275527920963]

@@ -1,0 +1,155 @@
+#SOLVERNAME# PAJ_CPLEX_MOSEK_msd
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, CPLEX.CplexSolver(Any[(:CPX_PARAM_THREADS, 1), (:CPX_PARAM_SCRIND, 1), (:CPX_PARAM_EPINT, 1.0e-9), (:CPX_PARAM_EPRHS, 1.0e-8), (:CPX_PARAM_EPGAP, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 1), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, true, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# classical_40_0.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     122
+     constraints |     205
+   nonzeros in A |    1922
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Second order |       1 |        41 |        41
+
+Variable types:
+      continuous |      82
+         integer |      40
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.02s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.00s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      -0.083314
+
+Mixed integer rounding cuts applied:  3
+Gomory fractional cuts applied:  3
+User cuts applied:  165
+
+Root node processing (before b&c):
+  Real time             =    0.34 sec. (17.23 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (7.71 ticks)
+                          ------------
+Total (root+branch&cut) =    0.35 sec. (24.94 ticks)
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 1 time.
+MIP Presolve eliminated 152 rows and 1 columns.
+MIP Presolve modified 1651 coefficients.
+Reduced MIP has 214 rows, 160 columns, and 2062 nonzeros.
+Reduced MIP has 40 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.40 ticks)
+Probing time = 0.00 sec. (0.40 ticks)
+Cover probing fixed 0 vars, tightened 32 bounds.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (3.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       -0.0833     8                     -0.0833      145         
+*     0+    0                           -0.0660       -0.0833            26.31%
+      0     0       -0.0833    10       -0.0660       Cuts: 5      184   26.31%
+*     0+    0                           -0.0660       -0.0833            26.31%
+*     0+    0                           -0.0725       -0.0833            14.84%
+      0     0       -0.0833    10       -0.0725       Cuts: 3      250   14.84%
+*     0+    0                           -0.0750       -0.0833            11.08%
+      0     2       -0.0833    10       -0.0750       -0.0833      250   11.08%
+Elapsed time = 0.13 sec. (124.10 ticks, tree = 0.01 MB, solutions = 3)
+*    40+   16                           -0.0785       -0.0833             6.09%
+*    41+   17                           -0.0785       -0.0833             6.09%
+*    90+   43                           -0.0794       -0.0833             4.99%
+*    90+   43                           -0.0794       -0.0833             4.99%
+*   100+   51                           -0.0795       -0.0833             4.77%
+*   100+   51                           -0.0795       -0.0833             4.77%
+*   105    54      integral     0       -0.0797       -0.0833     3739    4.53%
+    105    54       -0.0797     0       -0.0797       -0.0833     3739    4.53%
+*   116    58      integral     0       -0.0800       -0.0833     4199    4.09%
+*   140+   58                           -0.0807       -0.0833             3.27%
+*   240+  101                           -0.0807       -0.0832             3.11%
+    240   103       -0.0825     8       -0.0807       -0.0832     7950    3.11%
+*   270+   82                           -0.0815       -0.0832             2.11%
+*   271+   83                           -0.0815       -0.0832             2.11%
+    385   115       -0.0816     7       -0.0815       -0.0825    11034    1.17%
+    571   133        cutoff             -0.0815       -0.0823    14425    0.96%
+    780   132       -0.0821     5       -0.0815       -0.0821    18045    0.68%
+   1057   101       -0.0816     5       -0.0815       -0.0818    20953    0.29%
+
+Starting MIP-solver-driven algorithm
+
+MIP-solver-driven algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  -8.152109e-02
+ - Best bound           =  -8.152109e-02
+ - Relative opt. gap    =      0.000e+00
+ - Total time (s)       =       1.60e+00
+
+Timers (s):
+ - Setup                =   2.25e-02
+ -- Transform data      =   2.29e-04
+ -- Create conic data   =   2.15e-02
+ -- Create MIP data     =   7.60e-04
+ - Algorithm            =   1.58e+00
+ -- Solve relaxation    =   4.52e-03
+ -- Get relaxation cuts =   7.68e-05
+ -- MIP solver driving  =   1.58e+00
+ -- Solve subproblems   =   3.00e-02
+ -- Get subproblem cuts =   5.88e-03
+ -- Get separation cuts =   2.19e-03
+
+Counters:
+ - Lazy callbacks       =    74
+ -- Integer repeats     =    57
+ -- Conic subproblems   =    18
+ --- Infeasible         =     1
+ --- Optimal            =    17
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =    27
+ --- From subproblems   =    17
+ --- In lazy callback   =    10
+ - Heuristic callbacks  =   686
+ -- Solutions passed    =    11
+
+Solution returned by MIP solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+    Second order |     75 |     18 |    961 |     40 |    961
+
+0 numerically unstable disaggregated SOC cuts
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |  0.00e+00 |  3.47e-17
+    Second order |        NA |  7.94e-07
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+
+Flow cuts applied:  2
+Mixed integer rounding cuts applied:  2
+User cuts applied:  884
+
+Root node processing (before b&c):
+  Real time             =    0.13 sec. (124.09 ticks)
+Sequential b&c:
+  Real time             =    1.45 sec. (1609.75 ticks)
+                          ------------
+Total (root+branch&cut) =    1.58 sec. (1733.84 ticks)
+#STATUS# Optimal
+#OBJVAL# -0.08152109437683482
+#OBJBOUND# -0.08152109437683482
+#NODECOUNT# 1249
+#TIMESOLVER# 1.604266881942749
+#TIMEALL# 1.6046922206878662
+#SOLUTION# [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.20972458159150698,0.0,0.0,0.0,0.050209310825300654,0.0,0.1415424483395781,0.0,0.0646342441509032,0.0,0.0,0.0,0.1334609183671945,0.0,0.0,0.0,0.0803739611546817,0.0,0.1747137970018353,0.033672618969327314,0.0,0.0,0.0,0.10306827604015842,0.0,0.0,0.0,0.0,0.0,0.0,0.008599843559513808,0.0,0.0,0.0,0.0,0.0,0.0,-0.0,0.0,0.0,0.0,1.0,-0.0,-0.0,-0.0,1.0,0.0,1.0,-0.0,1.0,0.0,0.0,-0.0,1.0,-0.0,0.0,-0.0,1.0,-0.0,1.0,1.0,-0.0,0.0,0.0,1.0,-0.0,-0.0,-0.0,0.0,-0.0,0.0,1.0,0.021142519699231137,0.015127787865935476,0.008866707024365685,0.012953795783975257,0.013890255110898675,0.02967971057114017,0.01914855683141726,0.012751300658633478,0.012682755367450178,0.06086014366442964,0.019874507618495366,0.014450689855971791,0.02436522398492289,0.058574245024329945,0.011353055076429577,0.06895287699091855,0.025519757282663175,0.06857859395281009,0.04603547976601038,0.012283444024125477,0.028686565196308904,0.0490539764930836,0.01927437101828088,0.014736575307831986,0.010491313930442076,0.05497918745417024,0.006730317404026479,0.043194956836595216,0.042927410703472696,0.0152855476677545,0.019793489206713904,0.011945488075541808,0.049903168665581636,0.022736738657231394,0.01346516359988773,0.006700926648464537,0.0038455872961689697,0.017676262286703295,0.02097750690401141,0.03163003846060632,0.2]

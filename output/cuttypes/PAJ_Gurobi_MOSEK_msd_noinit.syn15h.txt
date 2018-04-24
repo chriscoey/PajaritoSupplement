@@ -1,0 +1,120 @@
+#SOLVERNAME# PAJ_Gurobi_MOSEK_msd_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 1), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, false, false, false, false, false, true, 10.0, true, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# syn15h.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     133
+     constraints |     366
+   nonzeros in A |     611
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Primal expon. |      11 |         3 |         3
+
+Variable types:
+      continuous |     118
+         integer |      15
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.16s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.01s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =    -854.323190
+Academic license - for non-commercial use only
+Optimize a model with 366 rows, 133 columns and 633 nonzeros
+Variable types: 118 continuous, 15 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e-05, 5e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [5e-01, 1e+01]
+Presolve removed 308 rows and 86 columns
+Presolve time: 0.00s
+Presolved: 58 rows, 47 columns, 153 nonzeros
+Variable types: 36 continuous, 11 integer (11 binary)
+
+Root relaxation: objective -8.540809e+02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -854.08093    0    1          - -854.08093      -     -    0s
+     0     0 -853.28503    0    1          - -853.28503      -     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Flow cover: 1
+  Lazy constraints: 6
+
+Explored 1 nodes (37 simplex iterations) in 0.08 seconds
+Thread count was 8 (of 16 available processors)
+
+Solution count 0
+
+Solve interrupted
+Best objective -, best bound -8.532850261982e+02, gap -
+
+Starting MIP-solver-driven algorithm
+
+MIP-solver-driven algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  -8.532847e+02
+ - Best bound           =  -8.532850e+02
+ - Relative opt. gap    =      3.477e-07
+ - Total time (s)       =       2.65e-01
+
+Timers (s):
+ - Setup                =   1.59e-01
+ -- Transform data      =   3.28e-04
+ -- Create conic data   =   1.57e-01
+ -- Create MIP data     =   8.67e-04
+ - Algorithm            =   1.07e-01
+ -- Solve relaxation    =   9.13e-03
+ -- Get relaxation cuts =   1.82e-02
+ -- MIP solver driving  =   7.89e-02
+ -- Solve subproblems   =   6.29e-03
+ -- Get subproblem cuts =   1.17e-04
+ -- Get separation cuts =   8.90e-05
+
+Counters:
+ - Lazy callbacks       =     6
+ -- Integer repeats     =     3
+ -- Conic subproblems   =     3
+ --- Infeasible         =     0
+ --- Optimal            =     3
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =     3
+ --- From subproblems   =     3
+ --- In lazy callback   =     0
+ - Heuristic callbacks  =     1
+ -- Solutions passed    =     1
+
+Solution returned by conic solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+   Primal expon. |     23 |      5 |      7 |     11 |      7
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |        NA |  1.04e-09
+   Primal expon. |        NA |  0.00e+00
+
+Distance to integrality of integer/binary variables:
+         integer |  2.22e-16
+
+#STATUS# Optimal
+#OBJVAL# -853.2847294710817
+#OBJBOUND# -853.2850261982085
+#NODECOUNT# 1
+#TIMESOLVER# 0.26532602310180664
+#TIMEALL# 0.26635289192199707
+#SOLUTION# [-0.0,1.5564920857166598,0.2743962474650051,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,0.0,0.0,1.0000000000000002,0.0,0.0,0.0,-0.0,1.0,1.0,0.0,0.0,0.0,0.0,853.2847294710817,9.999999997983872,-0.0,9.999999997983872,-0.0,2.8774743274195678,2.8774743274195678,2.8774743274195678,-0.0,-0.0,2.8774743274195678,-0.0,-0.0,-0.0,2.8774743274195678,-0.0,2.594153476194433,0.2833208515986012,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.5564920857166598,-0.0,0.2743962474650051,-0.0,-0.0,0.0,-0.0,-0.0,-0.0,-0.0,-2.3978952721027436,9.999999997983872,2.8774743274195678,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,2.8774743274195678,2.8774743274195678,5.7549486548391355,-0.0,-0.0,-0.0,5.7549486548391355,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,2.594153476194433,1.5564920857166598,-0.0,-0.0,-0.2494511331098104,0.2833208515986012,0.2743962474650051,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.0,-0.0,-0.0,-0.0,-0.0,0.0,-0.0,-0.0,-0.0,-0.0,0.0,-0.0,-0.0,0.0,-0.0,-0.0,-0.0,-0.0]

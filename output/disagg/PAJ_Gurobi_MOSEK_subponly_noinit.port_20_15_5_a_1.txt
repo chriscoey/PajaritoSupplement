@@ -1,0 +1,143 @@
+WARNING: Repeated integer solution without converging
+WARNING: Pajarito failed to converge to the desired relative gap; try turning off the MIP solver's presolve functionality
+#SOLVERNAME# PAJ_Gurobi_MOSEK_subponly_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 0), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 0.0)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, false, false, false, false, false, true, 10.0, false, false, false, false, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# port_20_15_5_a_1.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     151
+     constraints |     300
+   nonzeros in A |    1026
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Second order |       1 |        21 |        21
+   Primal expon. |      30 |         3 |         3
+   Pos. semidef. |       1 |      11^2 |      11^2
+
+Variable types:
+      continuous |     111
+         integer |      40
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.16s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.05s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      -0.045918
+Academic license - for non-commercial use only
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |  -2.640854e-02 |  -4.591643e-02 |   7.384e-01 |   2.785e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |  -4.027601e-02 |  -4.555320e-02 |   1.310e-01 |   1.424e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    3 |  -4.027601e-02 |  -4.508314e-02 |   1.193e-01 |   2.673e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    4 |  -4.027601e-02 |  -4.440140e-02 |   1.024e-01 |   4.116e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    5 |  -4.027601e-02 |  -4.359236e-02 |   8.232e-02 |   8.125e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    6 |  -4.027601e-02 |  -4.303463e-02 |   6.848e-02 |   1.301e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    7 |  -4.027601e-02 |  -4.230490e-02 |   5.036e-02 |   1.876e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    8 |  -4.032732e-02 |  -4.209588e-02 |   4.384e-02 |   2.669e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    9 |  -4.042983e-02 |  -4.201124e-02 |   3.911e-02 |   3.378e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   10 |  -4.145890e-02 |  -4.178056e-02 |   7.757e-03 |   4.266e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   11 |  -4.145890e-02 |  -4.157894e-02 |   2.895e-03 |   5.340e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   12 |  -4.148441e-02 |  -4.148323e-02 |  -2.849e-05 |   6.511e+01
+
+Iterative algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  -4.148441e-02
+ - Best bound           =  -4.148323e-02
+ - Relative opt. gap    =     -2.849e-05
+ - Total time (s)       =       6.51e+01
+
+Timers (s):
+ - Setup                =   1.58e-01
+ -- Transform data      =   1.93e-04
+ -- Create conic data   =   1.57e-01
+ -- Create MIP data     =   5.82e-04
+ - Algorithm            =   6.50e+01
+ -- Solve relaxation    =   4.52e-02
+ -- Get relaxation cuts =   1.80e-02
+ -- Solve MIP models    =   6.45e+01
+ -- Solve subproblems   =   3.93e-01
+ -- Get subproblem cuts =   1.76e-02
+ -- Get separation cuts =   0.00e+00
+
+Counters:
+ - Iterations           =    12
+ -- Integer repeats     =     0
+ -- Conic subproblems   =    12
+ --- Infeasible         =     0
+ --- Optimal            =    12
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =    12
+ --- From subproblems   =    12
+ --- From MIP solve     =     0
+
+Solution returned by conic solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+    Second order |     13 |      0 |    240 |     20 |     29
+   Primal expon. |    390 |      0 |    360 |     30 |    149
+   Pos. semidef. |     13 |      0 |    132 |     11 |      9
+
+0 numerically unstable disaggregated SOC cuts
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear | -0.00e+00 |  3.12e-07
+    Second order |        NA | -9.71e-09
+   Primal expon. |        NA |  7.86e-09
+   Pos. semidef. |        NA | -1.29e-07
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Optimal
+#OBJVAL# -0.041484408662418884
+#OBJBOUND# -0.041483226504635276
+#NODECOUNT# NaN
+#TIMESOLVER# 65.1149480342865
+#TIMEALL# 65.12089490890503
+#SOLUTION# [0.0,0.01632761138262463,0.0432832227379986,0.0,0.0,0.0,0.0,0.0,0.0,0.03676970405237722,0.0,0.0,0.0,0.0,0.0,0.0,0.07631915645599824,0.0,0.0,0.08185852721924328,0.0,0.1319631041623247,0.0,0.0,0.0,0.0,0.0,0.09710465281513667,0.0,0.0,0.0,0.0334132662531444,0.0,0.0,0.0,0.0,0.07509830616499741,0.057184973444065035,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.2735865430185942,0.002474475938437079,0.022552113730126534,0.014111246977258152,0.0020779128203456906,0.0021528236817388393,0.0027172041927252095,0.001192749305391365,0.0022557376972303345,0.0034689011243428385,0.013528506829276902,0.002686157735887662,0.006575450441929104,0.0019848544666163474,0.0025830813039042565,0.001233592061450801,0.0015167322071835856,0.018604814513827773,0.001336479000250525,0.0018012890826014567,0.01588063619608859,0.002095401054797774,0.02244673661819041,0.002313346879209588,0.005068525335657936,0.001749341206980004,0.005697379120823243,0.003523006355727887,0.019604203697596745,0.002325670688798187,0.003058082041067056,0.0034876461093440447,0.023867970672996952,0.0022073215532785184,0.004435544659662227,0.002727990470595021,0.001986777970709657,0.01974837293451336,0.013072277460787669,0.00032943573587728185,-0.0009482312249540473,0.0020975982847531026,0.022696803784965684,0.0023160152646179515,0.0050813469814809525,0.0017508705420736705,0.00571357577088249,0.003529198797639982,0.01979512035255788,0.002328377411150515,0.0030627544401365765,0.0034937168639176666,0.024150563114734586,0.0022097602189794854,0.0044453703143311745,0.0027317042838581464,-0.002093198120929296,-0.02219290703901769,-0.0023106633473401633,-0.005055652666261024,-0.0017478085979362758,-0.005681113004211132,-0.003516781564247328,-0.019410772829492072,-0.0023229625554994993,-0.0030533938649680917,-0.0034815535040062643,-0.023580836449273702,-0.002204879194382212,-0.004425680886346314,-0.002724261046789723]

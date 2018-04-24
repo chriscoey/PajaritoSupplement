@@ -1,0 +1,98 @@
+WARNING: Repeated integer solution without converging
+#SOLVERNAME# PAJ_GLPK_ECOS
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, GLPKMathProgInterface.GLPKInterfaceMIP.GLPKSolverMIP(true, Any[(:msg_lev, 0), (:tol_int, 1.0e-9), (:tol_bnd, 1.0e-8), (:mip_gap, 0.0)]), Pajarito.UnsetSolver(), 0, false, true, ECOS.ECOSSolver(Any[(:verbose, false), (:reltol, 1.0e-10), (:feastol, 1.0e-10), (:reltol_inacc, 1.0e-5), (:feastol_inacc, 1.0e-8)]), true, true, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, false, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# uflquad-nopsc-30-150.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |   13531
+     constraints |   22681
+   nonzeros in A |   31530
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Rotated S.O. |    4500 |         3 |         3
+
+Variable types:
+      continuous |   13501
+         integer |      30
+
+Transforming data...               0.02s
+
+Creating conic subproblem...       0.00s
+
+Building MIP model...              0.11s
+
+Solving conic relaxation...        0.73s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =     180.910564
+
+signal (15): Terminated
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 372
+_glp_luf_vt_solve at /home/ubuntu/.julia/v0.6/GLPK/deps/src/glpk-4.61/src/bflib/luf.c:598
+_glp_fhvint_btran at /home/ubuntu/.julia/v0.6/GLPK/deps/src/glpk-4.61/src/bflib/fhvint.c:134
+primal_simplex at /home/ubuntu/.julia/v0.6/GLPK/deps/src/glpk-4.61/src/simplex/spxprim.c:959 [inlined]
+_glp_spx_primal at /home/ubuntu/.julia/v0.6/GLPK/deps/src/glpk-4.61/src/simplex/spxprim.c:1130
+glp_simplex at /home/ubuntu/.julia/v0.6/GLPK/deps/src/glpk-4.61/src/glpapi06.c:463
+_glp_ios_solve_node at /home/ubuntu/.julia/v0.6/GLPK/deps/src/glpk-4.61/src/glpios01.c:1367
+_glp_ios_driver at /home/ubuntu/.julia/v0.6/GLPK/deps/src/glpk-4.61/src/glpios03.c:1142
+solve_mip at /home/ubuntu/.julia/v0.6/GLPK/deps/src/glpk-4.61/src/glpapi09.c:250
+preprocess_and_solve_mip at /home/ubuntu/.julia/v0.6/GLPK/deps/src/glpk-4.61/src/glpapi09.c:415 [inlined]
+glp_intopt at /home/ubuntu/.julia/v0.6/GLPK/deps/src/glpk-4.61/src/glpapi09.c:634
+intopt at /home/ubuntu/.julia/v0.6/GLPK/src/GLPK.jl:225
+optimize! at /home/ubuntu/.julia/v0.6/GLPKMathProgInterface/src/GLPKInterfaceMIP.jl:503
+unknown function (ip: 0x7f718bca95ca)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+#solve#116 at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:175
+unknown function (ip: 0x7f718bc91c9f)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+#solve at ./<missing>:0
+solve_iterative! at /home/ubuntu/.julia/v0.6/Pajarito/src/conic_algorithm.jl:1350
+optimize! at /home/ubuntu/.julia/v0.6/Pajarito/src/conic_algorithm.jl:639
+unknown function (ip: 0x7f718bc2f2c2)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_invoke at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:41
+solveprint at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+unknown function (ip: 0x7f718bc18f56)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+do_call at /home/centos/buildbot/slave/package_tarball64/build/src/interpreter.c:75
+eval at /home/centos/buildbot/slave/package_tarball64/build/src/interpreter.c:242
+eval_body at /home/centos/buildbot/slave/package_tarball64/build/src/interpreter.c:543
+eval_body at /home/centos/buildbot/slave/package_tarball64/build/src/interpreter.c:589
+jl_interpret_toplevel_thunk at /home/centos/buildbot/slave/package_tarball64/build/src/interpreter.c:692
+jl_toplevel_eval_flex at /home/centos/buildbot/slave/package_tarball64/build/src/toplevel.c:592
+jl_parse_eval_all at /home/centos/buildbot/slave/package_tarball64/build/src/ast.c:873
+jl_load at /home/centos/buildbot/slave/package_tarball64/build/src/toplevel.c:616
+include_from_node1 at ./loading.jl:569
+unknown function (ip: 0x7f719e36fb1b)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+include at ./sysimg.jl:14
+unknown function (ip: 0x7f719e21486b)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+process_options at ./client.jl:305
+_start at ./client.jl:371
+unknown function (ip: 0x7f719e37b6e8)
+jl_call_fptr_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:339 [inlined]
+jl_call_method_internal at /home/centos/buildbot/slave/package_tarball64/build/src/julia_internal.h:358 [inlined]
+jl_apply_generic at /home/centos/buildbot/slave/package_tarball64/build/src/gf.c:1933
+jl_apply at /home/centos/buildbot/slave/package_tarball64/build/ui/../src/julia.h:1424 [inlined]
+true_main at /home/centos/buildbot/slave/package_tarball64/build/ui/repl.c:127
+main at /home/centos/buildbot/slave/package_tarball64/build/ui/repl.c:264
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x40170c)
+unknown function (ip: 0xffffffffffffffff)
+Allocations: 25954993 (Pool: 25942758; Big: 12235); GC: 58
+
+Starting iterative algorithm
+#STATUS# KilledTime

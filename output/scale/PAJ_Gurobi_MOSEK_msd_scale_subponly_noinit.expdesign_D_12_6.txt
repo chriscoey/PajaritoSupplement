@@ -1,0 +1,113 @@
+#SOLVERNAME# PAJ_Gurobi_MOSEK_msd_scale_subponly_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 1), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-6), (:MIPGap, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, false, false, false, false, false, true, 10.0, true, false, false, false, 1.0e-12, 1.0e-6, false, "")
+#INSTANCE# expdesign_D_12_6.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     127
+     constraints |     311
+   nonzeros in A |     769
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Primal expon. |       6 |         3 |         3
+   Pos. semidef. |       2 |       6^2 |      12^2
+
+Variable types:
+      continuous |     115
+         integer |      12
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.16s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.06s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      -0.548891
+Academic license - for non-commercial use only
+Optimize a model with 248 rows, 127 columns and 1756 nonzeros
+Variable types: 115 continuous, 12 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [2e-13, 9e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 5e+02]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 205 rows and 67 columns
+Presolve time: 0.00s
+Presolved: 43 rows, 60 columns, 797 nonzeros
+Variable types: 48 continuous, 12 integer (0 binary)
+Warning: Markowitz tolerance tightened to 0.125
+
+Root relaxation: unbounded, 18 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  postponed    0               -          -      -     -    0s
+
+Explored 0 nodes (18 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 16 available processors)
+
+Solution count 0
+
+Model is unbounded
+Best objective -, best bound -, gap -
+
+Starting MIP-solver-driven algorithm
+WARNING: MIP solver returned status Unbounded but the conic relaxation solve succeeded; try tightening the conic solver tolerances (or submit an issue)
+
+MIP-solver-driven algorithm summary:
+ - Status               =    UnboundedOA
+ - Best feasible        =           +Inf
+ - Best bound           =  -5.488907e-01
+ - Relative opt. gap    =            NaN
+ - Total time (s)       =       5.85e-01
+
+Timers (s):
+ - Setup                =   1.57e-01
+ -- Transform data      =   1.71e-04
+ -- Create conic data   =   1.56e-01
+ -- Create MIP data     =   5.65e-04
+ - Algorithm            =   4.28e-01
+ -- Solve relaxation    =   5.90e-02
+ -- Get relaxation cuts =   1.71e-02
+ -- MIP solver driving  =   9.58e-03
+ -- Solve subproblems   =   0.00e+00
+ -- Get subproblem cuts =   0.00e+00
+ -- Get separation cuts =   0.00e+00
+
+Counters:
+ - Lazy callbacks       =     0
+ -- Integer repeats     =     0
+ -- Conic subproblems   =     0
+ --- Infeasible         =     0
+ --- Optimal            =     0
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =     0
+ --- From subproblems   =     0
+ --- In lazy callback   =     0
+ - Heuristic callbacks  =     0
+ -- Solutions passed    =     0
+
+Solution returned by MIP solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+   Primal expon. |      6 |      0 |      0 |      6 |      0
+   Pos. semidef. |      2 |      0 |      0 |     18 |      0
+
+#STATUS# UnboundedOA
+#OBJVAL# Inf
+#OBJBOUND# -0.5488907091708235
+#NODECOUNT# 0
+#TIMESOLVER# 0.5850369930267334
+#TIMEALL# 0.5853900909423828
+#SOLUTION# [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]

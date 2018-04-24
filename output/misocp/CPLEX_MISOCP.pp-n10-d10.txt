@@ -1,0 +1,71 @@
+
+Cone linearizations applied:  141
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (10.67 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (10.37 ticks)
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (21.05 ticks)
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 20 rows and 20 columns.
+Aggregator did 10 substitutions.
+Reduced MIQCP has 41 rows, 70 columns, and 109 nonzeros.
+Reduced MIQCP has 0 binaries, 10 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 10 quadratic constraints.
+Presolve time = 0.00 sec. (0.08 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.04 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000     0                      0.0000        0         
+      0     0       11.5316    10                    Cone: 10       10         
+      0     0       27.7618    10                    Cone: 20       20         
+      0     0       61.9045    10                    Cone: 30       34         
+      0     0       70.2194    10                    Cone: 40       43         
+      0     0       71.7340    10                    Cone: 50       52         
+      0     0       72.1666    10                    Cone: 60       61         
+      0     0       72.2922    10                    Cone: 79       81         
+      0     0       72.2922    10                    Cone: 87       89         
+      0     0       72.2922    10                    Cone: 94       95         
+      0     0       72.2922    10                    Cone: 96       97         
+      0     0       72.2922    10                    Cone: 97       98         
+      0     0       72.2922    10                    Cone: 99      100         
+      0     0       72.2922    10                   Cone: 100      101         
+      0     0       72.2922    10                   Cone: 101      102         
+      0     0       72.2922    10                     72.2922      102         
+*     0+    0                           72.7171       72.2922             0.58%
+      0     0       72.3917    10       72.7171   LiftProj: 4      110    0.45%
+*     0+    0                           72.4813       72.3917             0.12%
+      0     0       72.4003     7       72.4813   LiftProj: 1      116    0.11%
+*     0+    0                           72.4813       72.4003             0.11%
+*     0+    0                           72.4813       72.4139             0.09%
+      0     0       72.4223     6       72.4813   LiftProj: 1      126    0.08%
+      0     0       72.4223     5       72.4813   LiftProj: 1      128    0.08%
+      0     2       72.4223     5       72.4813       72.4223      128    0.08%
+Elapsed time = 0.05 sec. (28.00 ticks, tree = 0.01 MB, solutions = 3)
+
+Lift and project cuts applied:  6
+Cone linearizations applied:  21
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (28.00 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (3.76 ticks)
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (31.76 ticks)
+#SOLVERNAME# CPLEX_MISOCP
+#SOLVER# CPLEX.CplexSolver(Any[(:CPX_PARAM_THREADS, 1), (:CPX_PARAM_TILIM, 3600.0), (:CPX_PARAM_SCRIND, 1), (:CPX_PARAM_EPINT, 1.0e-9), (:CPX_PARAM_EPRHS, 1.0e-8), (:CPX_PARAM_EPGAP, 1.0e-5)])
+#INSTANCE# pp-n10-d10.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# Optimal
+#OBJVAL# 72.4812747679602
+#OBJBOUND# 72.4812747679602
+#NODECOUNT# 35
+#TIMESOLVER# 0.053765058517456055
+#TIMEALL# 0.12851214408874512
+#SOLUTION# [5.0,9.0,6.0,4.0,3.0,7.0,5.0,9.0,2.0,5.0,0.2000000032980661,0.11111111706228481,0.1666666679360731,0.2499999158646356,0.33333333274708504,0.14285716078213184,0.1999999782082976,0.11111113614194286,0.4999999981854563,0.19999999886058914,5.0,0.2000000032980661,1.41421356,9.0,0.11111111706228481,1.41421356,6.0,0.1666666679360731,1.41421356,4.0,0.2499999158646356,1.41421356,3.0,0.33333333274708504,1.41421356,7.0,0.14285716078213184,1.41421356,5.0,0.1999999782082976,1.41421356,9.0,0.11111113614194286,1.41421356,2.0,0.4999999981854563,1.41421356,5.0,0.19999999886058914,1.41421356]

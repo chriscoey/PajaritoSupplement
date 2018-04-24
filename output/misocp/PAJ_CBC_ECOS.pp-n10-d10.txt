@@ -1,0 +1,271 @@
+WARNING: Solver does not appear to support adding constraints to an existing model. JuMP's internal model will be discarded.
+WARNING: Repeated integer solution without converging
+#SOLVERNAME# PAJ_CBC_ECOS
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Cbc.CbcMathProgSolverInterface.CbcSolver(Any[(:logLevel, 0), (:integerTolerance, 1.0e-9), (:primalTolerance, 1.0e-8), (:ratioGap, 0.0), (:check_warmstart, false)]), Pajarito.UnsetSolver(), 0, false, true, ECOS.ECOSSolver(Any[(:verbose, false), (:reltol, 1.0e-10), (:feastol, 1.0e-10), (:reltol_inacc, 1.0e-5), (:feastol_inacc, 1.0e-8)]), true, true, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, false, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# pp-n10-d10.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |      50
+     constraints |      31
+   nonzeros in A |      59
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Rotated S.O. |      10 |         3 |         3
+
+Variable types:
+      continuous |      40
+         integer |      10
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.00s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.00s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      72.292210
+Coin0505I Presolved problem not optimal, resolve after postsolve
+Coin0505I Presolved problem not optimal, resolve after postsolve
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |           +Inf |  +7.229221e+01 |         Inf |   9.510e-02
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |           +Inf |  +7.229221e+01 |         Inf |   1.727e-01
+WARNING: Repeated integer solution without converging
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    3 |           +Inf |  +7.229221e+01 |         Inf |   2.210e-01
+WARNING: Repeated integer solution without converging
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    4 |           +Inf |  +7.229221e+01 |         Inf |   3.474e-01
+WARNING: Repeated integer solution without converging
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    5 |           +Inf |  +7.229221e+01 |         Inf |   4.368e-01
+WARNING: Repeated integer solution without converging
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    6 |  +6.898324e+08 |  +7.229221e+01 |   1.000e+00 |   5.277e-01
+WARNING: Repeated integer solution without converging
+Presolve determined that the problem was infeasible with tolerance of 1e-08
+Analysis indicates model infeasible or unbounded
+0  Obj 0 Primal inf 18.34008 (10) Dual inf 8569.1295 (10) w.o. free dual inf (0)
+49  Obj 2.9472167e-14 Primal inf 72.309155 (60)
+56  Obj 1.2550462e-09 Primal inf 45.000844 (58)
+104  Obj 18252162 Primal inf 13175.536 (100)
+106  Obj 18252162 Primal inf 13034.56 (105)
+108  Obj 20892539 Primal inf 12753.249 (103)
+113  Obj 39221285 Primal inf 11615.772 (100)
+123  Obj 86373067 Primal inf 9904.0827 (98)
+129  Obj 1.0757004e+08 Primal inf 9142.0471 (97)
+133  Obj 1.2375874e+08 Primal inf 8477.4164 (97)
+195  Obj 1.3795043e+09
+Optimal - objective value 1.3795043e+09
+Optimal objective 1379504250 - 195 iterations time 0.002
+Cbc0045I Given objective value 6.89832e+08, computed 1.3795e+09
+Cbc0045I Solution with objective value 1.3795e+09 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    7 |  +6.898324e+08 |  +7.229221e+01 |   1.000e+00 |   6.720e-01
+WARNING: Repeated integer solution without converging
+Presolve determined that the problem was infeasible with tolerance of 1e-08
+Analysis indicates model infeasible or unbounded
+0  Obj 0 Primal inf 18.34008 (10) Dual inf 10190.436 (10) w.o. free dual inf (0)
+50  Obj 5.7458174e-14 Primal inf 71.974463 (60)
+56  Obj 1.4400989e-09 Primal inf 46.80175 (62)
+102  Obj 12280678 Primal inf 26479.646 (124)
+106  Obj 20892539 Primal inf 1.5806878e+14 (120)
+108  Obj 20892539 Primal inf 1.5806878e+14 (124)
+117  Obj 45192971 Primal inf 24026.311 (115)
+120  Obj 45192971 Primal inf 23865.135 (120)
+135  Obj 1.6499118e+08 Primal inf 188064.97 (101)
+138  Obj 1.6499118e+08 Primal inf 187891.87 (106)
+212  Obj 2.7596814e+09
+Optimal - objective value 2.7596814e+09
+Optimal objective 2759681429 - 212 iterations time 0.002
+Cbc0045I Given objective value 6.89832e+08, computed 2.75968e+09
+Cbc0045I Solution with objective value 2.75968e+09 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    8 |  +6.898324e+08 |  +7.229221e+01 |   1.000e+00 |   8.194e-01
+WARNING: Repeated integer solution without converging
+Presolve determined that the problem was infeasible with tolerance of 1e-08
+Analysis indicates model infeasible or unbounded
+0  Obj 0 Primal inf 18.34008 (10) Dual inf 12121.595 (10) w.o. free dual inf (0)
+50  Obj 1.3591139e-13 Primal inf 71.70793 (60)
+56  Obj 2.6139824e-09 Primal inf 47.608423 (68)
+103  Obj 12280678 Primal inf 12267.627 (141)
+106  Obj 12280678 Primal inf 11768.325 (145)
+109  Obj 30530375 Primal inf 55174.428 (140)
+116  Obj 39142472 Primal inf 11347.061 (135)
+124  Obj 77491621 Primal inf 8117.8307 (124)
+126  Obj 77491621 Primal inf 7800.2926 (129)
+129  Obj 99041287 Primal inf 6677.2036 (122)
+132  Obj 1.04623e+08 Primal inf 52694.513 (128)
+139  Obj 1.2581997e+08 Primal inf 4214.23 (115)
+146  Obj 1.5894032e+08 Primal inf 122217.05 (105)
+228  Obj 4.9006396e+09 Primal inf 966.21741 (15)
+242  Obj 5.5321277e+09
+Optimal - objective value 5.5321277e+09
+Optimal objective 5532127686 - 242 iterations time 0.002
+Cbc0045I Given objective value 6.89832e+08, computed 5.53213e+09
+Cbc0045I Solution with objective value 5.53213e+09 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    9 |  +6.898324e+08 |  +7.229221e+01 |   1.000e+00 |   9.714e-01
+WARNING: Repeated integer solution without converging
+Presolve determined that the problem was infeasible with tolerance of 1e-08
+Analysis indicates model infeasible or unbounded
+0  Obj 0 Primal inf 18.34008 (10) Dual inf 14397.853 (10) w.o. free dual inf (0)
+50  Obj 3.3669466e-13 Primal inf 71.233768 (60)
+56  Obj 9.9885206e-09 Primal inf 47.408826 (74)
+104  Obj 18252162 Primal inf 217864.34 (163)
+108  Obj 18252162 Primal inf 113469.58 (164)
+114  Obj 45192871 Primal inf 112970.99 (154)
+117  Obj 45192871 Primal inf 112432.51 (159)
+124  Obj 1.1067332e+08 Primal inf 770226.2 (150)
+193  Obj 3.9763896e+09 Primal inf 35941.957 (42)
+228  Obj 1.08718e+10
+Optimal - objective value 1.08718e+10
+Optimal objective 1.087180016e+10 - 228 iterations time 0.002
+Cbc0045I Given objective value 6.89832e+08, computed 1.08718e+10
+Cbc0045I Solution with objective value 1.08718e+10 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   10 |  +6.898324e+08 |  +7.229221e+01 |   1.000e+00 |   1.125e+00
+WARNING: Repeated integer solution without converging
+Presolve determined that the problem was infeasible with tolerance of 1e-08
+Analysis indicates model infeasible or unbounded
+0  Obj 0 Primal inf 18.425216 (10) Dual inf 17090.029 (10) w.o. free dual inf (0)
+40  Obj 7.8274023e-13 Primal inf 91.201754 (125)
+51  Obj 7.8272757e-13 Primal inf 71.663602 (60)
+57  Obj 2.1386903e-08 Primal inf 48.169313 (81)
+103  Obj 12280678 Primal inf 247433.67 (184)
+105  Obj 14921055 Primal inf 246874.65 (182)
+111  Obj 20892539 Primal inf 483649.92 (172)
+117  Obj 39221285 Primal inf 240862.3 (156)
+123  Obj 64823401 Primal inf 1168923.2 (149)
+130  Obj 1.0757004e+08 Primal inf 873221.71 (128)
+138  Obj 1.4069038e+08 Primal inf 1560679.1 (116)
+221  Obj 9.0122222e+09 Primal inf 35006.679 (41)
+252  Obj 2.2373433e+10
+Optimal - objective value 2.2373433e+10
+Optimal objective 2.237343319e+10 - 252 iterations time 0.002
+Cbc0045I Given objective value 6.89832e+08, computed 2.23734e+10
+Cbc0045I Solution with objective value 2.23734e+10 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   11 |  +6.898324e+08 |  +7.229221e+01 |   1.000e+00 |   1.282e+00
+WARNING: Repeated integer solution without converging
+Presolve determined that the problem was infeasible with tolerance of 1e-08
+Analysis indicates model infeasible or unbounded
+0  Obj 0 Primal inf 18.650792 (10) Dual inf 20448.644 (10) w.o. free dual inf (0)
+39  Obj 1.4971117e-12 Primal inf 89.082096 (133)
+50  Obj 1.4970806e-12 Primal inf 73.04265 (60)
+56  Obj 4.666164e-08 Primal inf 45.97854 (85)
+102  Obj 12280678 Primal inf 548889.87 (200)
+104  Obj 14921055 Primal inf 548330.85 (198)
+110  Obj 20892539 Primal inf 1082632.9 (188)
+117  Obj 39221285 Primal inf 541558.96 (172)
+122  Obj 59241688 Primal inf 538877.76 (160)
+127  Obj 64823401 Primal inf 827749.88 (154)
+137  Obj 1.4069038e+08 Primal inf 5734490.4 (138)
+221  Obj 6.6019199e+09 Primal inf 16537.679 (59)
+269  Obj 5.0834885e+10
+Optimal - objective value 5.0834885e+10
+Optimal objective 5.083488495e+10 - 269 iterations time 0.002
+Cbc0045I Given objective value 6.89832e+08, computed 5.08349e+10
+Cbc0045I Solution with objective value 5.08349e+10 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   12 |  +6.898324e+08 |  +7.229221e+01 |   1.000e+00 |   1.442e+00
+WARNING: Repeated integer solution without converging
+Presolve determined that the problem was infeasible with tolerance of 1e-08
+Analysis indicates model infeasible or unbounded
+0  Obj 0 Primal inf 18.650792 (10) Dual inf 21260.234 (10) w.o. free dual inf (0)
+40  Obj 2.0569481e-12 Primal inf 89.600491 (135)
+46  Obj 2.056922e-12 Primal inf 81.823113 (97)
+52  Obj 1.1967424e-08 Primal inf 68.264647 (65)
+58  Obj 6.5720343e-08 Primal inf 42.027061 (91)
+103  Obj 12280678 Primal inf 550236.23 (204)
+105  Obj 14921055 Primal inf 549677.22 (202)
+111  Obj 20892539 Primal inf 1083979.3 (192)
+117  Obj 26474252 Primal inf 834449.93 (180)
+121  Obj 44802998 Primal inf 540495.04 (169)
+135  Obj 1.4069038e+08 Primal inf 8993974.1 (152)
+219  Obj 7.7834434e+09 Primal inf 45759.862 (62)
+268  Obj 5.5674714e+10
+Optimal - objective value 5.5674714e+10
+Optimal objective 5.567471449e+10 - 268 iterations time 0.002
+Cbc0045I Given objective value 6.89832e+08, computed 5.56747e+10
+Cbc0045I Solution with objective value 5.56747e+10 saved
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   13 |  +6.898324e+08 |  +7.229221e+01 |   1.000e+00 |   1.602e+00
+WARNING: Repeated integer solution without converging
+WARNING: Pajarito failed to converge to the desired relative gap; try turning off the MIP solver's presolve functionality
+
+Iterative algorithm summary:
+ - Status               =     Suboptimal
+ - Best feasible        =  +6.898324e+08
+ - Best bound           =  +7.229221e+01
+ - Relative opt. gap    =      1.000e+00
+ - Total time (s)       =       1.60e+00
+
+Timers (s):
+ - Setup                =   3.89e-04
+ -- Transform data      =   8.42e-05
+ -- Create conic data   =   7.05e-05
+ -- Create MIP data     =   2.34e-04
+ - Algorithm            =   1.60e+00
+ -- Solve relaxation    =   7.67e-04
+ -- Get relaxation cuts =   6.71e-05
+ -- Solve MIP models    =   1.60e+00
+ -- Solve subproblems   =   9.73e-04
+ -- Get subproblem cuts =   9.27e-05
+ -- Get separation cuts =   1.01e-03
+
+Counters:
+ - Iterations           =    13
+ -- Integer repeats     =    12
+ -- Conic subproblems   =     1
+ --- Infeasible         =     1
+ --- Optimal            =     0
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =     8
+ --- From subproblems   =     0
+ --- From MIP solve     =     8
+
+Solution returned by MIP solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+    Second order |     20 |    102 |    321 |     20 |    207
+
+97 numerically unstable disaggregated SOC cuts
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear | -0.00e+00 |  9.31e-10
+    Rotated S.O. |  6.54e-07 |        NA
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Suboptimal
+#OBJVAL# 6.898323679413683e8
+#OBJBOUND# 72.29220962992378
+#NODECOUNT# NaN
+#TIMESOLVER# 1.6023478507995605
+#TIMEALL# 1.6364591121673584
+#SOLUTION# [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.164144473789499e6,2.457919751494933e6,2.192960429847471e6,3.213767427954428e6,3.7901280236639716e6,2.874502701799756e6,2.6870767116028247e6,2.8087150038761436e6,7.7331722893686155e6,5.2528895035420135e6,0.0,2.164144473789499e6,1.41421356,0.0,2.457919751494933e6,1.41421356,0.0,2.192960429847471e6,1.41421356,0.0,3.213767427954428e6,1.41421356,0.0,3.7901280236639716e6,1.41421356,0.0,2.874502701799756e6,1.41421356,0.0,2.6870767116028247e6,1.4142135600000003,0.0,2.8087150038761436e6,1.41421356,1.1874920200885485e-14,7.733172289368616e6,1.41421356,0.0,5.2528895035420135e6,1.4142135599999999]

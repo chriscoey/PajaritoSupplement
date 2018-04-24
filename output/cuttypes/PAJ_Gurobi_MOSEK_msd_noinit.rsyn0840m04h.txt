@@ -1,0 +1,45 @@
+#SOLVERNAME# PAJ_Gurobi_MOSEK_msd_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 1), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, false, false, false, false, false, true, 10.0, true, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# rsyn0840m04h.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |    2833
+     constraints |    8593
+   nonzeros in A |   15409
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Primal expon. |     112 |         3 |         3
+
+Variable types:
+      continuous |    2257
+         integer |     576
+
+Transforming data...               0.01s
+
+Creating conic subproblem...       0.19s
+
+Building MIP model...              0.04s
+
+Solving conic relaxation...        0.22s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =   -2618.991939
+Academic license - for non-commercial use only
+Optimize a model with 8593 rows, 2833 columns and 15633 nonzeros
+Variable types: 2257 continuous, 576 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [3e-08, 6e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [3e-01, 4e+03]
+Presolve removed 6855 rows and 1564 columns
+Presolve time: 0.05s
+Presolved: 1738 rows, 1269 columns, 5534 nonzeros
+Variable types: 756 continuous, 513 integer (513 binary)
+WARNING: Conic solver failure: returned status Unknown
+
+Starting MIP-solver-driven algorithm
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+#ERROR# ErrorException("Cannot add exp cone separation cut on point (0.0, 0.0, 1.1609065253521961e-8)\n")

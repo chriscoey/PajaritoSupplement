@@ -1,0 +1,72 @@
+
+Cone linearizations applied:  141
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (10.67 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (10.37 ticks)
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (21.05 ticks)
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 1009 rows and 577 columns.
+Aggregator did 1012 substitutions.
+Reduced MIQCP has 1125 rows, 2440 columns, and 4649 nonzeros.
+Reduced MIQCP has 432 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 572 quadratic constraints.
+Presolve time = 0.01 sec. (5.24 ticks)
+Probing time = 0.00 sec. (0.51 ticks)
+Clique table members: 72.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (1.20 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000     0                      0.0000        0         
+      0     0        0.0000     0                    Cone: 30       10         
+      0     0        0.0000     0                    Cone: 74       39         
+      0     0        0.0000     0                   Cone: 106       67         
+      0     0        0.0000     0                   Cone: 151       99         
+      0     0        0.0000     0                   Cone: 203      149         
+      0     0        0.0000     3                   Cone: 244      181         
+      0     0       28.8000   182                     28.8000      645         
+      0     2       28.8000   182                     28.8000      645         
+Elapsed time = 4.51 sec. (5957.10 ticks, tree = 0.01 MB, solutions = 0)
+      4     6       28.8000   180                     28.8000      712         
+      8    10       28.8000   177                     28.8000      781         
+     10    12       28.8000   176                     28.8000      812         
+     14    16       28.8000   172                     28.8000      882         
+     18    20       28.8000   168                     28.8000      960         
+     20    22       28.8000   166                     28.8000      996         
+     24    26       28.8000   162                     28.8000     1065         
+     28    30       28.8000   158                     28.8000     1140         
+     30    32       28.8000   156                     28.8000     1174         
+     44    46       28.8000   142                     28.8000     1454         
+Elapsed time = 8.29 sec. (10965.62 ticks, tree = 0.02 MB, solutions = 0)
+     55    57       28.8000   132                     28.8000     1636         
+     60    62   no solution                           28.8000     1902         
+     65    67   no solution                           28.8000     2152         
+     70    72   no solution                           28.8000     2403         
+     75    77   no solution                           28.8000     2653         
+     80    82   no solution                           28.8000     2903         
+     85    87   no solution                           28.8000     3160         
+     90    92   no solution                           28.8000     3414         
+     95    97   no solution                           28.8000     3669         
+    100   102   no solution                           28.8000     3926         
+Elapsed time = 16.10 sec. (21605.18 ticks, tree = 0.07 MB, solutions = 0)
+    106   108   no solution                           28.8000     4227         
+#SOLVERNAME# CPLEX_MISOCP
+#SOLVER# CPLEX.CplexSolver(Any[(:CPX_PARAM_THREADS, 1), (:CPX_PARAM_TILIM, 3600.0), (:CPX_PARAM_SCRIND, 1), (:CPX_PARAM_EPINT, 1.0e-9), (:CPX_PARAM_EPRHS, 1.0e-8), (:CPX_PARAM_EPGAP, 1.0e-5)])
+#INSTANCE# achtziger_stolpe07-5.2bflowc.cbf.gz
+#TIMELIMIT# 3600.0
+#ERROR# CPLEX.CplexError(3019, "CPLEX Error  3019: Failure to solve MIP subproblem.\n")
+
+Root node processing (before b&c):
+  Real time             =    4.51 sec. (5957.08 ticks)
+Sequential b&c:
+  Real time             =   12.50 sec. (16946.30 ticks)
+                          ------------
+Total (root+branch&cut) =   17.01 sec. (22903.38 ticks)
+CPLEX Error  3019: Failure to solve MIP subproblem.

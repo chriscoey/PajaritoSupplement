@@ -1,0 +1,644 @@
+#SOLVERNAME# PAJ_CPLEX_MOSEK_msd
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, true, CPLEX.CplexSolver(Any[(:CPX_PARAM_THREADS, 1), (:CPX_PARAM_SCRIND, 1), (:CPX_PARAM_EPINT, 1.0e-9), (:CPX_PARAM_EPRHS, 1.0e-8), (:CPX_PARAM_EPGAP, 1.0e-5)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 1), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, true, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# achtziger_stolpe07-5.2flowc.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     433
+     constraints |     338
+   nonzeros in A |     846
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+    Rotated S.O. |      72 |         3 |         3
+
+Variable types:
+      continuous |     361
+         integer |      72
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.00s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.01s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =      46.327922
+
+Mixed integer rounding cuts applied:  3
+Gomory fractional cuts applied:  3
+User cuts applied:  165
+
+Root node processing (before b&c):
+  Real time             =    0.35 sec. (17.23 ticks)
+Sequential b&c:
+  Real time             =    0.01 sec. (7.71 ticks)
+                          ------------
+Total (root+branch&cut) =    0.36 sec. (24.94 ticks)
+Warning: Control callbacks may disable some MIP features.
+Tried aggregator 2 times.
+MIP Presolve eliminated 148 rows and 0 columns.
+MIP Presolve modified 16 coefficients.
+Aggregator did 246 substitutions.
+Reduced MIP has 810 rows, 331 columns, and 3242 nonzeros.
+Reduced MIP has 72 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.72 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.01 sec. (9.44 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       46.3279    31                     46.3279      365         
+      0     0       46.4680    30                   Fract: 25      473         
+      0     0       46.5098    34                   Fract: 17      565         
+      0     2       46.5105    34                     46.5216      565         
+Elapsed time = 9.03 sec. (7903.83 ticks, tree = 0.01 MB, solutions = 0)
+     19    21       48.5772    19                     46.8224     1946         
+     59    61       78.0509    18                     46.8224     4698         
+     73    67    infeasible                           46.8224     6287         
+    107    83       49.4077    18                     46.8746     9314         
+    136   106    infeasible                           46.8746    13653         
+    144   108      112.1226     9                     46.8746    17566         
+    151   107    infeasible                           46.8746    22755         
+    155   107    infeasible                           46.8746    25277         
+    164   106       47.1644    23                     46.9082    28608         
+    213   147    infeasible                           46.9082    41098         
+Elapsed time = 15.73 sec. (12931.70 ticks, tree = 0.54 MB, solutions = 0)
+    232   152    infeasible                           46.9082    53341         
+    289   199    infeasible                           46.9133    60166         
+    345   245    infeasible                           47.0667    66077         
+    424   312       49.7345     9                     47.1116    74363         
+    473   351   822103.3856     9                     47.1116    86127         
+    543   407    infeasible                           47.1651    94366         
+    591   451    infeasible                           47.1883   101678         
+    653   507    infeasible                           47.2423   110955         
+    728   568    infeasible                           47.2564   118774         
+    799   623  6053427.1730     1                     47.2858   126404         
+Elapsed time = 28.54 sec. (23330.16 ticks, tree = 1.00 MB, solutions = 0)
+    869   681    infeasible                           47.2955   136198         
+    892   700   478894.9411    12                     47.3068   138381         
+    932   730       49.8940    26                     47.3233   147154         
+    992   784       50.0615    21                     47.3349   157409         
+   1032   816    infeasible                           47.3349   167134         
+   1096   874       94.5045     9                     47.3391   172012         
+   1108   878    infeasible                           47.3391   181285         
+   1112   880    infeasible                           47.3391   215679         
+   1118   880    infeasible                           47.3391   226847         
+   1155   905       49.8848     1                     47.3409   231640         
+Elapsed time = 49.02 sec. (38401.48 ticks, tree = 1.40 MB, solutions = 0)
+   1247   991    infeasible                           47.3512   239716         
+   1264  1000    infeasible                           47.3512   247075         
+   1351  1069       51.7587    14                     47.3622   256212         
+   1373  1089       81.1119     8                     47.3622   258779         
+   1477  1181   336772.9735     3                     47.3699   268358         
+*  1520+  476                           50.8995       47.3834             6.91%
+*  1521+  474                           50.8995       47.3834             6.91%
+   1550   499       48.1892    22       50.8995       47.3936   275812    6.89%
+*  1620+  546                           50.8995       47.4011             6.87%
+*  1620+  546                           50.8990       47.4011             6.87%
+*  1621+  547                           50.8990       47.4011             6.87%
+*  1640+  427                           49.8995       47.4011             5.01%
+   1661   441       49.3397    22       49.8995       47.4089   282410    4.99%
+*  1740+  354                           49.1406       47.4171             3.51%
+*  1741+  353                           49.1406       47.4171             3.51%
+   1797   389       47.8653    25       49.1406       47.4299   288848    3.48%
+   1959   492       48.4616    24       49.1406       47.4671   296306    3.41%
+   2144   590       47.7091    32       49.1406       47.5188   303148    3.30%
+Elapsed time = 60.46 sec. (48058.69 ticks, tree = 0.77 MB, solutions = 5)
+   2297   682       49.0543    20       49.1406       47.5617   309931    3.21%
+   2462   780       48.2514    27       49.1406       47.6214   317532    3.09%
+   2654   883       48.3323    23       49.1406       47.6451   325078    3.04%
+   2829   990       47.9633    28       49.1406       47.6847   332782    2.96%
+   3014  1083       48.7554    16       49.1406       47.7072   340160    2.92%
+   3173  1172       48.8122    25       49.1406       47.7255   347421    2.88%
+   3349  1261       48.2885    20       49.1406       47.7514   355011    2.83%
+   3525  1340       48.9249    14       49.1406       47.7811   362384    2.77%
+   3689  1416       48.9635    25       49.1406       47.8000   370111    2.73%
+   3849  1486       49.1215    17       49.1406       47.8146   377649    2.70%
+Elapsed time = 71.52 sec. (57637.63 ticks, tree = 1.53 MB, solutions = 5)
+   4024  1573       49.1337    12       49.1406       47.8377   384971    2.65%
+   4163  1641       48.6137    21       49.1406       47.8603   392429    2.61%
+   4328  1732       48.9739    20       49.1406       47.8723   400057    2.58%
+   4480  1822       48.9735    14       49.1406       47.8917   407491    2.54%
+   4644  1914       49.0417    15       49.1406       47.9029   414940    2.52%
+   4806  2004       48.9762    17       49.1406       47.9106   422220    2.50%
+   4970  2078       48.9239    20       49.1406       47.9314   429697    2.46%
+   5149  2170       48.5157    20       49.1406       47.9458   437022    2.43%
+   5302  2238       48.2221    22       49.1406       47.9597   444292    2.40%
+   5468  2315       48.2232    32       49.1406       47.9668   451311    2.39%
+Elapsed time = 82.44 sec. (67213.60 ticks, tree = 2.36 MB, solutions = 5)
+   5633  2378       48.0108    31       49.1406       47.9745   458286    2.37%
+   5800  2458        cutoff             49.1406       47.9807   465699    2.36%
+   5944  2529       48.2760    20       49.1406       47.9902   472944    2.34%
+   6103  2604       48.2003    26       49.1406       48.0008   480202    2.32%
+   6263  2673       48.2928    30       49.1406       48.0139   487375    2.29%
+   6425  2752       48.8195    29       49.1406       48.0222   494622    2.28%
+   6590  2829       48.2560    22       49.1406       48.0267   501950    2.27%
+   6762  2898        cutoff             49.1406       48.0323   508867    2.26%
+   6922  2973       49.0828    11       49.1406       48.0398   515900    2.24%
+   7092  3041       49.1157    24       49.1406       48.0526   523061    2.21%
+Elapsed time = 93.29 sec. (76767.64 ticks, tree = 3.00 MB, solutions = 5)
+   7274  3129       48.6848    22       49.1406       48.0603   529981    2.20%
+   7436  3199        cutoff             49.1406       48.0686   537347    2.18%
+   7604  3262       48.2553    19       49.1406       48.0742   544529    2.17%
+   7759  3323        cutoff             49.1406       48.0812   551749    2.16%
+   7914  3395       48.5785    22       49.1406       48.0890   558834    2.14%
+   8090  3458       48.4485    16       49.1406       48.0978   565876    2.12%
+   8241  3504       48.5772    29       49.1406       48.1050   573318    2.11%
+   8400  3577       48.5765    21       49.1406       48.1124   580555    2.09%
+   8573  3653       48.8638    27       49.1406       48.1173   587939    2.08%
+   8740  3732       49.0911    24       49.1406       48.1231   595134    2.07%
+Elapsed time = 104.18 sec. (86342.45 ticks, tree = 3.62 MB, solutions = 5)
+   8909  3803       48.8262    20       49.1406       48.1313   602262    2.05%
+   9078  3888       48.4163    16       49.1406       48.1395   609353    2.04%
+   9237  3949       49.1293    20       49.1406       48.1460   616331    2.02%
+   9415  4011       48.8761    22       49.1406       48.1554   623672    2.00%
+   9594  4087       48.7901    18       49.1406       48.1616   630825    1.99%
+   9767  4156       48.3730    34       49.1406       48.1685   637774    1.98%
+   9925  4216       48.7245    30       49.1406       48.1733   644817    1.97%
+  10101  4292       48.4909    16       49.1406       48.1818   651833    1.95%
+  10286  4353        cutoff             49.1406       48.1904   658742    1.93%
+  10461  4433       48.7861    18       49.1406       48.1935   665780    1.93%
+Elapsed time = 114.96 sec. (95909.07 ticks, tree = 4.38 MB, solutions = 5)
+  10619  4496       48.9342    32       49.1406       48.1991   673064    1.92%
+  10786  4571       48.9775    16       49.1406       48.2029   679842    1.91%
+  10940  4634       49.0846    20       49.1406       48.2096   686426    1.89%
+  11112  4692       49.0282    21       49.1406       48.2146   693850    1.88%
+  11280  4735       48.4318    27       49.1406       48.2212   700787    1.87%
+  11441  4790       49.0774    17       49.1406       48.2263   708158    1.86%
+  11602  4850       49.0184     8       49.1406       48.2296   714845    1.85%
+  11774  4917       48.8615    17       49.1406       48.2360   721811    1.84%
+  11955  5003       48.4158    14       49.1406       48.2397   728590    1.83%
+  12638  5233       48.6764    23       49.1406       48.2602   756752    1.79%
+Elapsed time = 129.01 sec. (108345.40 ticks, tree = 5.09 MB, solutions = 5)
+  13339  5498       48.7814    24       49.1406       48.2750   784748    1.76%
+  14035  5717       49.0878    30       49.1406       48.2911   812831    1.73%
+  14738  5946       48.7974    26       49.1406       48.3057   840945    1.70%
+  15462  6166        cutoff             49.1406       48.3259   868546    1.66%
+  16177  6397        cutoff             49.1406       48.3449   896286    1.62%
+  16869  6611       48.9739    26       49.1406       48.3590   924112    1.59%
+  17578  6810        cutoff             49.1406       48.3772   951624    1.55%
+  18279  6982       49.0891    25       49.1406       48.3941   979562    1.52%
+  19005  7142       49.0656    27       49.1406       48.4103  1007500    1.49%
+  19725  7356       48.9781    23       49.1406       48.4236  1035224    1.46%
+Elapsed time = 171.69 sec. (146529.77 ticks, tree = 6.94 MB, solutions = 5)
+  20408  7510        cutoff             49.1406       48.4365  1063324    1.43%
+  21140  7718       48.9872    21       49.1406       48.4474  1090227    1.41%
+  21862  7897       48.9090    21       49.1406       48.4609  1118019    1.38%
+  22585  8044       48.9008    14       49.1406       48.4710  1145731    1.36%
+  23299  8194        cutoff             49.1406       48.4841  1172570    1.34%
+  24028  8343       48.7705    25       49.1406       48.4955  1200581    1.31%
+  24749  8496       49.1089    23       49.1406       48.5070  1227997    1.29%
+  25455  8590       49.0161    26       49.1406       48.5228  1255523    1.26%
+  26192  8672       48.9215    19       49.1406       48.5372  1282759    1.23%
+  26904  8784       49.0436    26       49.1406       48.5488  1310232    1.20%
+Elapsed time = 214.12 sec. (184713.68 ticks, tree = 8.51 MB, solutions = 5)
+  27628  8877        cutoff             49.1406       48.5610  1337540    1.18%
+  28350  8956       48.6910    21       49.1406       48.5726  1364641    1.16%
+  29126  9087        cutoff             49.1406       48.5834  1391806    1.13%
+  29867  9157       48.8602    21       49.1406       48.5969  1419381    1.11%
+  30618  9216       48.7651    24       49.1406       48.6083  1446890    1.08%
+  31378  9237       49.0746    30       49.1406       48.6201  1473931    1.06%
+  32124  9275        cutoff             49.1406       48.6302  1501005    1.04%
+  32890  9314        cutoff             49.1406       48.6420  1527986    1.01%
+  33657  9323       49.0509    23       49.1406       48.6543  1555676    0.99%
+  34436  9330        cutoff             49.1406       48.6657  1582452    0.97%
+Elapsed time = 256.21 sec. (222893.14 ticks, tree = 8.96 MB, solutions = 5)
+  35187  9331       49.0709    29       49.1406       48.6770  1609980    0.94%
+  35972  9313       49.0258    29       49.1406       48.6899  1636584    0.92%
+  36757  9242        cutoff             49.1406       48.7024  1663403    0.89%
+  37542  9148       48.8154    19       49.1406       48.7162  1689397    0.86%
+  38365  9077       49.0247    17       49.1406       48.7304  1716012    0.83%
+  39177  8954       49.0661    24       49.1406       48.7437  1742476    0.81%
+  40006  8861        cutoff             49.1406       48.7567  1768439    0.78%
+  40838  8748        cutoff             49.1406       48.7700  1795132    0.75%
+  41676  8541        cutoff             49.1406       48.7855  1821257    0.72%
+  42540  8295       49.0768    26       49.1406       48.8019  1846758    0.69%
+Elapsed time = 298.15 sec. (261060.03 ticks, tree = 8.01 MB, solutions = 5)
+  43393  8063        cutoff             49.1406       48.8182  1872546    0.66%
+  44293  7756       48.8982    23       49.1406       48.8357  1897720    0.62%
+  45210  7388       49.0677    29       49.1406       48.8532  1923305    0.58%
+  46153  6943       49.1085    14       49.1406       48.8723  1948450    0.55%
+  47125  6440       49.0694    15       49.1406       48.8946  1973087    0.50%
+  48173  5821       49.1173    31       49.1406       48.9179  1995782    0.45%
+  49278  5065        cutoff             49.1406       48.9448  2017986    0.40%
+  50479  4073        cutoff             49.1406       48.9803  2038470    0.33%
+  51822  2886        cutoff             49.1406       49.0193  2055505    0.25%
+  53297  1486        cutoff             49.1406       49.0690  2069253    0.15%
+Elapsed time = 339.15 sec. (299242.63 ticks, tree = 1.96 MB, solutions = 5)
+
+Starting MIP-solver-driven algorithm
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+WARNING: Conic solver failure: returned status Unknown
+
+MIP-solver-driven algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  +4.914061e+01
+ - Best bound           =  +4.914025e+01
+ - Relative opt. gap    =      7.420e-06
+ - Total time (s)       =       3.43e+02
+
+Timers (s):
+ - Setup                =   5.18e-03
+ -- Transform data      =   3.56e-04
+ -- Create conic data   =   3.61e-03
+ -- Create MIP data     =   1.22e-03
+ - Algorithm            =   3.43e+02
+ -- Solve relaxation    =   9.02e-03
+ -- Get relaxation cuts =   2.90e-04
+ -- MIP solver driving  =   3.43e+02
+ -- Solve subproblems   =   1.53e+00
+ -- Get subproblem cuts =   1.55e-02
+ -- Get separation cuts =   4.90e-02
+
+Counters:
+ - Lazy callbacks       =   361
+ -- Integer repeats     =   241
+ -- Conic subproblems   =   121
+ --- Infeasible         =     3
+ --- Optimal            =     5
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =   113
+ -- Feasible solutions  =    22
+ --- From subproblems   =     5
+ --- In lazy callback   =    17
+ - Heuristic callbacks  = 29020
+ -- Solutions passed    =     4
+
+Solution returned by MIP solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+    Second order |   1944 |   3284 |   4826 |    146 |   4826
+
+439 numerically unstable disaggregated SOC cuts
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear | -0.00e+00 |  2.66e-15
+    Rotated S.O. |  3.18e-07 |        NA
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+
+Gomory fractional cuts applied:  19
+User cuts applied:  4792
+
+Root node processing (before b&c):
+  Real time             =    9.03 sec. (7903.76 ticks)
+Sequential b&c:
+  Real time             =  333.53 sec. (294918.60 ticks)
+                          ------------
+Total (root+branch&cut) =  342.57 sec. (302822.36 ticks)
+#STATUS# Optimal
+#OBJVAL# 49.14061137416569
+#OBJBOUND# 49.14024673781308
+#NODECOUNT# 54807
+#TIMESOLVER# 342.5816299915314
+#TIMEALL# 342.61690402030945
+#SOLUTION# [49.14061137416569,1.0,1.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.12499999999832467,4.4999999999884,0.35355339020753895,6.125000000000001,0.0,0.12499998732007256,0.0,0.0,0.0,0.3535533903545134,0.0,0.3535533903963165,0.3535533903545135,4.499999988154574,0.0,6.125000000000002,0.0,4.499999957414923,0.0,0.4999999969459161,0.0,0.0,0.0,1.4142135528871724,2.000000000000014,0.1817801786969263,2.872900308855635,0.5141519881587076,0.0,0.22293725268150463,0.18178017870366803,0.0,0.0,2.0000000000000133,0.18178017879167632,0.49999999998539363,1.4142135610708269,0.0,0.0,0.0,0.0,0.0,2.0000000000000133,0.0,0.49999999998659544,0.0,0.0,0.0,0.0,1.4142135610708269,0.0,2.0000000000000133,0.0,0.49999999999999695,0.0,0.0,0.0,0.0,0.0,1.4142135610708269,0.0,0.0,0.49999999999996053,0.0,0.0,1.4142135610708277,0.0,0.0,0.0,0.0,0.0,0.0,-2.12132034355965,-0.594603557501361,-2.4748737341529248,-1.1102230246251565e-16,0.0,0.0,0.0,-0.594603557501361,0.0,0.594603557501361,0.594603557501361,2.12132034355965,0.0,2.4748737341529248,-2.12132034355965,0.0,0.0,0.0,0.0,1.189207115002722,1.4142135623730998,-1.6949632696092802,-0.7170442702058557,0.47216284479686627,0.4263570739503698,0.0,0.0,1.4142135623730998,-0.7071067811865501,-1.189207115002722,0.0,0.0,0.0,0.0,1.4142135623730998,-0.7071067811865501,0.0,0.0,0.0,-1.189207115002722,0.0,1.4142135623730998,-0.7071067811865501,0.0,0.0,0.0,0.0,1.189207115002722,0.0,-0.7071067811865501,0.0,1.1892071150027221,0.0,0.0,0.0,-0.0,0.35355339059327506,-0.353553390593275,-0.0,-0.70710678118655,0.4263570739503698,0.0,0.4263570739503698,0.0,-0.0,0.0,-0.0,0.0,-0.0,0.0,-1.1102230246251565e-16,-0.0,1.0,0.06249999999916234,0.35355339059327506,1.0,2.2499999999942,-2.12132034355965,1.0,0.17677669510376948,-0.594603557501361,1.0,3.0625000000000004,-2.4748737341529248,0.0,0.0,-1.1102230246251565e-16,1.0,0.06249999366003628,-0.353553390593275,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.1767766951772567,-0.594603557501361,0.0,0.0,0.0,1.0,0.17677669519815825,0.594603557501361,1.0,0.17677669517725675,0.594603557501361,1.0,2.249999994077287,2.12132034355965,0.0,0.0,0.0,1.0,3.062500000000001,2.4748737341529248,0.0,0.0,-0.0,1.0,2.2499999787074616,-2.12132034355965,0.0,0.0,0.0,1.0,0.24999999847295806,-0.70710678118655,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.7071067764435862,1.189207115002722,1.0,1.000000000000007,1.4142135623730998,1.0,0.09089008934846315,0.4263570739503698,1.0,1.4364501544278174,-1.6949632696092802,1.0,0.2570759940793538,-0.7170442702058557,0.0,0.0,0.0,1.0,0.11146862634075232,0.47216284479686627,1.0,0.09089008935183401,0.4263570739503698,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0000000000000067,1.4142135623730998,1.0,0.09089008939583816,0.4263570739503698,1.0,0.24999999999269681,-0.7071067811865501,1.0,0.7071067805354134,-1.189207115002722,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0000000000000067,1.4142135623730998,0.0,0.0,-0.0,1.0,0.24999999999329772,-0.7071067811865501,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.7071067805354134,-1.189207115002722,0.0,0.0,0.0,1.0,1.0000000000000067,1.4142135623730998,0.0,0.0,-0.0,1.0,0.24999999999999847,-0.7071067811865501,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.7071067805354134,1.189207115002722,0.0,0.0,0.0,0.0,0.0,-0.0,1.0,0.24999999999998027,-0.7071067811865501,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.7071067805354139,1.1892071150027221,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-0.0,0.0,0.0,-1.1102230246251565e-16,0.0,0.0,-0.0]

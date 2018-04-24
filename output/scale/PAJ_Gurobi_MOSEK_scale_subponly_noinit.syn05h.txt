@@ -1,0 +1,95 @@
+WARNING: Repeated integer solution without converging
+WARNING: Pajarito failed to converge to the desired relative gap; try turning off the MIP solver's presolve functionality
+#SOLVERNAME# PAJ_Gurobi_MOSEK_scale_subponly_noinit
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 0), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-6), (:MIPGap, 0.0)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, false, false, false, false, false, true, 10.0, false, false, false, false, 1.0e-12, 1.0e-6, false, "")
+#INSTANCE# syn05h.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |      46
+     constraints |     120
+   nonzeros in A |     202
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Primal expon. |       3 |         3 |         3
+
+Variable types:
+      continuous |      41
+         integer |       5
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.16s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.01s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =    -838.010731
+Academic license - for non-commercial use only
+
+Starting iterative algorithm
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |  -8.374449e+02 |  -8.380107e+02 |   6.757e-04 |   1.851e-01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |  -8.377324e+02 |  -8.377324e+02 |  -4.967e-12 |   1.908e-01
+
+Iterative algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  -8.377324e+02
+ - Best bound           =  -8.377324e+02
+ - Relative opt. gap    =     -4.967e-12
+ - Total time (s)       =       1.91e-01
+
+Timers (s):
+ - Setup                =   1.56e-01
+ -- Transform data      =   1.57e-04
+ -- Create conic data   =   1.55e-01
+ -- Create MIP data     =   3.60e-04
+ - Algorithm            =   3.50e-02
+ -- Solve relaxation    =   5.08e-03
+ -- Get relaxation cuts =   1.79e-02
+ -- Solve MIP models    =   7.21e-03
+ -- Solve subproblems   =   4.16e-03
+ -- Get subproblem cuts =   8.63e-05
+ -- Get separation cuts =   0.00e+00
+
+Counters:
+ - Iterations           =     2
+ -- Integer repeats     =     0
+ -- Conic subproblems   =     2
+ --- Infeasible         =     0
+ --- Optimal            =     2
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =     0
+ -- Feasible solutions  =     2
+ --- From subproblems   =     2
+ --- From MIP solve     =     0
+
+Solution returned by conic solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+   Primal expon. |      6 |      0 |      3 |      3 |      1
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |        NA |  8.94e-11
+   Primal expon. |        NA |  0.00e+00
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Optimal
+#OBJVAL# -837.7324009021412
+#OBJBOUND# -837.7324008979801
+#NODECOUNT# NaN
+#TIMESOLVER# 0.19080209732055664
+#TIMEALL# 0.19130706787109375
+#SOLUTION# [-1.3077755930753018e-11,5.754948654744639,-0.0,-0.0,2.8774743273723193,0.0,1.0,0.0,0.0,1.0,837.7324009021412,9.999999999977149,-0.0,9.999999999977149,-0.0,2.877474327338784,2.877474327338784,2.877474327372167,-0.0,-0.0,2.877474327372167,0.0,-0.0,-0.0,-0.0,-0.0,-2.3978952727078275,9.999999999977149,2.877474327338784,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.0,-0.0,-0.0,-0.0,-0.0,2.8774743273723193,2.8774743273723193,5.754948654744639,-0.0,-0.0,-0.0]

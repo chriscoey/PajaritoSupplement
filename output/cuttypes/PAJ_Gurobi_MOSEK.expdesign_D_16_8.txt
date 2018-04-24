@@ -1,0 +1,426 @@
+#SOLVERNAME# PAJ_Gurobi_MOSEK
+#SOLVER# Pajarito.PajaritoSolver(3, 3600.0, 1.0e-5, false, Gurobi.GurobiSolver(nothing, Any[(:OutputFlag, 0), (:Threads, 8), (:IntFeasTol, 1.0e-9), (:FeasibilityTol, 1.0e-8), (:MIPGap, 0.0)]), Pajarito.UnsetSolver(), 0, false, true, Mosek.MosekSolver(Any[(:LOG, 0), (:NUM_THREADS, 8), (:MSK_DPAR_INTPNT_CO_TOL_REL_GAP, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_PFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_DFEAS, 1.0e-10), (:MSK_DPAR_INTPNT_CO_TOL_NEAR_REL, 1000.0)]), true, true, false, false, true, false, false, true, false, true, true, true, true, false, true, 10.0, false, false, false, true, 1.0e-12, 1.0e-8, false, "")
+#INSTANCE# expdesign_D_16_8.cbf.gz
+#TIMELIMIT# 3600.0
+
+Problem dimensions:
+       variables |     217
+     constraints |     534
+   nonzeros in A |    1601
+
+Cones summary:
+Cone             | Count   | Min dim.  | Max dim. 
+   Primal expon. |       8 |         3 |         3
+   Pos. semidef. |       2 |       8^2 |      16^2
+
+Variable types:
+      continuous |     201
+         integer |      16
+
+Transforming data...               0.00s
+
+Creating conic subproblem...       0.16s
+
+Building MIP model...              0.00s
+
+Solving conic relaxation...        0.05s
+ - Relaxation status    =        Optimal
+ - Relaxation bound     =       2.880391
+Academic license - for non-commercial use only
+
+Starting iterative algorithm
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    1 |           +Inf |  +2.880391e+00 |         Inf |   9.606e-01
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    2 |           +Inf |  +2.880391e+00 |         Inf |   1.125e+00
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    3 |           +Inf |  +2.880391e+00 |         Inf |   1.335e+00
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    4 |           +Inf |  +2.880391e+00 |         Inf |   1.547e+00
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    5 |  +6.705819e+00 |  +2.880391e+00 |   5.705e-01 |   1.628e+00
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    6 |  +6.705819e+00 |  +2.880391e+00 |   5.705e-01 |   1.838e+00
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    7 |  +6.705819e+00 |  +2.880391e+00 |   5.705e-01 |   2.061e+00
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    8 |  +6.705819e+00 |  +2.880391e+00 |   5.705e-01 |   2.288e+00
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+    9 |  +6.705819e+00 |  +2.880391e+00 |   5.705e-01 |   2.491e+00
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   10 |  +6.705819e+00 |  +2.880391e+00 |   5.705e-01 |   2.752e+00
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_ILL_POSED, solution is Mosek.MSK_SOL_STA_PRIM_ILLPOSED_CER, response is Mosek.MSK_RES_TRM_STALL
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   11 |  +6.705819e+00 |  +2.880391e+00 |   5.705e-01 |   3.047e+00
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   12 |  +6.705819e+00 |  +2.880391e+00 |   5.705e-01 |   3.281e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   13 |  +6.705819e+00 |  +2.880391e+00 |   5.705e-01 |   3.614e+00
+Academic license - for non-commercial use only
+Mosek problem is Mosek.MSK_PRO_STA_UNKNOWN, solution is Mosek.MSK_SOL_STA_UNKNOWN, response is Mosek.MSK_RES_OK
+
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   14 |  +6.705819e+00 |  +2.880391e+00 |   5.705e-01 |   3.950e+00
+WARNING: Conic solver failure: returned status Unknown
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   15 |  +6.370937e+00 |  +2.880391e+00 |   5.479e-01 |   4.261e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   16 |  +6.370937e+00 |  +2.880391e+00 |   5.479e-01 |   4.546e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   17 |  +4.579472e+00 |  +2.880391e+00 |   3.710e-01 |   4.915e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   18 |  +4.278707e+00 |  +2.880391e+00 |   3.268e-01 |   5.193e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   19 |  +4.278707e+00 |  +2.880391e+00 |   3.268e-01 |   5.516e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   20 |  +4.278707e+00 |  +2.880391e+00 |   3.268e-01 |   5.875e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   21 |  +3.531859e+00 |  +2.880391e+00 |   1.845e-01 |   6.210e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   22 |  +3.531859e+00 |  +2.880391e+00 |   1.845e-01 |   6.555e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   23 |  +3.531859e+00 |  +2.880391e+00 |   1.845e-01 |   6.967e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   24 |  +3.531859e+00 |  +2.880391e+00 |   1.845e-01 |   7.398e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   25 |  +3.531859e+00 |  +2.880391e+00 |   1.845e-01 |   7.906e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   26 |  +3.531859e+00 |  +2.880391e+00 |   1.845e-01 |   8.298e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   27 |  +3.223607e+00 |  +2.880391e+00 |   1.065e-01 |   8.844e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   28 |  +3.223607e+00 |  +2.880391e+00 |   1.065e-01 |   9.026e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   29 |  +3.223607e+00 |  +2.880391e+00 |   1.065e-01 |   9.343e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   30 |  +3.223607e+00 |  +2.880391e+00 |   1.065e-01 |   9.759e+00
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   31 |  +3.223607e+00 |  +2.880391e+00 |   1.065e-01 |   1.025e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   32 |  +3.108203e+00 |  +2.880391e+00 |   7.329e-02 |   1.078e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   33 |  +3.108203e+00 |  +2.880391e+00 |   7.329e-02 |   1.124e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   34 |  +3.108203e+00 |  +2.880391e+00 |   7.329e-02 |   1.174e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   35 |  +3.085761e+00 |  +2.880391e+00 |   6.655e-02 |   1.228e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   36 |  +3.085761e+00 |  +2.880391e+00 |   6.655e-02 |   1.279e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   37 |  +3.052386e+00 |  +2.880391e+00 |   5.635e-02 |   1.318e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   38 |  +3.052386e+00 |  +2.880391e+00 |   5.635e-02 |   1.373e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   39 |  +3.003302e+00 |  +2.880391e+00 |   4.092e-02 |   1.435e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   40 |  +3.003302e+00 |  +2.880391e+00 |   4.092e-02 |   1.519e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   41 |  +2.970957e+00 |  +2.880391e+00 |   3.048e-02 |   1.591e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   42 |  +2.970957e+00 |  +2.880391e+00 |   3.048e-02 |   1.672e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   43 |  +2.956194e+00 |  +2.880391e+00 |   2.564e-02 |   1.791e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   44 |  +2.931337e+00 |  +2.880394e+00 |   1.738e-02 |   1.929e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   45 |  +2.931337e+00 |  +2.882349e+00 |   1.671e-02 |   2.082e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   46 |  +2.931337e+00 |  +2.883502e+00 |   1.632e-02 |   2.218e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   47 |  +2.931337e+00 |  +2.884349e+00 |   1.603e-02 |   2.336e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   48 |  +2.931337e+00 |  +2.889559e+00 |   1.425e-02 |   2.501e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   49 |  +2.931337e+00 |  +2.891793e+00 |   1.349e-02 |   2.649e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   50 |  +2.931337e+00 |  +2.892927e+00 |   1.310e-02 |   2.817e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   51 |  +2.931337e+00 |  +2.900986e+00 |   1.035e-02 |   3.034e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   52 |  +2.931337e+00 |  +2.901636e+00 |   1.013e-02 |   3.258e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   53 |  +2.931337e+00 |  +2.902264e+00 |   9.918e-03 |   3.467e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   54 |  +2.931337e+00 |  +2.904679e+00 |   9.094e-03 |   3.688e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   55 |  +2.931337e+00 |  +2.904691e+00 |   9.090e-03 |   3.909e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   56 |  +2.931337e+00 |  +2.909211e+00 |   7.548e-03 |   4.134e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   57 |  +2.931337e+00 |  +2.910209e+00 |   7.208e-03 |   4.375e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   58 |  +2.931337e+00 |  +2.910447e+00 |   7.126e-03 |   4.618e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   59 |  +2.931337e+00 |  +2.911209e+00 |   6.866e-03 |   4.846e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   60 |  +2.931337e+00 |  +2.915610e+00 |   5.365e-03 |   5.112e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   61 |  +2.931337e+00 |  +2.916764e+00 |   4.971e-03 |   5.374e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   62 |  +2.931337e+00 |  +2.916987e+00 |   4.895e-03 |   5.641e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   63 |  +2.931337e+00 |  +2.919728e+00 |   3.960e-03 |   5.951e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   64 |  +2.931337e+00 |  +2.919930e+00 |   3.891e-03 |   6.263e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   65 |  +2.931337e+00 |  +2.920934e+00 |   3.549e-03 |   6.576e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   66 |  +2.931337e+00 |  +2.920969e+00 |   3.537e-03 |   6.908e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   67 |  +2.931337e+00 |  +2.922440e+00 |   3.035e-03 |   7.236e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   68 |  +2.931337e+00 |  +2.925069e+00 |   2.138e-03 |   7.576e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   69 |  +2.931337e+00 |  +2.925575e+00 |   1.965e-03 |   7.937e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   70 |  +2.931337e+00 |  +2.926879e+00 |   1.521e-03 |   8.289e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   71 |  +2.931337e+00 |  +2.928256e+00 |   1.051e-03 |   8.698e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   72 |  +2.931337e+00 |  +2.929156e+00 |   7.438e-04 |   9.066e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   73 |  +2.931337e+00 |  +2.929614e+00 |   5.875e-04 |   9.447e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   74 |  +2.931337e+00 |  +2.930023e+00 |   4.480e-04 |   9.836e+01
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   75 |  +2.931337e+00 |  +2.931228e+00 |   3.722e-05 |   1.020e+02
+Academic license - for non-commercial use only
+
+Iter. | Best feasible  | Best bound     | Rel. gap    | Time (s)   
+   76 |  +2.931337e+00 |  +2.931337e+00 |   0.000e+00 |   1.056e+02
+WARNING: Repeated integer solution without converging
+
+Iterative algorithm summary:
+ - Status               =        Optimal
+ - Best feasible        =  +2.931337e+00
+ - Best bound           =  +2.931337e+00
+ - Relative opt. gap    =      0.000e+00
+ - Total time (s)       =       1.06e+02
+
+Timers (s):
+ - Setup                =   1.58e-01
+ -- Transform data      =   2.82e-04
+ -- Create conic data   =   1.57e-01
+ -- Create MIP data     =   1.19e-03
+ - Algorithm            =   1.05e+02
+ -- Solve relaxation    =   4.72e-02
+ -- Get relaxation cuts =   1.99e-02
+ -- Solve MIP models    =   1.01e+02
+ -- Solve subproblems   =   3.62e+00
+ -- Get subproblem cuts =   1.25e-01
+ -- Get separation cuts =   1.83e-02
+
+Counters:
+ - Iterations           =    76
+ -- Integer repeats     =     1
+ -- Conic subproblems   =    75
+ --- Infeasible         =     0
+ --- Optimal            =    64
+ --- Suboptimal         =     0
+ --- UserLimit          =     0
+ --- ConicFailure       =     0
+ --- Other status       =    11
+ -- Feasible solutions  =    65
+ --- From subproblems   =    64
+ --- From MIP solve     =     1
+
+Solution returned by conic solver
+
+Rounds of full separation/subproblem cuts, and count of cuts added:
+Cone             | Subp.  | Sep.   | Total  | Relax. | Viol. 
+   Primal expon. |    528 |     74 |    594 |      8 |    112
+   Pos. semidef. |    132 |     10 |   1317 |     24 |    462
+
+Distance to feasibility (negative indicates strict feasibility):
+Cone             | Variable  | Constraint
+          Linear |        NA |  3.89e-16
+   Primal expon. |        NA | -2.64e-11
+   Pos. semidef. |        NA |  1.29e-10
+
+Distance to integrality of integer/binary variables:
+         integer |  0.00e+00
+
+#STATUS# Optimal
+#OBJVAL# 2.931336732026285
+#OBJBOUND# 2.931336732026285
+#NODECOUNT# NaN
+#TIMESOLVER# 105.60046100616455
+#TIMEALL# 105.60137677192688
+#SOLUTION# [-0.9776214443304422,0.21795604105981198,-0.5251153294430521,0.526461909076506,-0.285322594515346,-0.5545618143188891,-0.5214764755576291,-0.8116570239972443,0.376204859798111,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.2435324021795735,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.5914871445841428,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.6929319531714389,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.7517716980630437,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.5743238666278955,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.593643400641638,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,0.4441215362461933,0.376204859798111,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.43087539219699267,1.2435324021795735,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.3924126806300261,0.018456896661213855,0.5914871445841428,-0.0,-0.0,-0.0,-0.0,-0.0,0.2058030723196145,0.1441752386390498,-0.13480521531267411,1.6929319531714389,-0.0,-0.0,-0.0,-0.0,-0.03291957638894999,0.2200634592678658,-0.1979079325465264,-0.39323822549990406,0.7517716980630437,-0.0,-0.0,-0.0,-0.39610791047637744,-0.35189675157965666,0.31559073633534607,-0.1681204623352049,0.13865743712639853,0.5743238666278955,-0.0,-0.0,0.07284734690220131,-0.34813146933136935,0.050314234719408955,0.6032275680000865,-0.03526493002247889,0.014757999112604116,0.593643400641638,-0.0,-0.35942532821375706,0.2656144598169114,0.4074804196615836,0.1638238728068303,-0.1842791981751947,0.07542843778156921,0.0030093845416494206,0.4441215362461933,0.376204859579811,-0.43087539217072124,-0.3924126806014477,0.20580307229058692,-0.032919576392125255,-0.39610791042987237,0.07284734689487028,-0.3594253281696601,-0.43087539217072124,1.7370231129538911,0.4678954493738511,-0.09153537802851616,0.2577669472091434,0.10177402605239927,-0.43156507839693536,0.6772718993201203,-0.3924126806014477,0.4678954493738511,1.001079861437015,-0.34733489087757957,-0.16030385004545342,0.7235409780295767,-0.030838629264538453,0.7863329986290304,0.20580307229058695,-0.09153537802851615,-0.34733489087757957,1.8529556384958465,-0.3406277343431731,-0.4975363987947562,0.5912492958362596,-0.09487302303632864,-0.032919576392125255,0.2577669472091434,-0.16030385004545342,-0.34062773434317317,0.9511572144595949,0.04450142758943004,-0.2602009202112843,-0.280216886578035,-0.39610791042987237,0.10177402605239932,0.7235409780295767,-0.4975363987947561,0.0445014275894301,1.3016226915266036,-0.0029923203048997093,0.5458606671616331,0.07284734689487025,-0.43156507839693536,-0.03083862926453851,0.5912492958362596,-0.2602009202112843,-0.0029923203048997093,0.9264662384014106,-0.03733014292486936,-0.35942532816966016,0.6772718993201203,0.7863329986290304,-0.09487302303632869,-0.2802168865780349,0.5458606671616331,-0.037330142924869414,1.1959132173651787,-2.931336732026285,1.0,0.0,1.0,2.0,0.0,2.0,2.0,0.0,2.0,3.0,1.0,1.0,2.0,1.0,3.0,3.0]

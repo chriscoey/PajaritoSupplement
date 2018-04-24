@@ -1,0 +1,61 @@
+numerics/lpfeastol = 1e-08
+presolving:
+(round 1, fast)       288 del vars, 604 del conss, 0 add conss, 508 chg bounds, 0 chg sides, 0 chg coeffs, 96 upgd conss, 0 impls, 4 clqs
+(round 2, fast)       289 del vars, 605 del conss, 0 add conss, 741 chg bounds, 0 chg sides, 4 chg coeffs, 96 upgd conss, 0 impls, 10 clqs
+(round 3, fast)       289 del vars, 605 del conss, 0 add conss, 753 chg bounds, 0 chg sides, 4 chg coeffs, 96 upgd conss, 0 impls, 10 clqs
+(round 4, exhaustive) 289 del vars, 605 del conss, 0 add conss, 753 chg bounds, 0 chg sides, 4 chg coeffs, 226 upgd conss, 0 impls, 10 clqs
+(round 5, fast)       289 del vars, 605 del conss, 0 add conss, 793 chg bounds, 0 chg sides, 4 chg coeffs, 226 upgd conss, 120 impls, 10 clqs
+   (0.0s) probing cycle finished: starting next cycle
+(round 6, exhaustive) 289 del vars, 605 del conss, 0 add conss, 905 chg bounds, 0 chg sides, 4 chg coeffs, 226 upgd conss, 1437 impls, 58 clqs
+(round 7, fast)       289 del vars, 605 del conss, 0 add conss, 905 chg bounds, 0 chg sides, 20 chg coeffs, 226 upgd conss, 1437 impls, 58 clqs
+   (0.0s) probing cycle finished: starting next cycle
+presolving (8 rounds: 8 fast, 3 medium, 3 exhaustive):
+ 289 deleted vars, 605 deleted constraints, 0 added constraints, 905 tightened bounds, 0 added holes, 0 changed sides, 20 changed coefficients
+ 1533 implications, 58 cliques
+presolved problem has 272 variables (36 bin, 0 int, 0 impl, 236 cont) and 354 constraints
+     96 constraints of type <soc>
+    120 constraints of type <varbound>
+     10 constraints of type <setppc>
+    128 constraints of type <linear>
+Presolving Time: 0.02
+numerics/lpfeastol = 1e-08
+
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |   171 |     - |4496k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   511 |     - |4597k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   536 |     - |4787k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   582 |     - |4790k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   620 |     - |4798k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   664 |     - |4806k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |   691 |     - |4807k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  2146 |     - |4835k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  2184 |     - |4835k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  2206 |     - |4856k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  2222 |     - |4891k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  2229 |     - |4892k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  2235 |     - |4892k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  2240 |     - |4893k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  2324 |     - |4927k| 0.000000e+00 |      --      |    Inf 
+  node  | left  |LP iter|LP it/n| mem |  dualbound   | primalbound  |  gap   
+      1 |     0 |  2329 |     - |4927k| 0.000000e+00 |      --      |    Inf 
+      1 |     0 |  2373 |     - |4927k| 0.000000e+00 |      --      |    Inf 
+      1 |     2 |  2373 |     - |4927k| 0.000000e+00 |      --      |    Inf 
+    100 |    69 |  7592 |  69.2 |7922k| 0.000000e+00 |      --      |    Inf 
+
+SCIP Status        : problem is solved [infeasible]
+Solving Time (sec) : 1.20
+Solving Nodes      : 134
+Primal Bound       : +1.00000000000000e+20 (0 solutions)
+Dual Bound         : +1.00000000000000e+20
+Gap                : 0.00 %
+#SOLVERNAME# SCIP_MISOCP
+#SOLVER# SCIP.SCIPSolver(("limits/gap", 1.0e-5, "numerics/feastol", 1.0e-8, "limits/time", 3600.0))
+#INSTANCE# clay0304h.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# Infeasible
+#OBJVAL# 1.0
+#OBJBOUND# 1.0e20
+#NODECOUNT# NaN
+#TIMESOLVER# 1.2
+#TIMEALL# 1.9051928520202637
+#SOLUTION# [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]

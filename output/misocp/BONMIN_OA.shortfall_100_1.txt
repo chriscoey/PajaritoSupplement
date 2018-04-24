@@ -1,0 +1,891 @@
+Bonmin 1.8.2 using Cbc 2.9.8 and Ipopt 3.12.1
+bonmin: bonmin.algorithm="B-OA"
+bonmin.time_limit=3600.0
+halt_on_ampl_error=yes
+bonmin.allowable_fraction_gap=1.0e-5
+bonmin.oa_log_level=1
+bonmin.bb_log_level=1
+
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit http://projects.coin-or.org/Ipopt
+******************************************************************************
+
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I             1         OPT -1.1131645       19 0.532     build initial OA
+NLP0014I             2      INFEAS 0.08754645       34 1.004     OA decomposition
+NLP0014I             3      INFEAS 0.075155106       40 1.128     OA decomposition
+NLP0014I             4      INFEAS 0.15511292       45 1.296     OA decomposition
+NLP0014I             5      INFEAS 0.051808772       39 1.104     OA decomposition
+NLP0014I             6      INFEAS 0.026516368       57 1.952     OA decomposition
+NLP0014I             7      INFEAS 0.0043884882       45 1.296     OA decomposition
+NLP0014I             8      INFEAS 0.070343947       37 1.052     OA decomposition
+NLP0014I             9      INFEAS 0.039934651       46 1.38     OA decomposition
+NLP0014I            10      INFEAS 0.033269781       49 1.456     OA decomposition
+NLP0014I            11      INFEAS 0.25418242       51 1.472     OA decomposition
+NLP0014I            12      INFEAS 0.059687515       47 1.36     OA decomposition
+NLP0014I            13      INFEAS 0.11966242       37 1     OA decomposition
+NLP0014I            14      INFEAS 0.043174356       29 0.86     OA decomposition
+NLP0014I            15      INFEAS 0.017444618       43 1.3     OA decomposition
+NLP0014I            16      INFEAS 0.068448045       32 0.916     OA decomposition
+NLP0014I            17      INFEAS 0.058455965       37 1.1     OA decomposition
+NLP0014I            18      INFEAS 0.18474945       38 1.192     OA decomposition
+NLP0014I            19      INFEAS 0.066123064       36 0.968     OA decomposition
+NLP0014I            20      INFEAS 0.19598486       36 1.06     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I            21      INFEAS 0.10774027       28 0.744     OA decomposition
+NLP0014I            22      INFEAS 0.014187118       44 1.424     OA decomposition
+NLP0014I            23      INFEAS 0.25683662       47 1.296     OA decomposition
+NLP0014I            24      INFEAS 0.080724466       37 1.1     OA decomposition
+NLP0014I            25      INFEAS 0.010727433       47 1.576     OA decomposition
+NLP0014I            26      INFEAS 0.063960457       40 1.172     OA decomposition
+NLP0014I            27      INFEAS 0.028148899       40 1.224     OA decomposition
+NLP0014I            28      INFEAS 0.19055397       40 1.068     OA decomposition
+NLP0014I            29      INFEAS 0.077558457       29 0.76     OA decomposition
+NLP0014I            30      INFEAS 0.063033042       28 0.752     OA decomposition
+NLP0014I            31      INFEAS 0.05728808       26 0.696     OA decomposition
+NLP0014I            32      INFEAS 0.18245354       41 1.128     OA decomposition
+NLP0014I            33      INFEAS 0.065419375       46 1.368     OA decomposition
+NLP0014I            34      INFEAS 0.14713829       27 0.736     OA decomposition
+NLP0014I            35      INFEAS 0.069722658       47 1.408     OA decomposition
+NLP0014I            36      INFEAS 0.012599886       47 1.368     OA decomposition
+NLP0014I            37      INFEAS 0.011624571       63 1.952     OA decomposition
+NLP0014I            38      INFEAS 0.0066226852       34 0.996     OA decomposition
+NLP0014I            39      INFEAS 0.019812069       40 1.168     OA decomposition
+NLP0014I            40      INFEAS 0.016090477       26 0.736     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I            41      INFEAS 0.0075325344       61 1.948     OA decomposition
+NLP0014I            42      INFEAS 0.049914423       45 1.376     OA decomposition
+NLP0014I            43      INFEAS 0.0071129376       30 0.836     OA decomposition
+NLP0014I            44      INFEAS 0.12965949       30 0.784     OA decomposition
+NLP0014I            45      INFEAS 0.089351997       28 0.724     OA decomposition
+NLP0014I            46      INFEAS 0.093797416       43 1.256     OA decomposition
+NLP0014I            47      INFEAS 0.0069885778       50 1.544     OA decomposition
+NLP0014I            48      INFEAS 0.070550795       45 1.36     OA decomposition
+NLP0014I            49      INFEAS 0.027344726       51 1.476     OA decomposition
+NLP0014I            50      INFEAS 0.026613082       34 1     OA decomposition
+NLP0014I            51      INFEAS 0.081018685       34 0.904     OA decomposition
+NLP0014I            52      INFEAS 0.038318752       32 0.892     OA decomposition
+NLP0014I            53      INFEAS 0.1544354       29 0.776     OA decomposition
+NLP0014I            54      INFEAS 0.13460309       35 0.94     OA decomposition
+NLP0014I            55         OPT -1.0804486       12 0.276     OA decomposition
+OA0003I New best feasible of -1.0804486 found after 86.124 sec and
+NLP0014I            56      INFEAS 0.06523154       35 0.992     OA decomposition
+NLP0014I            57      INFEAS 0.082160118       32 0.86     OA decomposition
+NLP0014I            58      INFEAS 0.015731083       46 1.664     OA decomposition
+NLP0014I            59      INFEAS 0.076839537       30 0.832     OA decomposition
+NLP0014I            60      INFEAS 0.027024493       38 1.176     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I            61      INFEAS 0.011900536       61 2.148     OA decomposition
+NLP0014I            62      INFEAS 0.1431021       40 1.128     OA decomposition
+OA0012I After 101.248.1f seconds, 62 iterations upper bound -1.08045940g, lower bound -1.11316450g
+NLP0014I            63      INFEAS 0.060756232       38 1.104     OA decomposition
+NLP0014I            64      INFEAS 0.013454996       46 1.348     OA decomposition
+NLP0014I            65      INFEAS 0.049792094       32 0.872     OA decomposition
+NLP0014I            66      INFEAS 0.052594045       63 1.836     OA decomposition
+NLP0014I            67      INFEAS 0.050467912       41 1.212     OA decomposition
+NLP0014I            68      INFEAS 0.027861953       46 1.364     OA decomposition
+NLP0014I            69      INFEAS 0.051607872       29 0.788     OA decomposition
+NLP0014I            70         OPT -1.072662       12 0.288     OA decomposition
+NLP0014I            71      INFEAS 0.086344835       36 0.98     OA decomposition
+NLP0014I            72      INFEAS 0.015765906       38 1.136     OA decomposition
+NLP0014I            73      INFEAS 0.031801143       31 0.876     OA decomposition
+NLP0014I            74      INFEAS 0.032529945       40 1.232     OA decomposition
+NLP0014I            75      INFEAS 0.13121137       39 1.14     OA decomposition
+NLP0014I            76      INFEAS 0.058817366       47 1.416     OA decomposition
+NLP0014I            77      INFEAS 0.052154381       36 1.04     OA decomposition
+NLP0014I            78      INFEAS 0.027573381       45 1.364     OA decomposition
+NLP0014I            79      INFEAS 0.0013206858       33 1.012     OA decomposition
+NLP0014I            80      INFEAS 0.007432119       34 1.008     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I            81      INFEAS 0.10098929       31 0.832     OA decomposition
+NLP0014I            82         OPT -1.0862727       15 0.368     OA decomposition
+OA0003I New best feasible of -1.0862727 found after 139.552 sec and
+NLP0014I            83      INFEAS 0.089583274       37 1.056     OA decomposition
+NLP0014I            84      INFEAS 0.046971385       74 2.164     OA decomposition
+NLP0014I            85      INFEAS 0.065678487       43 1.316     OA decomposition
+NLP0014I            86      INFEAS 0.019569025       31 0.904     OA decomposition
+NLP0014I            87      INFEAS 0.03876957       60 1.772     OA decomposition
+NLP0014I            88         OPT -1.086274       13 0.328     OA decomposition
+NLP0014I            89      INFEAS 0.023741136       33 0.928     OA decomposition
+NLP0014I            90      INFEAS 0.12355717       31 0.824     OA decomposition
+NLP0014I            91      INFEAS 0.041185915       41 1.244     OA decomposition
+NLP0014I            92      INFEAS 0.014436564       43 1.312     OA decomposition
+NLP0014I            93         OPT -1.0680818       16 0.38     OA decomposition
+NLP0014I            94      INFEAS 0.10296845       36 1.108     OA decomposition
+NLP0014I            95      INFEAS 0.028552549       54 1.648     OA decomposition
+NLP0014I            96      INFEAS 0.019934014       44 1.324     OA decomposition
+NLP0014I            97      INFEAS 0.036868698       41 1.192     OA decomposition
+NLP0014I            98      INFEAS 0.042591024       31 0.856     OA decomposition
+NLP0014I            99      INFEAS 0.033362588       42 1.272     OA decomposition
+NLP0014I           100      INFEAS 0.084014149       37 1.048     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           101      INFEAS 0.17364552       38 1.108     OA decomposition
+NLP0014I           102      INFEAS 0.11734484       33 0.892     OA decomposition
+NLP0014I           103      INFEAS 0.10300035       32 0.888     OA decomposition
+NLP0014I           104      INFEAS 0.12063383       28 0.772     OA decomposition
+NLP0014I           105      INFEAS 0.079048747       34 0.956     OA decomposition
+NLP0014I           106      INFEAS 0.053357423       33 0.984     OA decomposition
+NLP0014I           107      INFEAS 0.041264912       48 1.42     OA decomposition
+NLP0014I           108      INFEAS 0.097181005       30 0.864     OA decomposition
+NLP0014I           109      INFEAS 0.071701782       36 1.064     OA decomposition
+NLP0014I           110      INFEAS 0.068704925       48 1.46     OA decomposition
+OA0012I After 203.696.1f seconds, 110 iterations upper bound -1.08628360g, lower bound -1.11316450g
+NLP0014I           111      INFEAS 0.031449382       41 1.276     OA decomposition
+NLP0014I           112      INFEAS 0.082629296       40 1.204     OA decomposition
+NLP0014I           113      INFEAS 0.032175931       36 1.088     OA decomposition
+NLP0014I           114      INFEAS 0.1095404       33 0.944     OA decomposition
+NLP0014I           115      INFEAS 0.019607822       47 1.408     OA decomposition
+NLP0014I           116      INFEAS 0.084689475       37 1.128     OA decomposition
+NLP0014I           117      INFEAS 0.069623704       35 1.012     OA decomposition
+NLP0014I           118      INFEAS 0.061849631       37 1.096     OA decomposition
+NLP0014I           119      INFEAS 0.04446275       65 1.82     OA decomposition
+NLP0014I           120      INFEAS 0.056546225       42 1.28     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           121      INFEAS 0.040378432       53 1.564     OA decomposition
+NLP0014I           122      INFEAS 0.046178749       47 1.432     OA decomposition
+NLP0014I           123      INFEAS 0.068928802       30 0.816     OA decomposition
+NLP0014I           124         OPT -1.0855845       15 0.36     OA decomposition
+NLP0014I           125      INFEAS 0.050300187       53 1.608     OA decomposition
+NLP0014I           126      INFEAS 0.040235135       44 1.348     OA decomposition
+NLP0014I           127      INFEAS 0.0072404043       47 1.584     OA decomposition
+NLP0014I           128      INFEAS 0.081111851       34 0.964     OA decomposition
+NLP0014I           129      INFEAS 0.019471632       45 1.408     OA decomposition
+NLP0014I           130      INFEAS 0.043135732       32 0.892     OA decomposition
+NLP0014I           131      INFEAS 0.093606639       39 1.084     OA decomposition
+NLP0014I           132      INFEAS 0.018571568       35 1.028     OA decomposition
+NLP0014I           133         OPT -1.0821062       15 0.38     OA decomposition
+NLP0014I           134      INFEAS 0.035108039       42 1.24     OA decomposition
+NLP0014I           135      INFEAS 0.079267876       30 0.812     OA decomposition
+NLP0014I           136      INFEAS 0.015866625       36 1.08     OA decomposition
+NLP0014I           137      INFEAS 0.015054837       30 0.916     OA decomposition
+NLP0014I           138      INFEAS 0.073573006       37 1.06     OA decomposition
+NLP0014I           139      INFEAS 0.011830292       50 1.632     OA decomposition
+NLP0014I           140      INFEAS 0.02483962       36 1.076     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           141      INFEAS 0.10541224       27 0.748     OA decomposition
+NLP0014I           142      INFEAS 0.035441675       45 1.544     OA decomposition
+NLP0014I           143      INFEAS 0.016397492       40 1.172     OA decomposition
+NLP0014I           144      INFEAS 0.043196248       40 1.172     OA decomposition
+NLP0014I           145      INFEAS 0.12143174       30 0.828     OA decomposition
+NLP0014I           146      INFEAS 0.040992699       45 1.32     OA decomposition
+OA0012I After 304.068.1f seconds, 146 iterations upper bound -1.08628360g, lower bound -1.11316450g
+NLP0014I           147      INFEAS 0.12929702       33 0.888     OA decomposition
+NLP0014I           148      INFEAS 0.055882459       43 1.272     OA decomposition
+NLP0014I           149      INFEAS 0.052681789       49 1.468     OA decomposition
+NLP0014I           150      INFEAS 0.019141643       47 1.372     OA decomposition
+NLP0014I           151      INFEAS 0.062142513       28 0.804     OA decomposition
+NLP0014I           152      INFEAS 0.0222288       42 1.24     OA decomposition
+NLP0014I           153      INFEAS 0.0065363064       40 1.228     OA decomposition
+NLP0014I           154      INFEAS 0.074072735       33 0.896     OA decomposition
+NLP0014I           155         OPT -1.0746771       16 0.392     OA decomposition
+NLP0014I           156      INFEAS 0.037346971       30 0.848     OA decomposition
+NLP0014I           157      INFEAS 0.044780178       36 1.04     OA decomposition
+NLP0014I           158      INFEAS 0.079319246       37 1.06     OA decomposition
+NLP0014I           159      INFEAS 0.034239933       28 0.8     OA decomposition
+NLP0014I           160      INFEAS 0.077195771       31 0.856     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           161      INFEAS 0.059921611       40 1.16     OA decomposition
+NLP0014I           162      INFEAS 0.031516105       64 1.86     OA decomposition
+NLP0014I           163      INFEAS 0.0013867842       40 1.192     OA decomposition
+NLP0014I           164      INFEAS 0.0081799723       31 0.852     OA decomposition
+NLP0014I           165         OPT -1.0685835       18 0.448     OA decomposition
+NLP0014I           166      INFEAS 0.082168177       38 1.032     OA decomposition
+NLP0014I           167      INFEAS 0.035486556       42 1.192     OA decomposition
+NLP0014I           168      INFEAS 0.049456439       33 0.92     OA decomposition
+NLP0014I           169      INFEAS 0.026326918       37 1.092     OA decomposition
+NLP0014I           170      INFEAS 0.035099181       29 0.828     OA decomposition
+NLP0014I           171      INFEAS 0.064736793       45 1.44     OA decomposition
+NLP0014I           172      INFEAS 0.023213418       38 1.092     OA decomposition
+NLP0014I           173      INFEAS 0.015972658       36 1.048     OA decomposition
+NLP0014I           174         OPT -1.0742983       15 0.38     OA decomposition
+NLP0014I           175      INFEAS 0.01574386       47 1.516     OA decomposition
+NLP0014I           176      INFEAS 0.0046191926       37 1.076     OA decomposition
+NLP0014I           177      INFEAS 0.025459686       34 0.936     OA decomposition
+OA0012I After 404.864.1f seconds, 177 iterations upper bound -1.08628360g, lower bound -1.11316450g
+NLP0014I           178         OPT -1.0853156       12 0.284     OA decomposition
+NLP0014I           179         OPT -1.078794       14 0.344     OA decomposition
+NLP0014I           180      INFEAS 0.071896347       34 0.996     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           181      INFEAS 0.05068702       33 0.912     OA decomposition
+NLP0014I           182      INFEAS 0.032816172       32 0.876     OA decomposition
+NLP0014I           183      INFEAS 0.011687085       53 1.58     OA decomposition
+NLP0014I           184      INFEAS 0.10903187       44 1.268     OA decomposition
+NLP0014I           185      INFEAS 0.0063552878       61 1.976     OA decomposition
+NLP0014I           186      INFEAS 0.040071571       50 1.496     OA decomposition
+NLP0014I           187      INFEAS 0.046888832       31 0.864     OA decomposition
+NLP0014I           188      INFEAS 0.038487182       32 0.896     OA decomposition
+NLP0014I           189      INFEAS 0.044802227       45 1.368     OA decomposition
+NLP0014I           190      INFEAS 0.045822511       36 1.02     OA decomposition
+NLP0014I           191      INFEAS 0.08523228       39 1.172     OA decomposition
+NLP0014I           192      INFEAS 0.0013172475       42 1.304     OA decomposition
+NLP0014I           193      INFEAS 0.014240479       52 1.54     OA decomposition
+NLP0014I           194      INFEAS 0.023030042       38 1.2     OA decomposition
+NLP0014I           195      INFEAS 0.041059805       30 0.828     OA decomposition
+NLP0014I           196      INFEAS 0.0017354692       40 1.22     OA decomposition
+NLP0014I           197      INFEAS 0.09130893       27 0.74     OA decomposition
+NLP0014I           198         OPT -1.0838924       15 0.348     OA decomposition
+NLP0014I           199      INFEAS 0.10452681       43 1.216     OA decomposition
+NLP0014I           200      INFEAS 0.0053714568       40 1.228     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           201      INFEAS 0.074514567       39 1.144     OA decomposition
+NLP0014I           202      INFEAS 0.064220017       40 1.172     OA decomposition
+NLP0014I           203      INFEAS 0.017586392       38 1.084     OA decomposition
+NLP0014I           204      INFEAS 0.0035336096       31 0.876     OA decomposition
+NLP0014I           205      INFEAS 0.053423329       37 1.036     OA decomposition
+OA0012I After 505.82.1f seconds, 205 iterations upper bound -1.08628360g, lower bound -1.11316450g
+NLP0014I           206      INFEAS 0.087890934       30 0.884     OA decomposition
+NLP0014I           207         OPT -1.0827751       12 0.296     OA decomposition
+NLP0014I           208      INFEAS 0.062720413       38 1.152     OA decomposition
+NLP0014I           209      INFEAS 0.003605634       36 1.1     OA decomposition
+NLP0014I           210      INFEAS 0.044838036       30 0.844     OA decomposition
+NLP0014I           211      INFEAS 0.077544967       31 0.86     OA decomposition
+NLP0014I           212      INFEAS 0.046452962       38 1.164     OA decomposition
+NLP0014I           213      INFEAS 0.0015628178       45 1.432     OA decomposition
+NLP0014I           214      INFEAS 0.037860212       43 1.272     OA decomposition
+NLP0014I           215      INFEAS 0.042364759       42 1.228     OA decomposition
+NLP0014I           216      INFEAS 0.1068622       38 1.1     OA decomposition
+NLP0014I           217      INFEAS 0.053978895       28 0.76     OA decomposition
+NLP0014I           218      INFEAS 0.053233979       33 0.98     OA decomposition
+NLP0014I           219      INFEAS 0.0053443714       45 1.72     OA decomposition
+NLP0014I           220      INFEAS 0.0090605691       31 0.948     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           221      INFEAS 0.049389128       32 0.956     OA decomposition
+NLP0014I           222      INFEAS 0.024882605       44 1.328     OA decomposition
+NLP0014I           223      INFEAS 0.05944563       45 1.376     OA decomposition
+NLP0014I           224      INFEAS 0.045784791       46 1.348     OA decomposition
+NLP0014I           225      INFEAS 0.032195669       46 1.304     OA decomposition
+NLP0014I           226      INFEAS 0.022761104       41 1.212     OA decomposition
+NLP0014I           227      INFEAS 0.014238762       40 1.22     OA decomposition
+NLP0014I           228      INFEAS 0.070828464       41 1.132     OA decomposition
+NLP0014I           229      INFEAS 0.098618718       30 0.8     OA decomposition
+NLP0014I           230      INFEAS 0.018314349       44 1.444     OA decomposition
+OA0012I After 607.348.1f seconds, 230 iterations upper bound -1.08628360g, lower bound -1.11316450g
+NLP0014I           231         OPT -1.0841063       12 0.292     OA decomposition
+NLP0014I           232      INFEAS 0.10546208       30 0.804     OA decomposition
+NLP0014I           233      INFEAS 0.04036065       30 0.852     OA decomposition
+NLP0014I           234      INFEAS 0.023184009       28 0.788     OA decomposition
+NLP0014I           235      INFEAS 0.039583604       27 0.744     OA decomposition
+NLP0014I           236      INFEAS 0.056999191       51 1.508     OA decomposition
+NLP0014I           237      INFEAS 0.0013350338       40 1.164     OA decomposition
+NLP0014I           238      INFEAS 0.028944791       33 0.944     OA decomposition
+NLP0014I           239      INFEAS 0.084708999       39 1.072     OA decomposition
+NLP0014I           240         OPT -1.0894008       15 0.38     OA decomposition
+OA0003I New best feasible of -1.0894008 found after 643.748 sec and
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           241      INFEAS 0.0031970049       36 1.108     OA decomposition
+NLP0014I           242         OPT -1.0942433       10 0.236     OA decomposition
+OA0003I New best feasible of -1.0942433 found after 652.732 sec and
+NLP0014I           243      INFEAS 0.09409114       40 1.108     OA decomposition
+NLP0014I           244      INFEAS 0.041040473       31 0.892     OA decomposition
+NLP0014I           245         OPT -1.0922582       16 0.404     OA decomposition
+NLP0014I           246      INFEAS 0.14511016       29 0.772     OA decomposition
+NLP0014I           247      INFEAS 0.051233008       39 1.152     OA decomposition
+NLP0014I           248      INFEAS 0.026371081       38 1.116     OA decomposition
+NLP0014I           249      INFEAS 0.035245438       66 1.88     OA decomposition
+NLP0014I           250      INFEAS 0.062201459       49 1.452     OA decomposition
+NLP0014I           251      INFEAS 0.062147412       44 1.312     OA decomposition
+NLP0014I           252      INFEAS 0.10560897       36 1.028     OA decomposition
+NLP0014I           253      INFEAS 0.027394316       36 1.012     OA decomposition
+NLP0014I           254         OPT -1.0746923       14 0.36     OA decomposition
+NLP0014I           255      INFEAS 0.078545849       37 1.068     OA decomposition
+OA0012I After 710.236.1f seconds, 255 iterations upper bound -1.09425420g, lower bound -1.11316450g
+NLP0014I           256      INFEAS 0.033138721       40 1.16     OA decomposition
+NLP0014I           257      INFEAS 0.0033487012       43 1.804     OA decomposition
+NLP0014I           258      INFEAS 0.040616727       34 0.996     OA decomposition
+NLP0014I           259      INFEAS 0.05364044       39 1.124     OA decomposition
+NLP0014I           260      INFEAS 0.019023129       42 1.22     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           261         OPT -1.0907755       14 0.352     OA decomposition
+NLP0014I           262      INFEAS 0.070033146       30 0.832     OA decomposition
+NLP0014I           263      INFEAS 0.011156157       45 1.332     OA decomposition
+NLP0014I           264      INFEAS 0.0066608433       44 1.304     OA decomposition
+NLP0014I           265      INFEAS 0.07346799       32 0.856     OA decomposition
+NLP0014I           266      INFEAS 0.028503001       42 1.708     OA decomposition
+NLP0014I           267      INFEAS 0.047700163       33 0.88     OA decomposition
+NLP0014I           268      INFEAS 0.055599889       36 1.056     OA decomposition
+NLP0014I           269      INFEAS 0.0044675742       38 1.076     OA decomposition
+NLP0014I           270      INFEAS 0.0058328925       42 1.304     OA decomposition
+NLP0014I           271      INFEAS 0.012032498       33 0.912     OA decomposition
+NLP0014I           272      INFEAS 0.017267154       39 1.104     OA decomposition
+NLP0014I           273      INFEAS 0.029258606       29 0.804     OA decomposition
+NLP0014I           274      INFEAS 0.011078686       29 0.816     OA decomposition
+NLP0014I           275      INFEAS 0.033112666       37 1.084     OA decomposition
+NLP0014I           276      INFEAS 0.010282362       40 1.336     OA decomposition
+OA0012I After 813.868.1f seconds, 276 iterations upper bound -1.09425420g, lower bound -1.11316450g
+NLP0014I           277         OPT -1.0814055       11 0.26     OA decomposition
+NLP0014I           278      INFEAS 0.077703361       26 0.7     OA decomposition
+NLP0014I           279      INFEAS 0.02589903       31 0.86     OA decomposition
+NLP0014I           280         OPT -1.0958272       13 0.316     OA decomposition
+OA0003I New best feasible of -1.0958272 found after 826.956 sec and
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           281         OPT -1.0815341       17 0.436     OA decomposition
+NLP0014I           282      INFEAS 0.004623686       37 1.068     OA decomposition
+NLP0014I           283      INFEAS 0.0094478541       62 1.788     OA decomposition
+NLP0014I           284         OPT -1.0696415       16 0.392     OA decomposition
+NLP0014I           285      INFEAS 0.040410535       29 0.804     OA decomposition
+NLP0014I           286      INFEAS 0.018080895       47 1.348     OA decomposition
+NLP0014I           287      INFEAS 0.0092753188       75 2.692     OA decomposition
+NLP0014I           288      INFEAS 0.011821563       40 1.144     OA decomposition
+NLP0014I           289      INFEAS 0.088622499       28 0.74     OA decomposition
+NLP0014I           290      INFEAS 0.0064782058       45 1.3     OA decomposition
+NLP0014I           291      INFEAS 0.0085272473       37 1.072     OA decomposition
+NLP0014I           292      INFEAS 0.035451465       45 1.3     OA decomposition
+NLP0014I           293      INFEAS 0.048695818       46 1.352     OA decomposition
+NLP0014I           294      INFEAS 0.080888788       29 0.768     OA decomposition
+NLP0014I           295      INFEAS 0.039775462       30 0.868     OA decomposition
+OA0012I After 915.408.1f seconds, 295 iterations upper bound -1.09583820g, lower bound -1.11316450g
+NLP0014I           296         OPT -1.0725112       17 0.408     OA decomposition
+NLP0014I           297      INFEAS 0.030975866       35 1.028     OA decomposition
+NLP0014I           298      INFEAS 0.030598152       37 1.08     OA decomposition
+NLP0014I           299         OPT -1.0768623       15 0.376     OA decomposition
+NLP0014I           300         OPT -1.095658       16 0.404     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           301      INFEAS 0.046715188       28 0.764     OA decomposition
+NLP0014I           302      INFEAS 0.036324211       40 1.184     OA decomposition
+NLP0014I           303      INFEAS 0.023037902       46 1.4     OA decomposition
+NLP0014I           304         OPT -1.092685        9 0.2     OA decomposition
+NLP0014I           305         OPT -1.0836484       14 0.348     OA decomposition
+NLP0014I           306      INFEAS 0.0052050616       47 1.92     OA decomposition
+NLP0014I           307         OPT -1.0942913       14 0.352     OA decomposition
+NLP0014I           308      INFEAS 0.022862283       43 1.292     OA decomposition
+NLP0014I           309         OPT -1.0908304       14 0.34     OA decomposition
+NLP0014I           310         OPT -1.077584       16 0.388     OA decomposition
+NLP0014I           311         OPT -1.0899572       10 0.236     OA decomposition
+NLP0014I           312      INFEAS 0.018068406       34 0.996     OA decomposition
+NLP0014I           313      INFEAS 0.023883831       36 1.032     OA decomposition
+OA0012I After 1020.988.1f seconds, 313 iterations upper bound -1.09583820g, lower bound -1.11316450g
+NLP0014I           314      INFEAS 0.015923505       38 1.088     OA decomposition
+NLP0014I           315      INFEAS 0.034820769       32 0.904     OA decomposition
+NLP0014I           316      INFEAS 0.0036084359       38 1.112     OA decomposition
+NLP0014I           317      INFEAS 0.03587425       43 1.348     OA decomposition
+NLP0014I           318         OPT -1.0882992       15 0.372     OA decomposition
+NLP0014I           319         OPT -1.0882904       17 0.4     OA decomposition
+NLP0014I           320      INFEAS 0.044158529       26 0.728     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           321      INFEAS 0.00014341598       76 2.808     OA decomposition
+NLP0014I           322      INFEAS 0.059274549       28 0.764     OA decomposition
+NLP0014I           323      INFEAS 0.031693752       38 1.076     OA decomposition
+NLP0014I           324      INFEAS 0.00043018093       33 0.996     OA decomposition
+NLP0014I           325      INFEAS 0.02536568       33 0.96     OA decomposition
+NLP0014I           326      INFEAS 0.0036435334       47 1.728     OA decomposition
+NLP0014I           327      INFEAS 0.0018689549       49 1.84     OA decomposition
+NLP0014I           328         OPT -1.0804636       16 0.392     OA decomposition
+NLP0014I           329         OPT -1.0836814       17 0.412     OA decomposition
+NLP0014I           330      INFEAS 0.043359778       39 1.092     OA decomposition
+OA0012I After 1124.096.1f seconds, 330 iterations upper bound -1.09583820g, lower bound -1.11316450g
+NLP0014I           331      INFEAS 0.071325066       45 1.308     OA decomposition
+NLP0014I           332      INFEAS 0.074913059       37 0.992     OA decomposition
+NLP0014I           333      INFEAS 0.050493534       43 1.204     OA decomposition
+NLP0014I           334      INFEAS 0.084107532       40 1.08     OA decomposition
+NLP0014I           335         OPT -1.0844246       16 0.4     OA decomposition
+NLP0014I           336      INFEAS 0.0025026372       37 1.244     OA decomposition
+NLP0014I           337      INFEAS 0.00043112255       56 2.144     OA decomposition
+NLP0014I           338         OPT -1.0783908       11 0.26     OA decomposition
+NLP0014I           339         OPT -1.0799962       14 0.356     OA decomposition
+NLP0014I           340      INFEAS 0.027275691       36 1.024     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           341      INFEAS 0.034679883       27 0.736     OA decomposition
+NLP0014I           342      INFEAS 0.13337301       40 1.072     OA decomposition
+NLP0014I           343      INFEAS 0.036837656       45 1.408     OA decomposition
+NLP0014I           344      INFEAS 0.0052391246       44 1.396     OA decomposition
+OA0012I After 1230.616.1f seconds, 344 iterations upper bound -1.09583820g, lower bound -1.11316450g
+NLP0014I           345         OPT -1.0822242       11 0.256     OA decomposition
+NLP0014I           346      INFEAS 0.030129963       42 1.244     OA decomposition
+NLP0014I           347      INFEAS 0.053611514       36 0.988     OA decomposition
+NLP0014I           348      INFEAS 0.045470501       36 0.992     OA decomposition
+NLP0014I           349         OPT -1.0844896       10 0.236     OA decomposition
+NLP0014I           350      INFEAS 0.0025227579       41 1.352     OA decomposition
+NLP0014I           351      INFEAS 0.03228479       36 1.04     OA decomposition
+NLP0014I           352      INFEAS 0.010072174       35 1.056     OA decomposition
+NLP0014I           353      INFEAS 0.033789953       30 0.852     OA decomposition
+NLP0014I           354      INFEAS 0.008388779       41 1.196     OA decomposition
+NLP0014I           355      INFEAS 0.027126211       31 0.876     OA decomposition
+NLP0014I           356      INFEAS 0.016172903       73 2.208     OA decomposition
+NLP0014I           357      INFEAS 0.0018401393       38 1.08     OA decomposition
+NLP0014I           358      INFEAS 0.054594929       41 1.188     OA decomposition
+NLP0014I           359         OPT -1.0943961       16 0.396     OA decomposition
+NLP0014I           360      INFEAS 0.0096928794       47 1.404     OA decomposition
+OA0012I After 1332.788.1f seconds, 360 iterations upper bound -1.09583820g, lower bound -1.11316450g
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           361         OPT -1.0927339       12 0.28     OA decomposition
+NLP0014I           362      INFEAS 0.0023162316       29 0.792     OA decomposition
+NLP0014I           363         OPT -1.0777336       14 0.344     OA decomposition
+NLP0014I           364      INFEAS 0.030055363       34 1.104     OA decomposition
+NLP0014I           365         OPT -1.0825205       15 0.384     OA decomposition
+NLP0014I           366      INFEAS 0.017432777       42 1.216     OA decomposition
+NLP0014I           367      INFEAS 0.011906443       41 1.276     OA decomposition
+NLP0014I           368      INFEAS 0.026912049       36 1.036     OA decomposition
+NLP0014I           369      INFEAS 0.025496274       40 1.188     OA decomposition
+NLP0014I           370      INFEAS 0.020376433       32 0.904     OA decomposition
+NLP0014I           371      INFEAS 0.0085184085       38 1.104     OA decomposition
+NLP0014I           372      INFEAS 0.0036038346       24 0.68     OA decomposition
+NLP0014I           373      INFEAS 0.047479757       48 1.412     OA decomposition
+NLP0014I           374      INFEAS 0.015552365       33 0.896     OA decomposition
+OA0012I After 1434.352.1f seconds, 374 iterations upper bound -1.09583820g, lower bound -1.11316450g
+NLP0014I           375      INFEAS 0.071595718       38 1.128     OA decomposition
+NLP0014I           376         OPT -1.0887895       15 0.376     OA decomposition
+NLP0014I           377      INFEAS 0.021397189       39 1.092     OA decomposition
+NLP0014I           378      INFEAS 0.022487505       44 1.792     OA decomposition
+NLP0014I           379         OPT -1.0964912       14 0.344     OA decomposition
+OA0003I New best feasible of -1.0964912 found after 1463.972 sec and
+NLP0014I           380      INFEAS 0.011885854       41 1.324     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           381      INFEAS 0.057847073       34 1.008     OA decomposition
+NLP0014I           382         OPT -1.0897482       14 0.344     OA decomposition
+NLP0014I           383      INFEAS 0.031306153       29 0.792     OA decomposition
+NLP0014I           384      INFEAS 0.033304013       43 1.288     OA decomposition
+NLP0014I           385      INFEAS 0.061496388       31 0.888     OA decomposition
+NLP0014I           386      INFEAS 0.062581254       47 1.412     OA decomposition
+NLP0014I           387      INFEAS 0.0063822843       44 1.328     OA decomposition
+NLP0014I           388         OPT -1.0852181       14 0.332     OA decomposition
+OA0012I After 1535.856.1f seconds, 388 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           389      INFEAS 0.022066699       30 0.852     OA decomposition
+NLP0014I           390      INFEAS 0.0064825264       30 0.852     OA decomposition
+NLP0014I           391      INFEAS 0.0044059554       26 0.744     OA decomposition
+NLP0014I           392      INFEAS 0.021633215       30 0.816     OA decomposition
+NLP0014I           393      INFEAS 0.022641492       33 0.952     OA decomposition
+NLP0014I           394      INFEAS 0.0030914921       44 1.376     OA decomposition
+NLP0014I           395      INFEAS 0.029832491       39 1.16     OA decomposition
+NLP0014I           396      INFEAS 0.0016909421       41 1.208     OA decomposition
+NLP0014I           397      INFEAS 0.01905494       43 1.26     OA decomposition
+NLP0014I           398      INFEAS 0.022735149       49 1.476     OA decomposition
+NLP0014I           399      INFEAS 0.0098607137       59 1.796     OA decomposition
+OA0012I After 1636.424.1f seconds, 399 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           400         OPT -1.0842944       17 0.416     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           401      INFEAS 0.013670217       31 0.868     OA decomposition
+NLP0014I           402         OPT -1.0905503       10 0.232     OA decomposition
+NLP0014I           403      INFEAS 0.01649472       45 1.336     OA decomposition
+NLP0014I           404      INFEAS 0.032148704       49 1.804     OA decomposition
+NLP0014I           405      INFEAS 0.05900237       28 0.756     OA decomposition
+NLP0014I           406      INFEAS 0.00067903061       39 1.364     OA decomposition
+NLP0014I           407      INFEAS 0.0014818724       41 1.276     OA decomposition
+NLP0014I           408         OPT -1.0923692       10 0.228     OA decomposition
+NLP0014I           409      INFEAS 0.024675698       35 1.028     OA decomposition
+NLP0014I           410      INFEAS 0.011326485       29 0.82     OA decomposition
+NLP0014I           411         OPT -1.0859522       17 0.408     OA decomposition
+NLP0014I           412         OPT -1.0731968       16 0.392     OA decomposition
+OA0012I After 1739.652.1f seconds, 412 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           413         OPT -1.0873169       14 0.348     OA decomposition
+NLP0014I           414         OPT -1.0873075       11 0.256     OA decomposition
+NLP0014I           415      INFEAS 0.020159093       49 1.476     OA decomposition
+NLP0014I           416      INFEAS 0.078410906       43 1.204     OA decomposition
+NLP0014I           417         OPT -1.0940687       16 0.404     OA decomposition
+NLP0014I           418      INFEAS 0.035039224       37 1.076     OA decomposition
+NLP0014I           419      INFEAS 0.0092450651       44 1.3     OA decomposition
+NLP0014I           420         OPT -1.0890041       15 0.376     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           421      INFEAS 0.047205116       38 1.088     OA decomposition
+NLP0014I           422      INFEAS 0.047360481       38 1.132     OA decomposition
+NLP0014I           423      INFEAS 0.06196315       34 1     OA decomposition
+OA0012I After 1841.208.1f seconds, 423 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           424      INFEAS 0.0074632079       59 1.84     OA decomposition
+NLP0014I           425      INFEAS 0.016712048       31 0.916     OA decomposition
+NLP0014I           426      INFEAS 0.044692857       31 0.824     OA decomposition
+NLP0014I           427      INFEAS 0.012800879       46 1.584     OA decomposition
+NLP0014I           428      INFEAS 0.023694654       44 1.304     OA decomposition
+NLP0014I           429      INFEAS 0.029135346       33 0.944     OA decomposition
+NLP0014I           430      INFEAS 0.080075957       34 0.976     OA decomposition
+NLP0014I           431      INFEAS 0.0066758836       41 1.196     OA decomposition
+NLP0014I           432      INFEAS 0.0005224109       43 1.68     OA decomposition
+NLP0014I           433         OPT -1.0831462       17 0.408     OA decomposition
+NLP0014I           434      INFEAS 0.014032093       47 1.508     OA decomposition
+NLP0014I           435      INFEAS 0.052726399       35 1.028     OA decomposition
+OA0012I After 1942.068.1f seconds, 435 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           436      INFEAS 0.047777238       37 1.088     OA decomposition
+NLP0014I           437      INFEAS 0.047646127       34 1.008     OA decomposition
+NLP0014I           438         OPT -1.0931109       12 0.296     OA decomposition
+NLP0014I           439         OPT -1.0957249       14 0.348     OA decomposition
+NLP0014I           440         OPT -1.0878887       15 0.36     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           441      INFEAS 0.0025206701       44 1.352     OA decomposition
+NLP0014I           442      INFEAS 0.0038083407       29 0.792     OA decomposition
+NLP0014I           443         OPT -1.0827473       15 0.38     OA decomposition
+NLP0014I           444      INFEAS 0.01183871       42 1.236     OA decomposition
+NLP0014I           445      INFEAS 0.002814768       49 1.584     OA decomposition
+NLP0014I           446      INFEAS 0.027081513       38 1.092     OA decomposition
+OA0012I After 2042.9.1f seconds, 446 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           447      INFEAS 0.014427122       43 1.452     OA decomposition
+NLP0014I           448      INFEAS 0.0052881086       50 1.732     OA decomposition
+NLP0014I           449      INFEAS 0.03080674       31 0.864     OA decomposition
+NLP0014I           450         OPT -1.0940612       14 0.36     OA decomposition
+NLP0014I           451      INFEAS 0.020413169       30 0.812     OA decomposition
+NLP0014I           452      INFEAS 0.0044621377       40 1.16     OA decomposition
+NLP0014I           453      INFEAS 0.026292918       37 1.144     OA decomposition
+NLP0014I           454         OPT -1.0801807       16 0.4     OA decomposition
+NLP0014I           455      INFEAS 0.023232186       34 0.976     OA decomposition
+NLP0014I           456      INFEAS 0.054116628       33 0.92     OA decomposition
+NLP0014I           457      INFEAS 0.0065270045       32 0.944     OA decomposition
+NLP0014I           458      INFEAS 0.0029914765       34 0.992     OA decomposition
+OA0012I After 2144.74.1f seconds, 458 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           459      INFEAS 0.004172773       31 0.904     OA decomposition
+NLP0014I           460      INFEAS 0.0041616099       29 0.796     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           461      INFEAS 0.021240753       34 1.004     OA decomposition
+NLP0014I           462      INFEAS 0.037411438       41 1.188     OA decomposition
+NLP0014I           463      INFEAS 0.049213945       30 0.868     OA decomposition
+NLP0014I           464      INFEAS 0.0022890616       92 3.588     OA decomposition
+NLP0014I           465      INFEAS 0.017982952       38 1.2     OA decomposition
+NLP0014I           466      INFEAS 0.041037588       31 0.848     OA decomposition
+NLP0014I           467      INFEAS 0.037480089       38 1.12     OA decomposition
+NLP0014I           468      INFEAS 0.015017515       45 1.452     OA decomposition
+NLP0014I           469      INFEAS 0.029758024       29 0.792     OA decomposition
+OA0012I After 2249.1f seconds, 469 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           470      INFEAS 0.051162217       38 1.132     OA decomposition
+NLP0014I           471      INFEAS 0.0070767956       46 1.356     OA decomposition
+NLP0014I           472      INFEAS 0.037139978       36 1.072     OA decomposition
+NLP0014I           473      INFEAS 0.071821413       33 0.996     OA decomposition
+NLP0014I           474      INFEAS 0.012510813       37 1.216     OA decomposition
+NLP0014I           475      INFEAS 0.045244411       33 0.92     OA decomposition
+NLP0014I           476      INFEAS 0.064336808       35 1.028     OA decomposition
+NLP0014I           477      INFEAS 0.020906336       41 1.256     OA decomposition
+NLP0014I           478      INFEAS 0.033788428       31 0.924     OA decomposition
+NLP0014I           479      INFEAS 0.014610645       45 1.356     OA decomposition
+NLP0014I           480      INFEAS 0.028700041       47 1.412     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           481      INFEAS 0.019503034       28 0.808     OA decomposition
+OA0012I After 2356.388.1f seconds, 481 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           482      INFEAS 0.039552483       27 0.78     OA decomposition
+NLP0014I           483      INFEAS 0.023869409       40 1.208     OA decomposition
+NLP0014I           484      INFEAS 0.043879119       43 1.296     OA decomposition
+NLP0014I           485      INFEAS 0.011032072       41 1.232     OA decomposition
+NLP0014I           486      INFEAS 0.01322842       39 1.168     OA decomposition
+NLP0014I           487      INFEAS 0.054004292       41 1.212     OA decomposition
+NLP0014I           488      INFEAS 0.049919257       31 0.904     OA decomposition
+NLP0014I           489         OPT -1.0877226       15 0.364     OA decomposition
+NLP0014I           490         OPT -1.080858       16 0.388     OA decomposition
+NLP0014I           491      INFEAS 0.026275051       39 1.064     OA decomposition
+NLP0014I           492      INFEAS 0.018163507       34 1.016     OA decomposition
+OA0012I After 2462.536.1f seconds, 492 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           493      INFEAS 0.019094324       36 1.076     OA decomposition
+NLP0014I           494         OPT -1.0897746       11 0.264     OA decomposition
+NLP0014I           495      INFEAS 0.064326562       33 0.964     OA decomposition
+NLP0014I           496      INFEAS 0.014929252       46 1.496     OA decomposition
+NLP0014I           497         OPT -1.080854       17 0.436     OA decomposition
+NLP0014I           498      INFEAS 0.0079690628       51 1.812     OA decomposition
+NLP0014I           499         OPT -1.0774986       14 0.316     OA decomposition
+NLP0014I           500      INFEAS 0.0015589945       55 2.156     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           501         OPT -1.0890775       11 0.26     OA decomposition
+OA0012I After 2565.164.1f seconds, 501 iterations upper bound -1.09650210g, lower bound -1.11316450g
+NLP0014I           502         OPT -1.0993745       14 0.352     OA decomposition
+OA0003I New best feasible of -1.0993745 found after 2565.516 sec and
+NLP0014I           503      INFEAS 0.0087686396       60 1.804     OA decomposition
+NLP0014I           504         OPT -1.0877398       14 0.344     OA decomposition
+NLP0014I           505         OPT -1.0897186       16 0.388     OA decomposition
+NLP0014I           506      INFEAS 0.017528092       39 1.14     OA decomposition
+NLP0014I           507      INFEAS 0.013126583       43 1.3     OA decomposition
+NLP0014I           508      INFEAS 0.008926299       29 0.808     OA decomposition
+NLP0014I           509      INFEAS 0.010424879       38 1.132     OA decomposition
+NLP0014I           510      INFEAS 0.05527209       30 0.876     OA decomposition
+NLP0014I           511      INFEAS 0.0025676093       43 1.5     OA decomposition
+OA0012I After 2667.316.1f seconds, 511 iterations upper bound -1.09938550g, lower bound -1.11316450g
+NLP0014I           512         OPT -1.087435       16 0.428     OA decomposition
+NLP0014I           513         OPT -1.0905531       11 0.264     OA decomposition
+NLP0014I           514      INFEAS 0.010173342       38 1.16     OA decomposition
+NLP0014I           515      INFEAS 0.0099729679       34 1.012     OA decomposition
+NLP0014I           516      INFEAS 0.0091409989       61 1.86     OA decomposition
+NLP0014I           517      INFEAS 0.0042140789       43 1.408     OA decomposition
+NLP0014I           518      INFEAS 0.013010013       29 0.868     OA decomposition
+NLP0014I           519      INFEAS 0.0067991805       45 1.352     OA decomposition
+NLP0014I           520         OPT -1.0858647       14 0.348     OA decomposition
+OA0012I After 2767.768.1f seconds, 520 iterations upper bound -1.09938550g, lower bound -1.11316450g
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           521      INFEAS 0.0038362534       37 1.08     OA decomposition
+NLP0014I           522      INFEAS 0.003449069       46 1.64     OA decomposition
+NLP0014I           523         OPT -1.0898664       16 0.404     OA decomposition
+NLP0014I           524         OPT -1.0983286        9 0.212     OA decomposition
+NLP0014I           525      INFEAS 0.04314975       30 0.868     OA decomposition
+NLP0014I           526      INFEAS 0.006144937       56 2.16     OA decomposition
+NLP0014I           527      INFEAS 0.045772134       45 1.288     OA decomposition
+NLP0014I           528      INFEAS 0.0019209475       33 1.008     OA decomposition
+NLP0014I           529      INFEAS 0.059844965       32 0.868     OA decomposition
+NLP0014I           530      INFEAS 0.03714009       36 0.988     OA decomposition
+OA0012I After 2873.496.1f seconds, 530 iterations upper bound -1.09938550g, lower bound -1.11316450g
+NLP0014I           531      INFEAS 0.0027536211       46 1.336     OA decomposition
+NLP0014I           532      INFEAS 0.0083140063       42 1.208     OA decomposition
+NLP0014I           533      INFEAS 0.002828941       36 1.032     OA decomposition
+NLP0014I           534      INFEAS 0.011128646       43 1.26     OA decomposition
+NLP0014I           535      INFEAS 0.019849879       35 1.032     OA decomposition
+NLP0014I           536      INFEAS 0.00022722778       49 1.86     OA decomposition
+NLP0014I           537      INFEAS 0.0037439078       41 1.336     OA decomposition
+NLP0014I           538      INFEAS 0.0088446747       40 1.16     OA decomposition
+NLP0014I           539         OPT -1.0858149       16 0.4     OA decomposition
+OA0012I After 2982.188.1f seconds, 539 iterations upper bound -1.09938550g, lower bound -1.11316450g
+NLP0014I           540      INFEAS 0.0085201046       39 1.384     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           541         OPT -1.092315       15 0.368     OA decomposition
+NLP0014I           542      INFEAS 0.032408894       31 0.836     OA decomposition
+NLP0014I           543      INFEAS 0.017713344       49 1.772     OA decomposition
+NLP0014I           544         OPT -1.0900467       16 0.388     OA decomposition
+NLP0014I           545      INFEAS 0.06144009       28 0.744     OA decomposition
+NLP0014I           546      INFEAS 0.0016047645       36 1.152     OA decomposition
+NLP0014I           547         OPT -1.0810418       15 0.368     OA decomposition
+NLP0014I           548         OPT -1.095471       13 0.304     OA decomposition
+NLP0014I           549         OPT -1.0968119       14 0.34     OA decomposition
+OA0012I After 3084.876.1f seconds, 549 iterations upper bound -1.09938550g, lower bound -1.11316450g
+NLP0014I           550      INFEAS 0.005199111       41 1.352     OA decomposition
+NLP0014I           551      INFEAS 0.033499608       32 0.876     OA decomposition
+NLP0014I           552         OPT -1.0824513       15 0.38     OA decomposition
+NLP0014I           553      INFEAS 0.015895305       43 1.384     OA decomposition
+NLP0014I           554      INFEAS 0.03833328       37 1.076     OA decomposition
+NLP0014I           555      INFEAS 0.071028869       40 1.112     OA decomposition
+NLP0014I           556      INFEAS 0.0031724403       61 2.076     OA decomposition
+NLP0014I           557         OPT -1.0964774       14 0.336     OA decomposition
+OA0012I After 3185.592.1f seconds, 557 iterations upper bound -1.09938550g, lower bound -1.11316450g
+NLP0014I           558      INFEAS 0.040580878       47 1.456     OA decomposition
+NLP0014I           559         OPT -1.0889861       11 0.252     OA decomposition
+NLP0014I           560         OPT -1.0707373       16 0.408     OA decomposition
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           561      INFEAS 0.020998424       28 0.804     OA decomposition
+NLP0014I           562      INFEAS 0.001326009       36 1.116     OA decomposition
+NLP0014I           563      INFEAS 0.029473116       38 1.112     OA decomposition
+NLP0014I           564         OPT -1.088093       11 0.248     OA decomposition
+NLP0014I           565      INFEAS 0.008369565       44 1.32     OA decomposition
+NLP0014I           566      INFEAS 0.0068847423       47 1.452     OA decomposition
+OA0012I After 3293.648.1f seconds, 566 iterations upper bound -1.09938550g, lower bound -1.11316450g
+NLP0014I           567         OPT -1.0845498       16 0.376     OA decomposition
+NLP0014I           568      INFEAS 0.014203097       45 1.28     OA decomposition
+NLP0014I           569      INFEAS 0.047288976       51 1.428     OA decomposition
+NLP0014I           570      INFEAS 0.0026798373       30 0.868     OA decomposition
+NLP0014I           571      INFEAS 0.025355283       39 1.12     OA decomposition
+OA0012I After 3415.396.1f seconds, 571 iterations upper bound -1.09938550g, lower bound -1.11316450g
+NLP0014I           572      INFEAS 0.023008583       35 1.06     OA decomposition
+NLP0014I           573      INFEAS 0.029282504       41 1.204     OA decomposition
+NLP0014I           574      INFEAS 0.0032641711       47 1.556     OA decomposition
+NLP0014I           575      INFEAS 0.045104893       41 1.208     OA decomposition
+NLP0014I           576         OPT -1.0964334       15 0.38     OA decomposition
+NLP0014I           577      INFEAS 0.017340424       29 0.852     OA decomposition
+NLP0014I           578      INFEAS 0.026916464       41 1.212     OA decomposition
+NLP0014I           579         OPT -1.0918212       15 0.372     OA decomposition
+NLP0014I           580         OPT -1.0853951       15 0.368     OA decomposition
+OA0012I After 3524.42.1f seconds, 580 iterations upper bound -1.09938550g, lower bound -1.11316450g
+NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I           581      INFEAS 0.0042886531       27 0.744     OA decomposition
+NLP0014I           582      INFEAS 0.085649407       26 0.692     OA decomposition
+NLP0014I           583      INFEAS 0.055773783       42 1.216     OA decomposition
+NLP0014I           584      INFEAS 0.057461408       40 1.188     OA decomposition
+NLP0014I           585      INFEAS 0.015744331       45 1.368     OA decomposition
+NLP0014I           586      INFEAS 0.011520592       35 1.04     OA decomposition
+NLP0014I           587      INFEAS 0.006002151       28 0.792     OA decomposition
+NLP0014I           588      INFEAS 0.0022856627       44 1.308     OA decomposition
+OA0009I OA  interupted after 3601.688 seconds found solution of value -1.0993745 (lower bound -1.1131645 ).
+OA0010I Performed 587 iterations, explored 13516 branch-and-bound nodes in total
+Cbc0031I 139 added rows had average density of 101
+Cbc0013I At root node, 139 cuts changed objective from -1.1131645 to -1.1131645 in 1 passes
+Cbc0014I Cut generator 0 (Outer Approximation decomposition.) - 139 row cuts average 101.0 elements, 0 column cuts (0 active)
+Cbc0014I Cut generator 1 (Outer Approximation feasibility check.) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)
+Cbc0014I Cut generator 2 (Outer Approximation strong branching solution check.) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 1e+50 (best possible -1.1131645), took 14 iterations and 0 nodes (3601.70 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+ Outer Approximation decomposition. was tried 1 times and created 139 cuts of which 0 were active after adding rounds of cuts
+
+ 	"Not finished"
+WARNING: Array{T}(::Type{T}, m::Int) is deprecated, use Array{T}(m) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] Array(::Type{Int64}, ::Int64) at ./deprecated.jl:57
+ [3] loadcommon!(::AmplNLWriter.AmplNLMathProgModel, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:313
+ [4] loadproblem!(::AmplNLWriter.AmplNLNonlinearModel, ::Int64, ::Int64, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol, ::JuMP.NLPEvaluator) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:171
+ [5] _buildInternalModel_nlp(::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1248
+ [6] #build#119(::Bool, ::Bool, ::JuMP.ProblemTraits, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:303
+ [7] (::JuMP.#kw##build)(::Array{Any,1}, ::JuMP.#build, ::JuMP.Model) at ./<missing>:0
+ [8] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:168
+ [9] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [10] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [11] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [12] (::##5#6)(::IOStream) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:354
+ [13] open(::##5#6, ::String, ::String) at ./iostream.jl:152
+ [14] include_from_node1(::String) at ./loading.jl:569
+ [15] include(::String) at ./sysimg.jl:14
+ [16] process_options(::Base.JLOptions) at ./client.jl:305
+ [17] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 351
+WARNING: map!{F}(f::F, A::AbstractArray) is deprecated, use map!(f, A, A) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] map!(::AmplNLWriter.#pull_up_constants, ::Array{Any,1}) at ./deprecated.jl:57
+ [3] pull_up_constants(::AmplNLWriter.LinearityExpr) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_linearity.jl:126
+ [4] process_expression!(::Expr, ::Dict{Int64,Float64}, ::Array{Symbol,1}) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:409
+ [5] (::AmplNLWriter.##109#110{AmplNLWriter.AmplNLMathProgModel})(::Int64) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:213
+ [6] _collect(::UnitRange{Int64}, ::Base.Generator{UnitRange{Int64},AmplNLWriter.##109#110{AmplNLWriter.AmplNLMathProgModel}}, ::Base.EltypeUnknown, ::Base.HasShape) at ./array.jl:454
+ [7] loadproblem!(::AmplNLWriter.AmplNLNonlinearModel, ::Int64, ::Int64, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol, ::JuMP.NLPEvaluator) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:177
+ [8] _buildInternalModel_nlp(::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1248
+ [9] #build#119(::Bool, ::Bool, ::JuMP.ProblemTraits, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:303
+ [10] (::JuMP.#kw##build)(::Array{Any,1}, ::JuMP.#build, ::JuMP.Model) at ./<missing>:0
+ [11] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:168
+ [12] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [13] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [14] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [15] (::##5#6)(::IOStream) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:354
+ [16] open(::##5#6, ::String, ::String) at ./iostream.jl:152
+ [17] include_from_node1(::String) at ./loading.jl:569
+ [18] include(::String) at ./sysimg.jl:14
+ [19] process_options(::Base.JLOptions) at ./client.jl:305
+ [20] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 351
+WARNING: !(B::BitArray) is deprecated, use .!(B) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] !(::BitArray{1}) at ./deprecated.jl:57
+ [3] write_nl_header(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:67
+ [4] write_nl_file(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:2
+ [5] optimize!(::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:371
+ [6] optimize!(::AmplNLWriter.AmplNLNonlinearModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:722
+ [7] #solvenlp#165(::Bool, ::Function, ::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1271
+ [8] (::JuMP.#kw##solvenlp)(::Array{Any,1}, ::JuMP.#solvenlp, ::JuMP.Model, ::JuMP.ProblemTraits) at ./<missing>:0
+ [9] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:172
+ [10] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [11] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [12] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [13] (::##5#6)(::IOStream) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:354
+ [14] open(::##5#6, ::String, ::String) at ./iostream.jl:152
+ [15] include_from_node1(::String) at ./loading.jl:569
+ [16] include(::String) at ./sysimg.jl:14
+ [17] process_options(::Base.JLOptions) at ./client.jl:305
+ [18] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 351
+WARNING: !(B::BitArray) is deprecated, use .!(B) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] !(::BitArray{1}) at ./deprecated.jl:57
+ [3] write_nl_header(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:68
+ [4] write_nl_file(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:2
+ [5] optimize!(::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:371
+ [6] optimize!(::AmplNLWriter.AmplNLNonlinearModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:722
+ [7] #solvenlp#165(::Bool, ::Function, ::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1271
+ [8] (::JuMP.#kw##solvenlp)(::Array{Any,1}, ::JuMP.#solvenlp, ::JuMP.Model, ::JuMP.ProblemTraits) at ./<missing>:0
+ [9] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:172
+ [10] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [11] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [12] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [13] (::##5#6)(::IOStream) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:354
+ [14] open(::##5#6, ::String, ::String) at ./iostream.jl:152
+ [15] include_from_node1(::String) at ./loading.jl:569
+ [16] include(::String) at ./sysimg.jl:14
+ [17] process_options(::Base.JLOptions) at ./client.jl:305
+ [18] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 351
+WARNING: Array{T}(::Type{T}, m::Int) is deprecated, use Array{T}(m) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] Array(::Type{Int64}, ::Int64) at ./deprecated.jl:57
+ [3] loadcommon!(::AmplNLWriter.AmplNLMathProgModel, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:313
+ [4] loadproblem!(::AmplNLWriter.AmplNLNonlinearModel, ::Int64, ::Int64, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol, ::JuMP.NLPEvaluator) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:171
+ [5] _buildInternalModel_nlp(::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1248
+ [6] #build#119(::Bool, ::Bool, ::JuMP.ProblemTraits, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:303
+ [7] (::JuMP.#kw##build)(::Array{Any,1}, ::JuMP.#build, ::JuMP.Model) at ./<missing>:0
+ [8] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:168
+ [9] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [10] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [11] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [12] include_from_node1(::String) at ./loading.jl:569
+ [13] include(::String) at ./sysimg.jl:14
+ [14] process_options(::Base.JLOptions) at ./client.jl:305
+ [15] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 372
+WARNING: map!{F}(f::F, A::AbstractArray) is deprecated, use map!(f, A, A) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] map!(::AmplNLWriter.#pull_up_constants, ::Array{Any,1}) at ./deprecated.jl:57
+ [3] pull_up_constants(::AmplNLWriter.LinearityExpr) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_linearity.jl:126
+ [4] process_expression!(::Expr, ::Dict{Int64,Float64}, ::Array{Symbol,1}) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:409
+ [5] (::AmplNLWriter.##109#110{AmplNLWriter.AmplNLMathProgModel})(::Int64) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:213
+ [6] _collect(::UnitRange{Int64}, ::Base.Generator{UnitRange{Int64},AmplNLWriter.##109#110{AmplNLWriter.AmplNLMathProgModel}}, ::Base.EltypeUnknown, ::Base.HasShape) at ./array.jl:454
+ [7] loadproblem!(::AmplNLWriter.AmplNLNonlinearModel, ::Int64, ::Int64, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Array{Float64,1}, ::Symbol, ::JuMP.NLPEvaluator) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:177
+ [8] _buildInternalModel_nlp(::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1248
+ [9] #build#119(::Bool, ::Bool, ::JuMP.ProblemTraits, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:303
+ [10] (::JuMP.#kw##build)(::Array{Any,1}, ::JuMP.#build, ::JuMP.Model) at ./<missing>:0
+ [11] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:168
+ [12] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [13] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [14] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [15] include_from_node1(::String) at ./loading.jl:569
+ [16] include(::String) at ./sysimg.jl:14
+ [17] process_options(::Base.JLOptions) at ./client.jl:305
+ [18] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 372
+WARNING: !(B::BitArray) is deprecated, use .!(B) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] !(::BitArray{1}) at ./deprecated.jl:57
+ [3] write_nl_header(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:67
+ [4] write_nl_file(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:2
+ [5] optimize!(::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:371
+ [6] optimize!(::AmplNLWriter.AmplNLNonlinearModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:722
+ [7] #solvenlp#165(::Bool, ::Function, ::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1271
+ [8] (::JuMP.#kw##solvenlp)(::Array{Any,1}, ::JuMP.#solvenlp, ::JuMP.Model, ::JuMP.ProblemTraits) at ./<missing>:0
+ [9] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:172
+ [10] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [11] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [12] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [13] include_from_node1(::String) at ./loading.jl:569
+ [14] include(::String) at ./sysimg.jl:14
+ [15] process_options(::Base.JLOptions) at ./client.jl:305
+ [16] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 372
+WARNING: !(B::BitArray) is deprecated, use .!(B) instead.
+Stacktrace:
+ [1] depwarn(::String, ::Symbol) at ./deprecated.jl:70
+ [2] !(::BitArray{1}) at ./deprecated.jl:57
+ [3] write_nl_header(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:68
+ [4] write_nl_file(::IOStream, ::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/nl_write.jl:2
+ [5] optimize!(::AmplNLWriter.AmplNLMathProgModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:371
+ [6] optimize!(::AmplNLWriter.AmplNLNonlinearModel) at /home/ubuntu/.julia/v0.6/AmplNLWriter/src/AmplNLWriter.jl:722
+ [7] #solvenlp#165(::Bool, ::Function, ::JuMP.Model, ::JuMP.ProblemTraits) at /home/ubuntu/.julia/v0.6/JuMP/src/nlp.jl:1271
+ [8] (::JuMP.#kw##solvenlp)(::Array{Any,1}, ::JuMP.#solvenlp, ::JuMP.Model, ::JuMP.ProblemTraits) at ./<missing>:0
+ [9] #solve#116(::Bool, ::Bool, ::Bool, ::Array{Any,1}, ::Function, ::JuMP.Model) at /home/ubuntu/.julia/v0.6/JuMP/src/solvers.jl:172
+ [10] (::JuMP.#kw##solve)(::Array{Any,1}, ::JuMP.#solve, ::JuMP.Model) at ./<missing>:0
+ [11] optimize!(::ConicNonlinearBridge.NonlinearToConicBridge) at /home/ubuntu/.julia/v0.6/ConicNonlinearBridge/src/nonlinear_to_conic.jl:212
+ [12] solveprint(::ConicBenchmarkUtilities.CBFData, ::ConicNonlinearBridge.ConicNLPWrapper) at /home/ubuntu/PajaritoSupplement/scripts/run.jl:35
+ [13] include_from_node1(::String) at ./loading.jl:569
+ [14] include(::String) at ./sysimg.jl:14
+ [15] process_options(::Base.JLOptions) at ./client.jl:305
+ [16] _start() at ./client.jl:371
+while loading /home/ubuntu/PajaritoSupplement/scripts/run.jl, in expression starting on line 372
+WARNING: Variable value not defined for component of x. Check that the model was properly solved.
+#SOLVERNAME# BONMIN_OA
+#SOLVER# ConicNonlinearBridge.ConicNLPWrapper(AmplNLWriter.AmplNLSolver("/home/ubuntu/.julia/v0.6/CoinOptServices/deps/usr/lib/../bin/bonmin", String["bonmin.algorithm=\"B-OA\"", "bonmin.time_limit=3600.0", "halt_on_ampl_error=yes", "bonmin.allowable_fraction_gap=1.0e-5", "bonmin.oa_log_level=1", "bonmin.bb_log_level=1"], ""), false, false, false)
+#INSTANCE# shortfall_100_1.cbf.gz
+#TIMELIMIT# 3600.0
+#STATUS# UserLimit
+#OBJVAL# NaN
+#OBJBOUND# NaN
+#NODECOUNT# NaN
+#TIMESOLVER# 3685.9127600193024
+#TIMEALL# 3694.6204369068146
+#SOLUTION# [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
