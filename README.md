@@ -2,8 +2,11 @@
 
 This supplement is for reproducing the computational results in section 6 of "Outer Approximation With Conic Certificates For Mixed-Integer Convex Problems" by Chris Coey, Miles Lubin, and Juan Pablo Vielma.
 * Section 6.1 describes our presentation of results in tables and performance profiles.
-* Section 6.2 presents the comparisons of 9 MISOCP solvers (3 Bonmin, Pajarito + CBC or GLPK, SCIP, CPLEX, and 2 Pajarito + CPLEX) on our testset of 120 MISOCP (mixed-integer second-order cone programming) instances from CBLIB (http://cblib.zib.de/).
-* Section 6.3 presents the comparisons of key algorithmic variants of Pajarito (cut types, cut disaggregation, cut scaling) on our testset of 95 MICP (mixed-integer conic programming) instances (involving mixtures of second-order, exponential, and positive semidefinite cone constraints).
+* Section 6.2 presents the comparisons of 9 MISOCP (mixed-integer second-order cone programming) solvers (3 Bonmin methods, SCIP MISOCP, CPLEX MISOCP, Pajarito with ECOS and CBC or GLPK for MILP, and Pajarito MSD and iterative methods with MOSEK and CPLEX for MILP) on our testset of 120 MISOCP instances from CBLIB (http://cblib.zib.de/).
+* Section 6.3 presents the comparisons of key algorithmic variants of Pajarito on our testset of 95 MICP (mixed-integer (convex) conic programming) instances involving mixtures of second-order, exponential, and positive semidefinite cone constraints.
+  * Section 6.3.1 tests initial fixed cuts, certificate cuts, and separation cuts (described in Sections 3-4 and Appendix A).
+  * Section 6.3.2 tests extreme ray disaggregation (described in Section 4 and Appendices A-B).
+  * Section 6.3.3 tests certificate-based scaling of certificate cuts (described in Section 3).
 
 The folders in this supplement are organized as follows.
 * `cbfs/` contains our MISOCP and MICP testsets. Each instance file is stored as a gzipped `cbf` file (`.cbf.gz`). CBF is described by Friberg at http://cblib.zib.de/.
@@ -15,7 +18,7 @@ The folders in this supplement are organized as follows.
 * `analysis/` initially contains files that are outputted by the `scripts/process_csv.jl` and `xxxx_perf.jl` scripts that we ran. Specifically, a `.txt` file is , a `.tex` file is LaTeX/PGF/TiKZ code that produces a performance profile. The current set of files should be deleted or moved before running the scripts again.
 
 
-## MISOCP tests (section 6.2)
+## MISOCP tests (Section 6.2)
 
 ### Install software
 
@@ -30,7 +33,7 @@ wget https://julialang.s3.amazonaws.com/bin/linux/x64/0.6/julia-0.6.0-linux-x86_
 tar -xvzf julia-0.6.0-linux-x86_64.tar.gz
 echo "export PATH=\$PATH:$HOME/julia-903644385b/bin" >> ~/.bashrc
 ```
-Obtain a Mosek licence file `mosek.lic` from Mosek's website. Install Mosek. The wget link may need to be obtained from Mosek directly.
+Obtain a MOSEK licence file `mosek.lic` from MOSEK's website. Install MOSEK version 9-alpha. The wget link may need to be obtained from MOSEK directly.
 ```
 wget https://d2i6rjz61faulo.cloudfront.net/alpha/9/mosektoolslinux64x86.tar.bz2
 tar -xvjf mosektoolslinux64x86.tar.bz2
@@ -42,33 +45,31 @@ chmod +x cplex_studio127.linux-x86-64.bin
 ./cplex_studio127.linux-x86-64.bin
 echo "export LD_LIBRARY_PATH=/home/ubuntu/CPLEX_Studio127/cplex/bin/x86-64_linux" >> ~/.bashrc
 ```
-Get Mosek.jl.
+Get Mosek.jl, specifically chriscoey's branch with MathProgBase status fixes, commit 1f142c5b93f0a35bcfbc8560dc62ace0b36a946b.
 ```
 cd
 source .bashrc
 julia
 Pkg.update()
-ENV["MOSEKBINDIR"] = "/home/ubuntu/mosek/9/tools/platform/linux64x86/bin/"
 Pkg.clone("https://github.com/chriscoey/Mosek.jl","Mosek")
-Pkg.build("Mosek")
 exit()
-```
-Get on chriscoey's special branch of Mosek.jl (with MathProgBase status fixes).
-```
 cd
 cd .julia/v0.6/Mosek
 git remote remove origin
 git remote add origin https://github.com/chriscoey/Mosek.jl.git
 git fetch
 git branch --set-upstream-to=origin/master master
-git checkout master
-git pull
+git checkout 1f142c5b93f0a35bcfbc8560dc62ace0b36a946b
+git fetch
 cd
 ```
 Get more Julia packages.
 ```
 julia
+ENV["MOSEKBINDIR"] = "/home/ubuntu/mosek/9/tools/platform/linux64x86/bin/"
+Pkg.build("Mosek")
 Pkg.add("CPLEX")
+Pkg.build("CPLEX")
 Pkg.add("JuMP")
 Pkg.add("ECOS")
 Pkg.add("Cbc")
@@ -133,7 +134,7 @@ Ensure packages are on correct versions.
  - GLPKMathProgInterface         0.3.4
  - Ipopt                         0.2.6
  - JuMP                          0.18.0
- - Mosek                         0.8.2+             master
+ - Mosek                         0.8.2+             1f142c5b
  - Pajarito                      0.5.0+             master
  - SCIP                          0.4.0
  - Clp                           0.3.1
@@ -154,8 +155,6 @@ sudo chmod 777 scripts/run_misocp.sh scripts/run_micp.sh
 ### Run the MISOCP computations
 
 Run the remaining commands from top directory of PajaritoSupplement. If Julia indicates that any packages need to be installed, do so with `Pkg.add("xxxx.jl")`. Ignore any deprecation warnings.
-
-TODO where define JULIA home
 
 Run the bash script.
 ```
@@ -187,14 +186,25 @@ julia scripts/misocp_perf.jl analysis
 ### Install software
 
 This must be performed after the software installation steps for the MISOCP tests above.
-TODO have to get julia v0.6.2 now, update some packages
+
+The MISOCP tests are performed on Julia v0.6.0, but the MICP tests are performed on Julia v0.6.2 with some updated packages.
 
 Install Julia v0.6.2.
 ```
 wget https://julialang.s3.amazonaws.com/bin/linux/x64/0.6/julia-0.6.2-linux-x86_64.tar.gz
 tar -xvzf julia-0.6.2-linux-x86_64.tar.gz
-echo "export PATH=\$PATH:$HOME/julia-d386e40c17/bin" >> ~/.bashrc
 ```
+Change path in ~/.bashrc to point to Julia v0.6.2 instead of Julia v0.6.0. The line:
+  "export PATH=\$PATH:$HOME/julia-d386e40c17/bin"
+should become:
+  "export PATH=\$PATH:$HOME/julia-903644385b/bin"
+Now run:
+```
+source ~/.bashrc
+which julia
+```
+and check that the output includes julia-d386e40c17.
+
 Install Gurobi 7.5.2. Install Gurobi.jl following instructions at https://github.com/JuliaOpt/Gurobi.jl.
 ```
 julia
@@ -213,8 +223,6 @@ Update packages to correct versions.
 ### Run the MICP computations
 
 Run the remaining commands from top directory of PajaritoSupplement. If Julia indicates that any packages need to be installed, do so with `Pkg.add("xxxx.jl")`. Ignore any deprecation warnings.
-
-TODO where define JULIA home
 
 Run the bash script.
 ```
