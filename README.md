@@ -17,6 +17,8 @@ The folders in this supplement are organized as follows.
 * `results/` initially contains `.csv` files that are outputted by the `scripts/process_output.jl` script that we ran. Each line in each file corresponds to a solver-instance run, and summarizes the important performance metrics and solution checks. The current set of files should be deleted or moved before running the scripts again.
 * `analysis/` initially contains files that are outputted by the `scripts/process_csv.jl` and `xxxx_perf.jl` scripts that we ran. Specifically, a `.txt` file is , a `.tex` file is LaTeX/PGF/TiKZ code that produces a performance profile. The current set of files should be deleted or moved before running the scripts again.
 
+You will need to contact MOSEK for a prerelease download of MOSEK 9-alpha and a corresponding licence file (we will update the instructions after the MOSEK 9 release). MOSEK may not be able to provide you with the same early alpha versions that we used for our computations, but we believe this is unlikely to have a significant impact on the computational results.
+
 
 ## MISOCP tests (Section 6.2)
 
@@ -33,9 +35,8 @@ wget https://julialang.s3.amazonaws.com/bin/linux/x64/0.6/julia-0.6.0-linux-x86_
 tar -xvzf julia-0.6.0-linux-x86_64.tar.gz
 echo "export PATH=\$PATH:$HOME/julia-903644385b/bin" >> ~/.bashrc
 ```
-Obtain a MOSEK licence file `mosek.lic` from MOSEK's website. Install MOSEK version 9-alpha. The wget link may need to be obtained from MOSEK directly.
+Obtain a MOSEK 9-alpha download and a corresponding MOSEK licence file `mosek.lic` by contacting MOSEK directly. Install MOSEK 9-alpha to the default folder `~/mosek`, then move the licence file to the mosek folder.
 ```
-wget https://d2i6rjz61faulo.cloudfront.net/alpha/9/mosektoolslinux64x86.tar.bz2
 tar -xvjf mosektoolslinux64x86.tar.bz2
 mv mosek.lic mosek
 ```
