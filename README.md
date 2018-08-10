@@ -40,7 +40,7 @@ Obtain a MOSEK 9-alpha download and a corresponding MOSEK licence file `mosek.li
 tar -xvjf mosektoolslinux64x86.tar.bz2
 mv mosek.lic mosek
 ```
-Install CPLEX to `/home/ubuntu/CPLEX_Studio127`.
+Install CPLEX version 12.7 to `/home/ubuntu/CPLEX_Studio127`.
 ```
 chmod +x cplex_studio127.linux-x86-64.bin
 ./cplex_studio127.linux-x86-64.bin
