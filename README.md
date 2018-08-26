@@ -146,7 +146,7 @@ Ensure packages are on correct versions.
 
 Clone supplement repo with data instances and scripts.
 ```
-git clone https://github.com/mlubin/PajaritoSupplement.git
+git clone https://github.com/chriscoey/PajaritoSupplement.git
 ```
 Make the bash scripts executable.
 ```
